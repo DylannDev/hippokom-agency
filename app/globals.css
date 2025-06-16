@@ -2,6 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variante spéciale */
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/THICCCBOI/THICCCBOI-ThicccAF.woff2") format("woff2");
+  font-weight: 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: Poppins, sans-serif;
+  font-family: THICCCBOI, sans-serif;
+  @apply text-blue-dark;
+}
+
+.rich-text {
+  h2 {
+    @apply text-[32px] sm:text-[50px] leading-tight font-semibold text-black my-8;
+  }
+  h3 {
+    @apply text-[24px] sm:text-[34px] leading-tight font-semibold text-black mb-4 mt-12;
+  }
+  h4 {
+    @apply text-[22px] sm:text-[28px] leading-tight font-semibold text-black mb-2 mt-6;
+  }
+  p {
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    @apply list-disc list-inside space-y-1;
+  }
+
+  strong {
+    @apply font-semibold;
+  }
+
+  @apply text-base sm:text-lg text-gray leading-relaxed font-medium;
 }
