@@ -1,14 +1,9 @@
-const CategoryBadge = ({ categories }: { categories: string[] }) => {
+const CategoryBadge = ({ category }: { category: string }) => {
   return (
     <div className="flex flex-wrap gap-2">
-      {categories.map((category, index) => (
-        <span
-          key={index}
-          className="rounded-full bg-blue-background w-fit py-[2px] px-4 text-sm font-semibold text-blue"
-        >
-          {category}
-        </span>
-      ))}
+      <span className="rounded-full text-sm sm:text-base bg-blue w-fit py-3 sm:py-[12px] px-5 sm:px-[22px] font-semibold text-white">
+        {category}
+      </span>
     </div>
   );
 };

@@ -19,3 +19,7 @@ export const formatDate = (input: Date | string): string => {
   // Formatage
   return date.toLocaleDateString("fr-FR", options);
 };
+
+export const capitalizeFirstLetter = (str: string) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};

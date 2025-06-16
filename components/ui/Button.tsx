@@ -1,96 +1,73 @@
 "use client";
 
 import Link from "next/link";
-import React, { ReactNode } from "react";
-
-type ColorOption = "blue" | "yellow";
-type WidthOption = "large" | "normal";
-
-type ResponsiveWidth = {
-  default: WidthOption;
-  sm?: WidthOption;
-  md?: WidthOption;
-  lg?: WidthOption;
-};
 
 type ButtonProps = {
-  children?: string;
-  icon?: ReactNode;
+  children: React.ReactNode;
+  icon?: React.ReactNode;
+  iconPosition?: "left" | "right";
   href?: string;
-  color?: ColorOption;
-  responsiveWidth?: ResponsiveWidth;
+  target?: string;
+  variant?: "blue" | "blue-sky" | "yellow";
+  fullWidth?: boolean;
   disabled?: boolean;
-  link?: boolean;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-  type?: "submit" | undefined;
+  onClick?: () => void;
+  type?: "submit" | "button";
+  className?: string;
 };
 
 const Button = ({
   children,
   icon,
+  iconPosition = "left",
   href,
-  color = "yellow",
-  responsiveWidth = { default: "normal" },
+  target,
+  variant = "blue",
+  fullWidth = true,
   disabled = false,
-  link = false,
   onClick,
-  type,
+  type = "button",
+  className = "",
 }: ButtonProps) => {
   const baseClasses =
-    "rounded-xl px-[36px] py-[18px] font-semibold text-center text-base transition-all duration-200 ease-in-out active:scale-95 flex justify-center items-center gap-1";
+    "group rounded-full px-7 py-5 sm:px-9 sm:py-6 font-semibold text-base sm:text-lg transition-all duration-200 flex items-center justify-center gap-2 hover:-translate-y-1 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed";
 
-  // Gérer les classes de largeur responsive avec des valeurs fixes
-  const responsiveClasses = `
-    ${responsiveWidth.default === "large" ? "w-full" : "w-fit"}
-    ${
-      responsiveWidth.sm === "large"
-        ? "sm:w-full"
-        : responsiveWidth.sm === "normal"
-        ? "sm:w-fit"
-        : ""
-    }
-    ${
-      responsiveWidth.md === "large"
-        ? "md:w-full"
-        : responsiveWidth.md === "normal"
-        ? "md:w-fit"
-        : ""
-    }
-    ${
-      responsiveWidth.lg === "large"
-        ? "lg:w-full"
-        : responsiveWidth.lg === "normal"
-        ? "lg:w-fit"
-        : ""
-    }
-  `;
-
-  const colorClasses = {
-    blue: "bg-blue text-white hover:bg-blue-hover",
-    yellow: "bg-yellow text-blue-dark hover:bg-yellow-hover",
+  const variants = {
+    blue: "bg-blue text-white hover:bg-blue-dark",
+    "blue-sky": "bg-blue-medium text-black hover:bg-blue-medium/80",
+    yellow: "bg-yellow text-black hover:bg-yellow-hover",
   };
 
-  const classes = `${baseClasses} ${responsiveClasses} ${colorClasses[color]} ${
-    disabled ? "cursor-not-allowed opacity-75" : ""
-  }`;
+  const classes = `${baseClasses} ${variants[variant]} ${
+    fullWidth ? "w-full sm:w-fit" : "w-fit"
+  } ${className}`;
 
   const content = (
     <>
-      {icon && <span className="text-xl">{icon}</span>}
-      {children || (icon ? null : "")}
+      {icon && iconPosition === "left" && (
+        <span className="text-xl sm:text-2xl">{icon}</span>
+      )}
+      {children}
+      {icon && iconPosition === "right" && (
+        <span className="text-xl sm:text-2xl">{icon}</span>
+      )}
     </>
   );
 
-  return link ? (
-    <Link href={href || ""} className={classes}>
-      {content}
-    </Link>
-  ) : (
+  if (href) {
+    return (
+      <Link href={href} target={target} className={classes}>
+        {content}
+      </Link>
+    );
+  }
+
+  return (
     <button
+      type={type}
       className={classes}
       disabled={disabled}
       onClick={onClick}
-      type={type}
     >
       {content}
     </button>

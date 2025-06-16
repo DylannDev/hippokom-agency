@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BlogArticle } from "@/types/blog";
+import { BlogArticle } from "@/types/articles";
 import { formatDate } from "@/lib/utils";
+import { Typography } from "../ui/typography";
+import CategoryBadge from "./CategoryBadge";
+import { ArrowRotateButton } from "../ui/button-arrow-rotate";
 
 interface BlogCardProps {
   article: BlogArticle;
@@ -11,48 +14,46 @@ const BlogCard = ({ article }: BlogCardProps) => {
   const date = new Date();
 
   return (
-    <Link href={`/blog/${article.slug}`} className="cursor-pointer">
-      <div className="relative p-0 h-full flex flex-col w-full bg-transparent justify-center items-center rounded-3xl border">
-        <div className="w-full h-[270px] relative overflow-hidden rounded-t-3xl">
+    <Link
+      href={`/blog/${article.slug}`}
+      className="group cursor-pointer bg-white rounded-3xl sm:rounded-4xl px-5 pt-5 pb-6 sm:p-6 w-full"
+    >
+      <div className="relative h-full w-full bg-transparent flex flex-col sm:flex-row justify-start items-center gap-6">
+        <div className="w-full sm:w-1/2 h-full aspect-square lg:aspect-1/2 xl:aspect-square max-h-[300px] relative overflow-hidden rounded-3xl">
           <Image
             src={article.image}
             alt="hippokom blog article illustration"
             fill
             sizes="25vw"
-            className="object-cover object-center rounded-t-3xl transition-transform duration-300 ease-in-out hover:scale-105"
+            className="object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105"
           />
         </div>
 
-        <div className="p-5 flex flex-col justify-between gap-4 flex-grow">
-          <div className="rounded-full bg-blue-background w-fit py-[2px] px-4 text-sm font-semibold text-blue">
-            {article.categories}
+        <div className="flex flex-col justify-between gap-4 w-full sm:w-1/2">
+          <div className="flex items-center gap-2 ">
+            <CategoryBadge category={article.category} />
+            {/* <span className="font-semibold capitalize">{formatDate(date)}</span> */}
           </div>
-          <h1 className="text-2xl font-medium line-clamp-3 hover:text-blue-500">
+          <Typography
+            as="h3"
+            weight="semibold"
+            lineHeight="tight"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-xl line-clamp-4 mb-0 text-balance group-hover:text-blue transition-colors duration-300"
+          >
             {article.title}
-          </h1>
+          </Typography>
+          <Typography
+            as="p"
+            variant="base"
+            weight="semibold"
+            lineHeight="tight"
+            className="line-clamp-3 capitalize mb-8 text-balance text-gray transition-colors duration-300"
+          >
+            {formatDate(date)}
+          </Typography>
 
-          <p className="text-gray-500 flex-grow line-clamp-2">
-            {article.subtitle}
-          </p>
-
-          <div className="flex items-center justify-between mt-4 text-gray-500 text-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-[40px] h-[40px] relative">
-                <Image
-                  src="/aurelie.jpg"
-                  alt="profile photo"
-                  fill
-                  sizes="100%"
-                  className="object-cover object-top rounded-full"
-                />
-              </div>
-              <p className=" hover:underline hover:underline-offset-4">
-                Aurélie Ciril
-              </p>
-            </div>
-            <p className="flex items-center gap-1">
-              <span>{formatDate(date)}</span>
-            </p>
+          <div className="absolute bottom-0 right-0">
+            <ArrowRotateButton small />
           </div>
         </div>
       </div>

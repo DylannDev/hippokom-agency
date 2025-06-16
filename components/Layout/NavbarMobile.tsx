@@ -1,13 +1,26 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { PiCaretRightBold, PiList, PiX } from "react-icons/pi";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { navbarLinks } from "@/data";
 
-const Navbar = () => {
+const NavbarMobile = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [navTop, setNavTop] = useState(
+    "top-10 sm:top-12 md:top-16 left-10 right-10 sm:left-12 sm:right-12 md:left-16 md:right-16"
+  );
+
+  useEffect(() => {
+    setNavTop(
+      pathname === "/"
+        ? "top-10 sm:top-12 md:top-16 left-10 right-10 sm:left-12 sm:right-12 md:left-16 md:right-16"
+        : "top-5 left-5 right-5"
+    );
+  }, [pathname]);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -24,9 +37,13 @@ const Navbar = () => {
       document.body.classList.remove("no-scroll");
     };
   }, [isOpen]);
+
   return (
-    <div className="max-w-[1336px] h-[80px] fixed top-10 left-10 right-10 sm:top-12 sm:left-12 sm:right-12 md:top-16 md:left-16 md:right-16 mx-auto z-50 flex lg:hidden items-center justify-between bg-blue-dark px-6 rounded-3xl">
+    <div
+      className={`max-w-[1336px] h-[80px] fixed ${navTop} mx-auto z-50 flex lg:hidden items-center justify-between bg-blue-dark px-6 rounded-3xl transition-all duration-500 ease-in-out`}
+    >
       <Logo size={150} />
+
       {/* Icone pour ouvrir/fermer le menu */}
       <button
         onClick={toggleMenu}
@@ -42,8 +59,8 @@ const Navbar = () => {
 
       {/* Menu mobile */}
       <div
-        className={`fixed top-0 left-0 right-0 py-16 px-10 sm:px-12 md:px-16 z-40 h-screen bg-blue-dark transform transition-transform duration-500 ease-in-out ${
-          isOpen ? "translate-y-0" : "-translate-y-full"
+        className={`fixed top-0 left-0 right-0 py-16 sm:pt-20 md:pt-24 px-10 sm:px-12 md:px-16 z-40 h-screen bg-blue-dark transform transition-transform duration-500 ease-in-out ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <nav className="h-full">
@@ -77,4 +94,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarMobile;

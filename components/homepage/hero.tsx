@@ -19,18 +19,14 @@ const Hero = () => {
         <div className="absolute w-full h-full p-5 sm:p-6 md:p-8 flex items-end min-[1120px]:items-center">
           <div className="flex flex-col gap-8 items-center min-[1120px]:flex-row">
             <div className="flex flex-col justify-center items-center text-center min-[1120px]:items-start min-[1120px]:text-left gap-4 text-white w-full min-[1120px]:w-[55%]">
-              <h1 className="font-semibold text-3xl sm:text-5xl md:text-6xl min-[1360px]:text-7xl">
+              <h1 className="font-semibold text-3xl min-[400px]:text-4xl sm:text-5xl md:text-6xl min-[1360px]:text-7xl">
                 Boostez votre présence digitale
               </h1>
               <p className="text-sm sm:text-lg font-medium">
                 Hippô'Kom, l’agence qui réinvente votre présence digitale et
                 visuelle, pour des projets aussi uniques que votre marque !
               </p>
-              <Button
-                responsiveWidth={{ default: "large", sm: "normal" }}
-                color="yellow"
-                icon={<PiCalendarCheckDuotone />}
-              >
+              <Button variant="yellow" icon={<PiCalendarCheckDuotone />}>
                 Réserver un appel
               </Button>
             </div>
