@@ -1,0 +1,19 @@
+<svg width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="127" height="127" rx="15" fill="#436AF6"/>
+<rect x="29.1146" y="32.3503" width="62.2473" height="74.1218" rx="8.6246" transform="rotate(-6.25601 29.1146 32.3503)" fill="white" stroke="#121229" stroke-width="1.5"/>
+<rect x="41.6014" y="26.9578" width="35.9984" height="9.12455" rx="1.74989" transform="rotate(-6.25601 41.6014 26.9578)" fill="#FFEC18" stroke="#121229" stroke-width="1.5"/>
+<line x1="50.2451" y1="69.099" x2="71.1191" y2="66.8107" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="51.0806" y1="76.7211" x2="78.7883" y2="73.6836" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="52.8242" y1="92.6259" x2="80.532" y2="89.5884" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="51.9524" y1="84.6735" x2="75.9326" y2="82.0447" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="44.3904" cy="70.1808" r="2.06238" transform="rotate(-6.25601 44.3904 70.1808)" fill="#436AF6" stroke="#121229" stroke-width="1.5"/>
+<circle cx="45.2212" cy="77.7602" r="2.06238" transform="rotate(-6.25601 45.2212 77.7602)" fill="white" stroke="#121229" stroke-width="1.5"/>
+<circle cx="46.8831" cy="92.9189" r="2.06238" transform="rotate(-6.25601 46.8831 92.9189)" fill="white" stroke="#121229" stroke-width="1.5"/>
+<circle cx="46.0523" cy="85.3395" r="2.06238" transform="rotate(-6.25601 46.0523 85.3395)" fill="#436AF6" stroke="#121229" stroke-width="1.5"/>
+<line x1="47.7312" y1="45.0221" x2="68.6052" y2="42.7338" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="48.6846" y1="53.7196" x2="76.3923" y2="50.6822" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="49.5698" y1="61.796" x2="73.5501" y2="59.1672" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="41.7525" cy="46.1176" r="2.06238" transform="rotate(-6.25601 41.7525 46.1176)" fill="white" stroke="#121229" stroke-width="1.5"/>
+<circle cx="42.6377" cy="54.1938" r="2.06238" transform="rotate(-6.25601 42.6377 54.1938)" fill="#436AF6" stroke="#121229" stroke-width="1.5"/>
+<circle cx="43.5232" cy="62.2702" r="2.06238" transform="rotate(-6.25601 43.5232 62.2702)" fill="white" stroke="#121229" stroke-width="1.5"/>
+</svg>
