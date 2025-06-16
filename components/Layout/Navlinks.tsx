@@ -17,7 +17,7 @@ const Navlinks = () => {
           </Link>
         ))}
       </nav>
-      <Button color="blue" icon={<PiPaperPlaneTiltDuotone />}>
+      <Button variant="blue" icon={<PiPaperPlaneTiltDuotone />}>
         Contactez-nous
       </Button>
     </div>
