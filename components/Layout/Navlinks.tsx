@@ -1,7 +1,7 @@
 import { navbarLinks } from "@/data";
 import Link from "next/link";
 import { PiPaperPlaneTiltDuotone } from "react-icons/pi";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 
 const Navlinks = () => {
   return (

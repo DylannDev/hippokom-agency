@@ -3,7 +3,7 @@
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import { PiCalendarCheckDuotone } from "react-icons/pi";
 
 const problems = [

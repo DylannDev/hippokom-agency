@@ -1,6 +1,6 @@
 import { RiGoogleFill } from "react-icons/ri";
 import { Badge } from "../ui/badge";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import { Typography } from "../ui/typography";
 import { CarouselTestimonials } from "./carousel-testimonials";
 import { reviewLink } from "@/data";

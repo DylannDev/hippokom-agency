@@ -1,7 +1,7 @@
 "use client";
 
 import { RiArrowRightLine } from "react-icons/ri";
-import Button from "./button";
+import Button from "./Button";
 import { cn } from "@/lib/utils";
 
 interface ButtonArrowProps {
