@@ -1,7 +1,7 @@
 "use client";
 
 import { RiArrowRightLine } from "react-icons/ri";
-import Button from "./Button";
+import Button from "./button";
 import { cn } from "@/lib/utils";
 
 interface ButtonArrowProps {
@@ -9,7 +9,6 @@ interface ButtonArrowProps {
   href?: string;
   target?: string;
   variant?: "blue" | "blue-sky" | "yellow";
-  fullWidth?: boolean;
   disabled?: boolean;
   onClick?: () => void;
   type?: "submit" | "button";
@@ -22,7 +21,6 @@ export function ButtonArrow({
   href,
   target,
   variant = "yellow",
-  fullWidth = false,
   disabled = false,
   onClick,
   type = "button",
@@ -34,7 +32,6 @@ export function ButtonArrow({
       href={href}
       target={target}
       variant={variant}
-      fullWidth={fullWidth}
       disabled={disabled}
       onClick={onClick}
       type={type}

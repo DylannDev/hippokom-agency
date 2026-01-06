@@ -50,7 +50,7 @@ const AchievementsSection = () => {
           ))}
         </div>
         <div className="flex justify-center w-full mt-10">
-          <ButtonArrow href="/case-studies" variant="yellow" fullWidth>
+          <ButtonArrow href="/case-studies" variant="yellow">
             Voir nos réalisations
           </ButtonArrow>
         </div>

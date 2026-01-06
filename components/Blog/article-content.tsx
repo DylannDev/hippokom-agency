@@ -7,7 +7,8 @@ import CategoryBadge from "@/components/Blog/CategoryBadge";
 import { Typography } from "../ui/typography";
 import { Article, isBlogArticle, isCaseStudyArticle } from "@/types/articles";
 import { ButtonArrow } from "../ui/button-arrow";
-import { SimilarPosts } from "./similar-posts";
+import { CarouselBlog } from "../homepage/carousel-blog";
+import { blogArticles } from "@/data";
 
 // Composant pour afficher un highlight individuel
 const ProjectHighlight = ({
@@ -156,7 +157,7 @@ export const ArticleContentClient = ({ article }: { article: Article }) => {
         </ButtonArrow>
       </div>
       <hr className="mt-16 border-gray/20" />
-      <SimilarPosts title="Consultez nos derniers articles de blog" />
+      <CarouselBlog data={blogArticles} />
     </div>
   );
 };

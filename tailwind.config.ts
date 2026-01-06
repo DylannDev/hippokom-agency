@@ -20,6 +20,7 @@ const config: Config = {
     extend: {
       aspectRatio: {
         "1/2": "1 / 2",
+        "4/3": "4 / 3",
       },
       fontFamily: {
         thicccboi: ["THICCCBOI", "sans-serif"],

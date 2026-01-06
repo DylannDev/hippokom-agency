@@ -6,7 +6,7 @@ const BlogList = () => {
   return (
     <div className="max-w-[1200px] mx-auto flex flex-col gap-10 pt-36">
       <h1 className="text-5xl font-semibold">Blog</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 min-[1200px]:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 min-[1200px]:grid-cols-3 gap-x-8 gap-y-16">
         {blogArticles.map((article) => (
           <BlogCard key={article.slug} article={article} />
         ))}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Typography } from "@/components/ui/typography";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import { RiArrowRightLine } from "react-icons/ri";
 
 export default function NotFound() {

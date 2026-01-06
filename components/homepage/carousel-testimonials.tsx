@@ -47,7 +47,7 @@ const testimonials = [
   },
 ];
 
-export function CarouselThreeCards() {
+export function CarouselTestimonials() {
   return (
     <Carousel
       opts={{

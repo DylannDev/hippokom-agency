@@ -11,13 +11,13 @@ const NavbarMobile = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [navTop, setNavTop] = useState(
-    "top-10 sm:top-12 md:top-16 left-10 right-10 sm:left-12 sm:right-12 md:left-16 md:right-16"
+    "top-4 left-10 right-10 sm:left-12 sm:right-12 md:left-16 md:right-16"
   );
 
   useEffect(() => {
     setNavTop(
       pathname === "/"
-        ? "top-10 sm:top-12 md:top-16 left-10 right-10 sm:left-12 sm:right-12 md:left-16 md:right-16"
+        ? "top-12 left-10 right-10 sm:left-12 sm:right-12 md:left-16 md:right-16"
         : "top-5 left-5 right-5"
     );
   }, [pathname]);
@@ -40,7 +40,7 @@ const NavbarMobile = () => {
 
   return (
     <div
-      className={`max-w-[1336px] h-[80px] fixed ${navTop} mx-auto z-50 flex lg:hidden items-center justify-between bg-blue-dark px-6 rounded-3xl transition-all duration-500 ease-in-out`}
+      className={`max-w-[1336px] h-[80px] absolute ${navTop} mx-auto z-50 flex lg:hidden items-center justify-between bg-blue-dark px-6 rounded-3xl transition-all duration-500 ease-in-out`}
     >
       <Logo size={150} />
 

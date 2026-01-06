@@ -150,7 +150,6 @@ export function ContactForm() {
           type="submit"
           className="group flex items-center gap-2"
           disabled={isSubmitting}
-          fullWidth
         >
           {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
         </ButtonArrow>

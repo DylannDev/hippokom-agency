@@ -60,7 +60,7 @@ const navigation = {
 export function Footer() {
   return (
     <footer className="bg-black text-white relative -z-10 rounded-t-5xl">
-      <div className="max-w-7xl mx-auto px-5 pb-12 pt-96">
+      <div className="container max-w-[96rem] mx-auto px-4 pb-12 pt-96">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* À propos */}
           <motion.div

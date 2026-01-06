@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <div className="max-w-[1600px] mx-auto p-4 sm:p-6 md:p-8">
-          {/* <Navbar />
-          <NavbarMobile /> */}
+        <div className="max-w-[1600px] mx-auto p-4 sm:px-6 md:px-8">
+          <Navbar />
+          <NavbarMobile />
 
           {children}
           <PreFooter />

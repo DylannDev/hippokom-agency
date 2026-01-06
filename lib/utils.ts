@@ -6,18 +6,13 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const formatDate = (input: Date | string): string => {
-  // Options pour formater la date
-  const options: Intl.DateTimeFormatOptions = {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  };
-
-  // Si l'entrée est une chaîne, la convertir en Date
   const date = typeof input === "string" ? new Date(input) : input;
 
-  // Formatage
-  return date.toLocaleDateString("fr-FR", options);
+  const day = date.getDate();
+  const month = date.toLocaleString("en-US", { month: "short" });
+  const year = date.getFullYear();
+
+  return `${day} ${month}, ${year}`;
 };
 
 export const capitalizeFirstLetter = (str: string) => {

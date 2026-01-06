@@ -52,6 +52,24 @@ export const blogArticles = [
     content:
       "Un mauvais message ou un visuel inadapté peut ternir votre réputation. Voici comment éviter ces erreurs.",
   },
+  {
+    slug: "erreurs-communication-reseaux1",
+    title: "Les erreurs courantes en communication sur les réseaux sociaux",
+    date: "2025-01-14",
+    category: "Réseaux Sociaux",
+    image: "/error.webp",
+    content:
+      "Un mauvais message ou un visuel inadapté peut ternir votre réputation. Voici comment éviter ces erreurs.",
+  },
+  {
+    slug: "erreurs-communication-reseaux2",
+    title: "Les erreurs courantes en communication sur les réseaux sociaux",
+    date: "2025-01-14",
+    category: "Réseaux Sociaux",
+    image: "/error.webp",
+    content:
+      "Un mauvais message ou un visuel inadapté peut ternir votre réputation. Voici comment éviter ces erreurs.",
+  },
 ];
 
 export const caseStudiesArticles = [
@@ -68,11 +86,11 @@ export const caseStudiesArticles = [
     category: "Community Management",
     image: "/strategy.webp",
     content: `
-  <h3>🎯 Le contexte : une présence digitale inexistante</h3>
+  <h3>Le contexte : une présence digitale inexistante</h3>
   <p>Avant de faire appel à <strong>Hippô'kom</strong>, <em>Naomi Coiffure</em> faisait face à un problème courant chez de nombreux entrepreneurs : une envie de se développer via les réseaux sociaux, mais sans réelle stratégie. Le compte Instagram du salon était peu attractif : à peine 25 abonnés, une biographie confuse, des visuels mal cadrés et aucune cohérence éditoriale. Il n’y avait ni rubriques en Story à la Une, ni appel à l’action pour réserver.</p>
   <p><strong>Résultat ?</strong> Une image peu professionnelle, un manque de visibilité et peu (voire aucun) retour client via le digital. Et pourtant, le potentiel était bien là.</p>
   
-  <h3>🔧 La mission : mettre en place un community management professionnel</h3>
+  <h3>La mission : mettre en place un community management professionnel</h3>
   <p>Le travail de Hippô'kom a commencé par un <strong>audit complet</strong> du compte Instagram : identité, messages, cohérence visuelle, clarté des informations. Ensuite, l’agence a proposé une <strong>refonte totale</strong> du profil :</p>
   <ul>
     <li>Nom de compte plus lisible et professionnel</li>
@@ -83,7 +101,7 @@ export const caseStudiesArticles = [
   </ul>
   <p>Mais le plus important ? Une <strong>stratégie de contenu pensée pour la cible du client</strong> : langage simple, ton chaleureux, mise en avant des produits utilisés et codes adaptés à la clientèle visée.</p>
   
-  <h3>📈 Les résultats : une image transformée et des résultats concrets</h3>
+  <h3>Les résultats : une image transformée et des résultats concrets</h3>
   <ul>
     <li><strong>+1500 % de croissance</strong> sur Instagram : le compte passe de 25 à plus de 400 abonnés <strong>qualifiés</strong></li>
     <li>Des interactions quotidiennes avec la communauté : likes, commentaires, messages privés, partages</li>
@@ -92,7 +110,7 @@ export const caseStudiesArticles = [
     <li>Une image de marque <em>pro</em>, identifiable, et alignée avec les standards d’un salon haut de gamme</li>
   </ul>
   
-  <h3>🔍 Pourquoi faire appel à Hippô'kom pour votre community management ?</h3>
+  <h3>Pourquoi faire appel à Hippô'kom pour votre community management ?</h3>
   <p>Ce projet prouve une chose simple : <strong>le community management ne se limite pas à poster des jolies photos</strong>. Il s’agit de <strong>raconter une histoire, structurer un message, créer une expérience</strong> et positionner votre entreprise comme un acteur crédible et visible dans son secteur.</p>
   <p>Si vous avez une entreprise, et que :</p>
   <ul>
@@ -102,7 +120,7 @@ export const caseStudiesArticles = [
   </ul>
   <p>Il est temps de déléguer cette partie à un expert <strong>community manager</strong>, qui connaît les réseaux sociaux et saura valoriser votre activité — quel que soit votre secteur ou votre localisation.</p>
   
-  <h3>✨ Conclusion</h3>
+  <h3>Conclusion</h3>
   <p>Chez <strong>Hippô'kom</strong>, nous ne faisons pas de community management « à la chaîne ». Chaque entreprise est unique, chaque stratégie est personnalisée. L’exemple de <strong>Naomi Coiffure</strong> montre que même avec un compte inexistant, on peut atteindre une visibilité forte à condition d’avoir un bon accompagnement.</p>
   <p><strong>👉 Prêt(e) à transformer votre image digitale et attirer plus de clients grâce aux réseaux sociaux ? Contactez-nous dès maintenant pour un audit gratuit et sans engagement.</strong></p>
 `,
@@ -123,7 +141,7 @@ export const caseStudiesArticles = [
     category: "Identité Visuelle",
     image: "/visuals.webp",
     content: `
-  <h3>🎯 Le contexte : un besoin d'image professionnelle et alignée</h3>
+  <h3>Le contexte : un besoin d'image professionnelle et alignée</h3>
   <p>Avant de collaborer avec <strong>Hippô'kom</strong>, <em>SPM Plans</em>, dessinatrice en bâtiment, exprimait le besoin de mieux structurer son image de marque. Elle souhaitait disposer d’une identité visuelle claire, cohérente et professionnelle, capable de refléter la précision et le sérieux de son activité.</p>
   <p>Les enjeux étaient multiples :</p>
   <ul>
@@ -133,7 +151,7 @@ export const caseStudiesArticles = [
   </ul>
   <p>Une problématique fréquente chez <strong>les indépendants dans le BTP ou les métiers techniques</strong>, où la communication visuelle est parfois mise de côté, alors qu’elle représente un véritable <strong>levier de crédibilité et de différenciation</strong>.</p>
 
-  <h3>🔧 La mission : poser les fondations d’une image cohérente et professionnelle</h3>
+  <h3>La mission : poser les fondations d’une image cohérente et professionnelle</h3>
   <p><strong>Hippô'kom</strong> est intervenu pour construire une <strong>identité visuelle stratégique</strong> — bien plus qu’un simple logo. Objectif : transmettre, en un coup d’œil, le sérieux, la précision et l’expertise de SPM Plans.</p>
   <p>Les étapes du projet :</p>
   <ul>
@@ -144,7 +162,7 @@ export const caseStudiesArticles = [
   </ul>
   <p>Mais surtout : chaque choix a été fait <strong>en cohérence avec la personnalité de la cliente, son audience cible et ses objectifs business</strong>. Car une bonne identité visuelle, c’est avant tout <strong>un outil stratégique</strong>, pas juste un habillage.</p>
 
-  <h3>📈 Les résultats : une image qui inspire confiance et professionnalisme</h3>
+  <h3>Les résultats : une image qui inspire confiance et professionnalisme</h3>
   <ul>
     <li>Une marque reconnaissable, qui inspire immédiatement la crédibilité</li>
     <li>Un compte Instagram harmonisé, plus attrayant, et cohérent avec le métier de la cliente</li>
@@ -153,11 +171,11 @@ export const caseStudiesArticles = [
   </ul>
   <p>Cette refonte a permis à <em>SPM Plans</em> de renforcer sa visibilité, d’être perçue comme une experte de son secteur, et de poser les bases pour une communication cohérente à long terme.</p>
 
-  <h3>🔍 Pourquoi faire appel à Hippô'kom pour créer ou refondre votre identité visuelle ?</h3>
+  <h3>Pourquoi faire appel à Hippô'kom pour créer ou refondre votre identité visuelle ?</h3>
   <p>Trop d’entreprises sous-estiment <strong>le pouvoir d’un branding bien pensé</strong>. Que vous soyez indépendant, artisan ou TPE/PME : <strong>votre image est votre premier commercial</strong>. C’est ce qui donne envie à un client de vous contacter ou de passer son chemin.</p>
   <p>Chez <strong>Hippô'kom</strong>, nous ne faisons pas de design « joli » pour faire joli. Nous concevons des identités <strong>stratégiques, mémorables, et adaptées à votre audience</strong>.</p>
 
-  <h3>✨ Conclusion</h3>
+  <h3>Conclusion</h3>
   <p>Une identité visuelle n’est pas une dépense, c’est un investissement. Celui qui vous positionne comme <strong>un pro, pas un amateur</strong>. Et l’exemple de <em>SPM Plans</em> montre à quel point ce levier peut transformer votre communication.</p>
   <p><strong>👉 Besoin d’un logo, d’une refonte ou d’un branding complet ? Prenez contact avec notre équipe dès aujourd’hui et boostez votre impact visuel.</strong></p>
   
@@ -176,7 +194,7 @@ export const caseStudiesArticles = [
     category: "Communication",
     image: "/error.webp",
     content: `
-      <h3>🎯 Le contexte : un événement santé à valoriser mais aucune stratégie de communication en place</h3>
+      <h3>Le contexte : un événement santé à valoriser mais aucune stratégie de communication en place</h3>
       <p>En janvier 2025, le <strong>Festival du Bien Manger, Bien Bouger</strong> (FBMBB), organisé en partenariat avec la <strong>Maison Sport Santé Aquater</strong>, souhaitait toucher un large public autour des thématiques du sport, de la nutrition et du bien-être.</p>
       <p>Mais comme c’est souvent le cas dans l’organisation d’événements à impact territorial ou associatif :</p>
       <ul>
@@ -186,7 +204,7 @@ export const caseStudiesArticles = [
       </ul>
       <p>C’est dans ce contexte que <strong>Hippô'kom</strong> est intervenue pour orchestrer une campagne événementielle de A à Z, capable de fédérer en ligne… pour faire venir les gens sur le terrain.</p>
       
-      <h3>🔧 La mission : concevoir une stratégie événementielle multicanal, humaine et percutante</h3>
+      <h3>La mission : concevoir une stratégie événementielle multicanal, humaine et percutante</h3>
       <p>Pour ce projet, il ne s’agissait pas uniquement de “faire de la pub” pour un événement : <strong>l’objectif était d’incarner les valeurs du projet</strong> (santé, bienveillance, inclusion) dans chaque action de communication.</p>
       <p>Voici les prestations réalisées :</p>
       <ul>
@@ -197,7 +215,7 @@ export const caseStudiesArticles = [
       </ul>
       <p>Le tout dans une logique d’impact réel, de respect des valeurs du client, et avec une <strong>intelligence émotionnelle au service de la communication</strong>.</p>
       
-      <h3>📈 Les résultats : visibilité, engagement et ancrage local</h3>
+      <h3>Les résultats : visibilité, engagement et ancrage local</h3>
       <ul>
         <li><strong>+150 nouveaux abonnés Instagram</strong> engagés et qualifiés</li>
         <li>Lancement d’une page Facebook (de 0 à +30 abonnés dès la première semaine)</li>
@@ -207,7 +225,7 @@ export const caseStudiesArticles = [
       </ul>
       <p>Mais plus que les chiffres, ce qui a marqué les esprits : <strong>un événement perçu comme professionnel, accessible et sincère</strong>, avec des retours enthousiastes de la part des partenaires, des intervenants… et du public.</p>
       
-      <h3>🔍 Pourquoi faire appel à Hippô'kom pour votre communication événementielle ?</h3>
+      <h3>Pourquoi faire appel à Hippô'kom pour votre communication événementielle ?</h3>
       <p>Organiser un événement, c’est une chose. <strong>Faire en sorte qu’il ait un impact réel</strong>, qu’il attire du monde, qu’il touche les bonnes personnes — c’en est une autre.</p>
       <p>Chez <strong>Hippô'kom</strong>, chaque événement est traité comme un projet stratégique :</p>
       <ul>
@@ -217,62 +235,61 @@ export const caseStudiesArticles = [
       </ul>
       <p><strong>Et ça fonctionne aussi à distance.</strong> Quel que soit votre lieu d’implantation, nous assurons la gestion complète de votre communication, en ligne et hors ligne, de manière fluide et professionnelle.</p>
       
-      <h3>✨ Conclusion</h3>
+      <h3>Conclusion</h3>
       <p>Une communication événementielle réussie, ce n’est pas du hasard. C’est le fruit d’une stratégie, d’une empathie ciblée, et d’une exécution sans faille.</p>
       <p>👉 <strong>Besoin d’accompagnement pour votre prochain événement ? Parlons-en dès maintenant et transformons votre projet en un rendez-vous marquant.</strong></p>
     `,
   },
   {
-    slug: "naomi-coiffure-community-management-martinique",
+    slug: "strategie-multicanale-emission-musicale",
     title:
-      "Comment avons-nous boosté la visibilité d'un salon de coiffure grâce au community management",
-    client: "Naomi Coiffure — Fort-de-France, Martinique",
-    service: "Community management & stratégie de contenu",
+      "Comment avons-nous renforcé la visibilité d’une émission musicale grâce au digital",
+    client: "Windies Médias – Émission Nina Soul Session",
+    service: "Stratégie digitale multicanale & captation vidéo",
     highlights: [
-      { value: "+1500%", label: "de croissance d’abonnés Instagram" },
-      { value: "+1500%", label: "de croissance d’abonnés Instagram" },
+      { value: "+38%", label: "d’interactions sociales sur Instagram" },
+      { value: "+25%", label: "de croissance de la communauté en 1 mois" },
     ],
-    category: "Community Management",
+    category: "communication audiovisuelle",
     image: "/strategy.webp",
     content: `
-      <h3>Le point de départ : une présence digitale inexistante</h3>
-      <p>Avant de faire appel à <strong>Hippô'kom</strong>, <em>Naomi Coiffure</em> faisait face à un problème courant chez de nombreux entrepreneurs en Martinique : une envie de se développer via les réseaux sociaux, mais sans réelle stratégie. Le compte Instagram du salon était peu attractif : à peine 25 abonnés, une biographie confuse, des visuels mal cadrés et aucune cohérence éditoriale. Il n’y avait ni rubriques en Story à la Une, ni appel à l’action pour réserver.</p>
-      <p><strong>Résultat ?</strong> Une image peu professionnelle, un manque de visibilité et peu (voire aucun) retour client via le digital. Et pourtant, le potentiel était bien là.</p>
-      
-      <h3>Le virage stratégique : mettre en place un community management professionnel</h3>
-      <p>Le travail de Hippô'kom a commencé par un <strong>audit complet</strong> du compte Instagram : identité, messages, cohérence visuelle, clarté des informations. Ensuite, l’agence a proposé une <strong>refonte totale</strong> du profil :</p>
+      <h3>Le contexte : une émission télé ambitieuse mais une présence digitale à structurer</h3>
+      <p>Windies Médias, producteur de l’émission musicale Nina Soul Session (diffusée en partenariat avec Martinique La 1ère), souhaitait aller plus loin que la simple diffusion TV. L’objectif : créer une expérience transmedia complète, capable de fidéliser une audience jeune et connectée, tout en valorisant les artistes invités.</p>
+      <p>Mais pour y parvenir, plusieurs défis se posaient :</p>
       <ul>
-        <li>Nom de compte plus lisible et professionnel</li>
-        <li>Nouvelle biographie avec positionnement clair et call-to-action</li>
-        <li>Création de Stories à la Une (tarifs, avis clients, prestations)</li>
-        <li>Shooting photo professionnel sur place pour des visuels authentiques et de qualité</li>
-        <li>Mise en place d’un <strong>calendrier éditorial mensuel</strong> : types de posts, fréquence, formats (carrousels, reels, stories)</li>
+        <li>une fragmentation des canaux de diffusion,</li>
+        <li>un manque de stratégie cohérente entre les supports,</li>
+        <li>et une sous-exploitation des contenus riches produits lors des tournages.</li>
       </ul>
-      <p>Mais le plus important ? Une <strong>stratégie de contenu pensée pour une cible locale</strong> : langage simple, codes culturels martiniquais, mise en avant des produits utilisés et ton de voix chaleureux.</p>
-      
-      <h3>Les résultats : une image transformée et des résultats concrets</h3>
+      <p>Il devenait essentiel de penser la communication comme un écosystème complet, cohérent et engageant.</p>
+  
+      <h3>La mission : concevoir une stratégie multicanale connectée à la culture musicale</h3>
+      <p>L’accompagnement proposé par Hippô’kom a consisté à créer un pont intelligent entre la télévision et le digital.</p>
       <ul>
-        <li><strong>+1500 % de croissance</strong> sur Instagram : le compte passe de 25 à plus de 400 abonnés <strong>qualifiés</strong></li>
-        <li>Des interactions quotidiennes avec la communauté : likes, commentaires, messages privés, partages</li>
-        <li>Un impact direct sur le chiffre d’affaires : réservations en salon issues directement d’Instagram</li>
-        <li>Un partenariat sponsorisé avec <strong>L’Oréal</strong>, qui repère le salon grâce à sa communication visuelle</li>
-        <li>Une image de marque <em>pro</em>, identifiable, et alignée avec les standards d’un salon haut de gamme</li>
+        <li>Définition d’une stratégie éditoriale multicanale : Instagram, Facebook, YouTube, LinkedIn</li>
+        <li>Création de contenus exclusifs et immersifs : coulisses, interviews, sondages, revues de presse</li>
+        <li>Lancement d’un jeu concours communautaire : les Nina Soul Awards</li>
+        <li>Captation et diffusion d’extraits vidéo clés</li>
+        <li>Coordination de la communication entre la chaîne TV et les réseaux sociaux</li>
       </ul>
-      
-      <h3>Pourquoi cette étude de cas est importante si vous cherchez un community manager en Martinique</h3>
-      <p>Ce projet prouve une chose simple : <strong>le community management ne se limite pas à poster des jolies photos</strong>. Il s’agit de <strong>raconter une histoire, structurer un message, créer une expérience</strong> et positionner votre entreprise comme un acteur crédible et visible dans son secteur.</p>
-      <p>Si vous êtes un entrepreneur en Martinique, et que :</p>
+  
+      <h3>Résultats : engagement accru, notoriété renforcée, audience fidélisée</h3>
       <ul>
-        <li>vous publiez sans vraie stratégie,</li>
-        <li>vous n’avez pas le temps de gérer vos réseaux,</li>
-        <li>ou vous sentez que vos posts n’ont aucun impact…</li>
+        <li>Hausse significative des interactions (partages, votes, commentaires)</li>
+        <li>Notoriété renforcée des artistes auprès d’un public jeune et digital</li>
+        <li>Croissance de la communauté sur les réseaux sociaux</li>
+        <li>Création d’un rituel de consommation cross-canal</li>
+        <li>Renforcement de l’attachement à la marque Windies TV</li>
       </ul>
-      <p>Il est temps de déléguer cette partie à un expert du <strong>community management local</strong>, qui connaît les codes du territoire et saura valoriser votre activité.</p>
-      
-      <h3>Conclusion</h3>
-      <p>Chez <strong>Hippô'kom</strong>, nous ne faisons pas de community management « à la chaîne ». Chaque entreprise est unique, chaque stratégie est personnalisée. L’exemple de <em>Naomi Coiffure</em> montre que même avec un compte inexistant, on peut atteindre une visibilité forte — à condition d’avoir un bon accompagnement.</p>
-      <p><strong>Prêt(e) à transformer votre image digitale et attirer plus de clients grâce aux réseaux sociaux ?</strong></p>
-      <p><a href="#contact">Contactez-nous dès maintenant</a> pour un audit gratuit et sans engagement. Nous vous accompagnons partout en <strong>Martinique</strong>, quel que soit votre secteur.</p>
+  
+      <h3>Pourquoi faire appel à Hippô’kom pour votre stratégie de communication audiovisuelle ?</h3>
+      <p>Si, comme Windies TV, vous produisez du contenu culturel ou audiovisuel, votre enjeu n’est pas seulement d’informer ou divertir. Vous devez créer un lien durable avec votre audience, valoriser vos artistes et déclencher de l’engagement sur plusieurs canaux.</p>
+      <p>Chez Hippô’kom, nous construisons des stratégies multicanales sur-mesure, qui prolongent l’impact de vos contenus bien au-delà de leur diffusion. De la captation vidéo au jeu concours, en passant par la narration sur les réseaux sociaux, chaque action est pensée pour renforcer l’expérience et faire rayonner votre projet.</p>
+  
+      <h3>Le mot de la fin</h3>
+      <p>Une émission, c’est plus qu’un format TV. C’est un levier d’impact culturel, social et émotionnel — à condition de l’activer avec les bons outils de communication.</p>
+      <p><strong>Vous produisez du contenu audiovisuel et souhaitez maximiser son rayonnement ?</strong></p>
+      <p>👉 <strong>Discutons de votre projet et transformons chaque diffusion en une expérience mémorable.</strong></p>
     `,
   },
 ];
