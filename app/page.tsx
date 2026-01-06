@@ -26,7 +26,7 @@ export default function Home() {
         <Faq data={faqHomepage} />
       </div>
       <BlogSection />
-      {/* <ContactSection /> */}
+      <ContactSection />
     </main>
   );
 }
