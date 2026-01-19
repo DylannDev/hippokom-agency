@@ -73,7 +73,7 @@ export function TestimonialsSection() {
     <section id="testimonials" className="py-20 bg-blue-background">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-5 mb-12">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center lg:justify-between items-center">
           {/* Left - Title */}
           <div className="text-center lg:text-left">
             <Badge variant="left">avis clients</Badge>
@@ -98,7 +98,7 @@ export function TestimonialsSection() {
           </div>
 
           {/* CTA Button */}
-          <div className="flex justify-center">
+          <div className="hidden lg:flex justify-center">
             <Button
               icon={<RiGoogleFill />}
               iconPosition="right"
@@ -170,6 +170,18 @@ export function TestimonialsSection() {
         {/* Gradient fade effects */}
         <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-blue-background"></div>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-blue-background"></div>
+      </div>
+
+      {/* CTA Button */}
+      <div className="flex lg:hidden justify-center mt-20">
+        <Button
+          icon={<RiGoogleFill />}
+          iconPosition="right"
+          href={reviewLink}
+          target="_blank"
+        >
+          Laisser un avis
+        </Button>
       </div>
     </section>
   );

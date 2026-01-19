@@ -63,9 +63,9 @@ export function ProblemsSection() {
                 <div
                   className={`${problem.bgColor} border border-blue-light rounded-4xl p-8`}
                 >
-                  <div className="flex items-center gap-4">
+                  <div className="flex flex-col md:flex-row items-center gap-4">
                     {/* Image à gauche */}
-                    <div className="w-full aspect-square relative max-w-[200px] mx-auto">
+                    <div className="w-full aspect-square relative max-w-[150px] md:max-w-[200px] mx-auto">
                       <Image
                         src={problem.img}
                         alt={problem.alt}
@@ -76,7 +76,7 @@ export function ProblemsSection() {
                     </div>
 
                     {/* Texte à droite */}
-                    <div className="text-left flex-1">
+                    <div className="flex-1 text-center md:text-left">
                       <Typography
                         as="h3"
                         variant="2xl"
