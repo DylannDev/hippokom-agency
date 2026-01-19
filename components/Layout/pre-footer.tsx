@@ -26,7 +26,7 @@ export function PreFooter() {
           </div>
 
           <div className="flex justify-center flex-shrink-0">
-            <CalendlyButton size="default" variant="yellow" />
+            <CalendlyButton variant="yellow" />
           </div>
         </div>
       </div>

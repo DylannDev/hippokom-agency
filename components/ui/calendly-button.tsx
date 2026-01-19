@@ -11,7 +11,7 @@ interface CalendlyButtonProps {
 
 export function CalendlyButton({
   variant = "yellow",
-  size = "md",
+  size = "default",
   className,
 }: CalendlyButtonProps) {
   return (
