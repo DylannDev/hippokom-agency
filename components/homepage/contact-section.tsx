@@ -69,7 +69,7 @@ export function ContactSection() {
                   <Typography
                     as="p"
                     weight="semibold"
-                    className="mb-0 text-base md:text-lg group-hover:text-blue transition-all duration-300"
+                    className="mb-0 text-base md:text-lg whitespace-nowrap group-hover:text-blue transition-all duration-300"
                   >
                     {info.content}
                   </Typography>
