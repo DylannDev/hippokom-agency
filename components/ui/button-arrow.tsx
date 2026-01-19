@@ -8,7 +8,7 @@ interface ButtonArrowProps {
   children: React.ReactNode;
   href?: string;
   target?: string;
-  variant?: "blue" | "blue-sky" | "yellow";
+  variant?: "white" | "yellow" | "blue";
   disabled?: boolean;
   onClick?: () => void;
   type?: "submit" | "button";
