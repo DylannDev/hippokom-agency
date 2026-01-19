@@ -7,17 +7,18 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 hover:-translate-y-1 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none",
+  "group inline-flex whitespace-nowrap items-center justify-center gap-1 rounded-lg font-semibold transition-all duration-200 hover:-translate-y-1 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none",
   {
     variants: {
       variant: {
-        blue: "bg-blue text-white hover:bg-blue-dark ring-2 ring-transparent hover:ring-white",
-        "blue-sky": "bg-blue-medium text-black hover:bg-blue-medium/80",
+        blue: "bg-blue text-white hover:bg-blue-dark",
+        "blue-dark": "bg-blue-dark text-white",
         yellow: "bg-yellow text-black hover:bg-yellow-hover",
+        white: "bg-white text-blue-dark hover:bg-blue-dark hover:text-white",
       },
       size: {
         sm: "px-4 py-2 sm:px-5 sm:py-3 text-sm sm:text-base",
-        default: "px-6 py-4 sm:px-7 sm:py-5 text-base sm:text-lg",
+        default: "px-5 py-3 sm:px-6 sm:py-4 text-base sm:text-lg",
         md: "px-7 py-5 sm:px-8 sm:py-6 text-base sm:text-lg",
         lg: "px-8 py-6 sm:px-10 sm:py-7 text-lg sm:text-xl",
         xl: "px-10 py-7 sm:px-12 sm:py-8 text-xl sm:text-2xl",

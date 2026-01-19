@@ -8,9 +8,8 @@ import {
 } from "@/components/ui/accordion";
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { ContactSection } from "./contact-section";
 
 interface FaqItem {
   id: string;
@@ -34,20 +33,17 @@ export function Faq({
   isRichText = false,
 }: FaqProps) {
   return (
-    <section className={`relative ${className}`}>
-      <div
-        className={cn(
-          "flex flex-col gap-10 py-10 md:py-20 w-full max-w-[1100px] mx-auto"
-        )}
-      >
+    <section className={`relative bg-blue-background ${className}`}>
+      <div className="max-w-7xl mx-auto py-10 md:py-20 px-5">
+        {/* FAQ Content - Left */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="text-center lg:text-left mb-10"
         >
-          <Badge>{badge}</Badge>
+          <Badge variant="left">{badge}</Badge>
           <Typography
             as="h2"
             variant="5xl"
@@ -61,38 +57,58 @@ export function Faq({
             Des réponses concrètes pour prendre la meilleure décision.
           </Typography>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <Accordion className="flex flex-col gap-6" type="single" collapsible>
-            {data.map((faq, index) => (
-              <motion.div
-                key={faq.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
+        <div className="flex flex-col lg:flex-row gap-6">
+          <div className="flex-1">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Accordion
+                className="flex flex-col gap-6"
+                type="single"
+                collapsible
               >
-                <AccordionItem value={faq.id}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>
-                    {isRichText ? (
-                      <div
-                        className="rich-text"
-                        dangerouslySetInnerHTML={{ __html: faq.answer }}
-                      />
-                    ) : (
-                      faq.answer
-                    )}
-                  </AccordionContent>
-                </AccordionItem>
-              </motion.div>
-            ))}
-          </Accordion>
-        </motion.div>
+                {data.map((faq, index) => (
+                  <motion.div
+                    key={faq.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    <AccordionItem value={faq.id}>
+                      <AccordionTrigger>{faq.question}</AccordionTrigger>
+                      <AccordionContent>
+                        {isRichText ? (
+                          <div
+                            className="rich-text"
+                            dangerouslySetInnerHTML={{ __html: faq.answer }}
+                          />
+                        ) : (
+                          faq.answer
+                        )}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                ))}
+              </Accordion>
+            </motion.div>
+          </div>
+
+          {/* Contact Section - Right (Sticky) */}
+          <div className="lg:w-[430px] hidden lg:block">
+            <div className="sticky top-8">
+              <ContactSection />
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Section - Mobile (below FAQ) */}
+        <div className="lg:hidden mt-6 w-full">
+          <ContactSection />
+        </div>
       </div>
     </section>
   );

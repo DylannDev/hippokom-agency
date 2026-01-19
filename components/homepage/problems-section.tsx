@@ -3,8 +3,7 @@
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
-import Button from "../ui/Button";
-import { PiCalendarCheckDuotone } from "react-icons/pi";
+import { CalendlyButton } from "../ui/calendly-button";
 
 const problems = [
   {
@@ -13,7 +12,7 @@ const problems = [
     title: "Aucune stratégie claire",
     description:
       "Vous publiez au feeling, sans réel plan. Vos posts manquent d'impact et ne parlent pas à vos clients cibles. Avec nous, chaque contenu a un but précis : engager, convaincre, convertir !",
-    bgColor: "bg-blue-light",
+    bgColor: "bg-white",
   },
   {
     img: "/directions.svg",
@@ -21,7 +20,7 @@ const problems = [
     title: "Message dispersé, zéro impact",
     description:
       "Vous ne savez pas quoi publier ni comment mesurer l'efficacité de vos actions. On vous guide avec un plan de contenu précis et des formats adaptés pour valoriser votre expertise.",
-    bgColor: "bg-yellow-light",
+    bgColor: "bg-white",
   },
   {
     img: "/sandtimer.svg",
@@ -29,13 +28,13 @@ const problems = [
     title: "Du temps perdu",
     description:
       "Vous passez des heures à gérer vos réseaux, mais vos efforts n'apportent ni visibilité ni nouveaux clients. Chez Hippokom, nous boostons votre visibilité.",
-    bgColor: "bg-blue-light",
+    bgColor: "bg-white",
   },
 ];
 
 export function ProblemsSection() {
   return (
-    <section id="problems" className="py-20">
+    <section id="problems" className="py-20 bg-blue-background">
       <div>
         {/* Header */}
         <div className="max-w-3xl mx-auto px-5 sm:px-8 mb-10 sticky top-10">
@@ -61,7 +60,9 @@ export function ProblemsSection() {
               className="flex items-center justify-center sticky top-60"
             >
               <div className="max-w-3xl mx-auto px-5 sm:px-8 w-full">
-                <div className={`${problem.bgColor} rounded-4xl p-8`}>
+                <div
+                  className={`${problem.bgColor} border border-blue-light rounded-4xl p-8`}
+                >
                   <div className="flex items-center gap-4">
                     {/* Image à gauche */}
                     <div className="w-full aspect-square relative max-w-[200px] mx-auto">
@@ -115,9 +116,7 @@ export function ProblemsSection() {
           </Typography>
         </div>
         <div className="mt-8 sm:mt-10 w-full flex justify-center">
-          <Button variant="blue" icon={<PiCalendarCheckDuotone />}>
-            Réserver un appel
-          </Button>
+          <CalendlyButton variant="blue" />
         </div>
       </div>
     </section>

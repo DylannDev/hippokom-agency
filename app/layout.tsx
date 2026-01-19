@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <div className="max-w-[1600px] mx-auto p-4 sm:px-6 md:px-8">
+        <div className="relative">
           <Navbar />
           <NavbarMobile />
 

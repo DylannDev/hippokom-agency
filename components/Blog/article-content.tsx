@@ -6,9 +6,6 @@ import { cn, formatDate } from "@/lib/utils";
 import CategoryBadge from "@/components/Blog/CategoryBadge";
 import { Typography } from "../ui/typography";
 import { Article, isBlogArticle, isCaseStudyArticle } from "@/types/articles";
-import { ButtonArrow } from "../ui/button-arrow";
-import { CarouselBlog } from "../homepage/carousel-blog";
-import { blogArticles } from "@/data";
 
 // Composant pour afficher un highlight individuel
 const ProjectHighlight = ({
@@ -20,8 +17,10 @@ const ProjectHighlight = ({
 }) => (
   <div
     className={cn(
-      "flex flex-col items-center gap-4 w-full px-10 py-16 rounded-4xl transition-colors duration-300",
-      index === 0 ? "bg-blue-light" : "bg-yellow-light"
+      "flex flex-col items-center gap-4 w-full px-10 py-16 border rounded-4xl transition-colors duration-300",
+      index === 0
+        ? "bg-blue-light border-blue"
+        : "bg-yellow-light border-yellow"
     )}
   >
     <Typography
@@ -106,7 +105,7 @@ const ProjectResults = ({ article }: { article: Article }) => {
 // Composant client qui gère l'affichage de l'article
 export const ArticleContentClient = ({ article }: { article: Article }) => {
   return (
-    <div className="flex flex-col gap-8 max-w-[1200px] mx-auto">
+    <div className="flex flex-col gap-8 max-w-[1200px] mx-auto pt-40">
       {/* Header */}
       <div className="flex justify-center items-center gap-4">
         <CategoryBadge category={article.category} />
@@ -132,7 +131,7 @@ export const ArticleContentClient = ({ article }: { article: Article }) => {
         {article.title}
       </Typography>
 
-      <div className="relative w-full aspect-video">
+      <div className="relative w-full aspect-video border border-blue-dark rounded-4xl">
         <Image
           src={article.image}
           alt={article.title}
@@ -151,13 +150,6 @@ export const ArticleContentClient = ({ article }: { article: Article }) => {
           dangerouslySetInnerHTML={{ __html: article.content }}
         />
       </div>
-      <div className="flex justify-center w-full px-10">
-        <ButtonArrow variant="blue" href="/contact">
-          Contactez-nous
-        </ButtonArrow>
-      </div>
-      <hr className="mt-16 border-gray/20" />
-      <CarouselBlog data={blogArticles} />
     </div>
   );
 };

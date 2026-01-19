@@ -2,40 +2,51 @@ import Link from "next/link";
 import Image from "next/image";
 import { CaseStudyArticle } from "@/types/articles";
 import { Typography } from "../ui/typography";
-import CategoryBadge from "../Blog/CategoryBadge";
-import { ArrowRotateButton } from "../ui/button-arrow-rotate";
 
 const AchievementsCard = ({ article }: { article: CaseStudyArticle }) => {
   return (
     <Link
       href={`/realisations/${article.slug}`}
-      className="group cursor-pointer p-5 sm:p-8 bg-white rounded-4xl"
+      className="group cursor-pointer block h-full"
     >
-      <div className="relative p-0 h-full flex flex-col w-full bg-transparent justify-center items-center">
-        <div className="w-full aspect-square max-h-[400px] relative overflow-hidden rounded-3xl">
+      <div className="relative h-full w-full bg-white/20 backdrop-blur-md border border-white/40 rounded-3xl overflow-hidden flex flex-col">
+        {/* Image */}
+        <div className="w-full aspect-video relative overflow-hidden">
           <Image
             src={article.image}
-            alt="hippokom blog article illustration"
+            alt={`${article.client} - ${article.title}`}
             fill
-            sizes="25vw"
-            className="object-cover object-center rounded-t-3xl transition-transform duration-300 ease-in-out group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-110"
           />
         </div>
 
-        <div className="pt-5 flex flex-1 flex-col justify-between gap-8">
-          <div className="flex flex-col gap-4 sm:gap-6 h-full">
-            <CategoryBadge category={article.category} />
+        {/* Content */}
+        <div className="flex flex-col flex-1 p-6">
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            <span className="px-3 py-1.5 bg-blue-dark backdrop-blur-sm rounded-lg text-xs text-white font-medium">
+              {article.category}
+            </span>
+          </div>
+
+          {/* Description */}
+          <div className="flex flex-col gap-2 flex-1">
             <Typography
               as="h3"
               weight="semibold"
-              className="text-lg sm:text-[28px] leading-tight line-clamp-4 sm:line-clamp-3 mb-0 group-hover:text-blue transition-colors duration-300 flex-grow"
+              lineHeight="tight"
+              className="text-xl md:text-2xl text-white mb-0 group-hover:text-yellow transition-colors duration-300"
+            >
+              {article.client}
+            </Typography>
+            <Typography
+              as="p"
+              weight="normal"
+              className="text-white text-base line-clamp-2 mb-0"
             >
               {article.title}
             </Typography>
-          </div>
-
-          <div className="flex justify-end">
-            <ArrowRotateButton />
           </div>
         </div>
       </div>

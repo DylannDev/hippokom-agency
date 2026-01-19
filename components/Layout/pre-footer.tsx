@@ -1,39 +1,33 @@
 import { Typography } from "../ui/typography";
-import { ButtonArrow } from "../ui/button-arrow";
 import Image from "next/image";
-import { Badge } from "../ui/badge";
+import CalendlyButton from "../ui/calendly-button";
 
 export function PreFooter() {
   return (
-    <section className="relative w-full rounded-4xl -mb-[290px]">
-      <div className="w-full min-h-[450px] relative -z-1 inset-0 overflow-hidden rounded-5xl">
+    <section className="relative z-20 w-full -mb-[150px] max-w-7xl mx-auto px-5">
+      <div className="w-full relative overflow-hidden rounded-3xl">
         <Image
-          src="/bg-prefooter.svg"
+          src="/bg-light-blue.svg"
           alt="hippokom hero background illustration"
           fill
           sizes="100vw"
-          className="object-cover object-center rounded-5xl"
+          className="object-cover object-center rounded-3xl"
         />
-      </div>
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center gap-8">
-        <div className="text-center w-full text-white max-w-2xl px-5">
-          <Badge color="white">une Agence impliquée</Badge>
-          <Typography
-            as="h2"
-            variant="5xl"
-            weight="bold"
-            lineHeight="tightest"
-            className="mb-4 text-balance"
-          >
-            Prêt à booster votre visibilité ?
-          </Typography>
-          <Typography as="p" variant="xl" className="mb-0 text-balance">
-            Faites briller votre marque avec une communication sur-mesure.
-          </Typography>
-        </div>
+        <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-8 p-8 sm:p-12 lg:p-16">
+          <div className="text-center lg:text-left w-full text-white max-w-3xl">
+            <Typography
+              as="h2"
+              weight="semibold"
+              lineHeight="tightest"
+              className="mb-0 text-2xl sm:text-3xl md:text-4xl lg:text-[46px] leading-tight lg:leading-none text-balance"
+            >
+              Passez à la vitesse supérieure avec une communication sur-mesure.
+            </Typography>
+          </div>
 
-        <div className="flex justify-center w-full px-10">
-          <ButtonArrow href="/contact">Contactez-nous</ButtonArrow>
+          <div className="flex justify-center flex-shrink-0">
+            <CalendlyButton size="default" variant="yellow" />
+          </div>
         </div>
       </div>
     </section>

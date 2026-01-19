@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { capitalizeFirstLetter, cn } from "@/lib/utils";
-import { PiStarDuotone, PiStarFill } from "react-icons/pi";
-import React from "react";
-import { FcGoogle } from "react-icons/fc";
+import { IoMdStar, IoMdStarOutline } from "react-icons/io";
 import { RiGoogleFill } from "react-icons/ri";
 
 export const TestimonialCard = ({
@@ -23,9 +21,9 @@ export const TestimonialCard = ({
   return (
     <figure
       className={cn(
-        "relative w-full h-full cursor-pointer overflow-hidden rounded-3xl px-8 py-12",
-        "flex flex-col justify-between gap-6",
-        isEven ? "bg-blue-light" : "bg-yellow-light"
+        "relative w-full h-full cursor-pointer overflow-hidden rounded-3xl px-8 py-12 border border-blue-light",
+        "flex flex-col justify-between gap-6 bg-white"
+        // isEven ? "bg-blue-light" : "bg-yellow-light"
       )}
     >
       <blockquote className="text-black font-medium text-lg sm:line-clamp-4">
@@ -37,12 +35,12 @@ export const TestimonialCard = ({
           <figcaption className="text-xl text-blue-dark font-bold capitalize">
             {author}
           </figcaption>
-          <div className="flex items-center gap-1 text-xl text-blue">
+          <div className="flex items-center gap-0.5 text-xl text-blue">
             {[...Array(MAX_STARS)].map((_, index) =>
               index < stars ? (
-                <PiStarFill key={index} />
+                <IoMdStar key={index} />
               ) : (
-                <PiStarDuotone key={index} />
+                <IoMdStarOutline key={index} />
               )
             )}
           </div>

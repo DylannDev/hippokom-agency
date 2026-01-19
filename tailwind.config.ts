@@ -30,14 +30,14 @@ const config: Config = {
           DEFAULT: "#39394f",
         },
         blue: {
-          background: "#f3f8ff",
-          light: "#B7E9FD",
-          medium: "#65D1FF",
-          DEFAULT: "#436AF6",
-          hover: "#3d60e0",
+          background: "#E6FAFF",
+          light: "#B3F1FE",
+          medium: "#67E2FE",
+          DEFAULT: "#01CFFD",
           dark: "#15214B",
         },
         black: {
+          light: "#132c3f",
           DEFAULT: "#13182f",
         },
         yellow: {
@@ -80,9 +80,9 @@ const config: Config = {
         },
       },
       borderRadius: {
-        sm: "calc(var(--radius) - 4px)",
-        md: "calc(var(--radius) - 2px)",
-        lg: "var(--radius)",
+        // sm: "calc(var(--radius) - 4px)",
+        // md: "calc(var(--radius) - 2px)",
+        // lg: "var(--radius)",
         "4xl": "32px",
         "5xl": "40px",
       },
@@ -95,10 +95,20 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.3s ease-in-out",
         "accordion-up": "accordion-up 0.3s ease-in-out",
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
     },
   },

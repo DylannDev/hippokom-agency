@@ -5,28 +5,30 @@ import { ServicesSection } from "@/components/homepage/services-section";
 import { MethodSection } from "@/components/homepage/method-section";
 import AchievementsSection from "@/components/homepage/achievements-section";
 import { TestimonialsSection } from "@/components/homepage/testimonials-section";
-import { ContactSection } from "@/components/homepage/contact-section";
 import BlogSection from "@/components/homepage/blog-section";
 import { Faq } from "@/components/homepage/faq";
 import { faqHomepage } from "@/data";
+import FounderSection from "@/components/homepage/founder-section";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <div className="bg-blue-background">
+        <Hero />
+      </div>
       <ProblemsSection />
-      <div className="max-w-7xl mx-auto">
-        <SolutionSection />
-        <ServicesSection />
+      <ServicesSection />
+      <SolutionSection />
+      <div className="max-w-7xl mx-auto px-5">
         <MethodSection />
       </div>
       <AchievementsSection />
+      <FounderSection />
+      <TestimonialsSection />
+      <Faq data={faqHomepage} />
       <div className="max-w-7xl mx-auto">
-        <TestimonialsSection />
-        <Faq data={faqHomepage} />
+        <BlogSection />
       </div>
-      <BlogSection />
-      <ContactSection />
     </main>
   );
 }

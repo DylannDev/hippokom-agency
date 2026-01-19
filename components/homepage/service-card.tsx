@@ -18,8 +18,10 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
   return (
     <Link href={`/services/${service.slug}`} className="group">
       <div
-        className={`text-black cursor-pointer h-full flex flex-col sm:flex-row md:flex-col gap-4 sm:gap-8 items-start rounded-4xl px-8 py-12 transition-all duration-300 hover:-translate-y-2 ${
-          index % 2 === 0 ? "bg-blue-light" : "bg-yellow-light"
+        className={`text-black border cursor-pointer h-full flex flex-col sm:flex-row md:flex-col gap-4 sm:gap-8 items-start rounded-4xl px-8 py-12 transition-all duration-300 hover:-translate-y-2 ${
+          index % 2 === 0
+            ? "bg-blue-light border-blue"
+            : "bg-yellow-light border-yellow"
         }`}
       >
         <div className="w-full aspect-square max-h-[100px] sm:max-h-[160px] max-w-[100px] sm:max-w-[160px] relative mb-4 transition-transform duration-300 group-hover:scale-105">

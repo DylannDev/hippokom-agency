@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/carousel";
 import BlogCard from "../Blog/BlogCard";
 import { Typography } from "@/components/ui/typography";
-import Button from "@/components/ui/Button";
 import { Badge } from "../ui/badge";
 import { BlogArticle } from "@/types/articles";
 

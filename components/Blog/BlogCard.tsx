@@ -3,53 +3,64 @@ import Image from "next/image";
 import { BlogArticle } from "@/types/articles";
 import { formatDate } from "@/lib/utils";
 import { Typography } from "../ui/typography";
-import CategoryBadge from "./CategoryBadge";
-import { ArrowRotateButton } from "../ui/button-arrow-rotate";
+import { PiCalendarBlank, PiTag } from "react-icons/pi";
 
 interface BlogCardProps {
   article: BlogArticle;
 }
 
 const BlogCard = ({ article }: BlogCardProps) => {
-  const date = new Date();
-
   return (
     <Link
       href={`/blog/${article.slug}`}
       className="group cursor-pointer w-full h-full"
     >
-      <div className="relative h-full w-full bg-transparent flex flex-col gap-6">
-        <div className="w-full h-full aspect-4/3 max-h-[300px] relative overflow-hidden rounded-3xl">
+      <div className="relative h-full w-full bg-white border border-gray-300 rounded-3xl overflow-hidden flex flex-col">
+        {/* Image */}
+        <div className="w-full aspect-video relative overflow-hidden">
           <Image
             src={article.image}
-            alt="hippokom blog article illustration"
+            alt={article.title}
             fill
-            sizes="25vw"
-            className="object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-110"
           />
         </div>
 
-        <div className="flex flex-col justify-between gap-4 w-full">
-          <div className="flex items-center justify-between">
-            <CategoryBadge category={article.category} />
+        {/* Content */}
+        <div className="flex flex-col flex-1 p-6">
+          <div className="flex-1">
             <Typography
-              as="p"
-              variant="base"
+              as="h3"
               weight="semibold"
               lineHeight="tight"
-              className="line-clamp-3 capitalize mb-0"
+              className="text-xl md:text-[22px] text-black text-balance line-clamp-3 mb-3 group-hover:text-blue transition-colors duration-300"
             >
-              {formatDate(date)}
+              {article.title}
+            </Typography>
+            <Typography
+              as="p"
+              variant="lg"
+              className="text-black line-clamp-2 mb-0"
+            >
+              {article.content}
             </Typography>
           </div>
-          <Typography
-            as="h3"
-            weight="semibold"
-            lineHeight="tight"
-            className="text-xl sm:text-2xl md:text-3xl text-balance line-clamp-4 mb-0 group-hover:text-blue transition-colors duration-300"
-          >
-            {article.title}
-          </Typography>
+
+          {/* Footer */}
+          <div className="flex items-center gap-4 mt-6 pt-6 border-t border-gray-300">
+            <div className="flex items-center gap-2 text-gray">
+              <PiCalendarBlank className="text-lg text-blue" />
+              <span className="text-sm">
+                {formatDate(new Date(article.date))}
+              </span>
+            </div>
+            <div className="w-px h-4 bg-gray-300" />
+            <div className="flex items-center gap-2 text-gray">
+              <PiTag className="text-lg text-blue" />
+              <span className="text-sm capitalize">{article.category}</span>
+            </div>
+          </div>
         </div>
       </div>
     </Link>

@@ -9,20 +9,25 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 flex flex-col-reverse lg:flex-row items-center gap-12 w-full max-w-[800px] lg:max-w-full mx-auto"
+      className="relative w-full overflow-hidden rounded-3xl"
     >
-      <ContactForm />
-      <div className="w-full lg:w-[40%]">
+      <Image
+        src="/bg-light-blue.svg"
+        alt="background"
+        fill
+        sizes="100vw"
+        className="object-cover object-center"
+      />
+      <div className="relative max-w-xl mx-auto pt-10 pb-6 px-6">
         {/* Informations de contact */}
 
-        <div className="mb-8 lg:mb-0">
-          <Badge variant="left">Contact</Badge>
+        <div className="text-center text-white">
           <Typography
             as="h2"
-            variant="5xl"
+            variant="4xl"
             weight="semibold"
             lineHeight="tightest"
-            className="mb-4 text-balance text-center lg:text-left"
+            className="mb-4 text-balance"
           >
             Contactez-nous pour une offre sur-mesure
           </Typography>
@@ -30,22 +35,20 @@ export function ContactSection() {
             as="p"
             variant="xl"
             weight="medium"
-            className="text-gray text-balance text-center lg:text-left"
+            className="text-white text-balance"
           >
-            Un besoin en communication digitale ? Parlons-en, on vous accompagne
-            de A à Z.
+            On vous accompagne de A à Z.
           </Typography>
         </div>
-        <div className="flex flex-col md:flex-row lg:flex-col gap-6">
+        <div className="flex flex-col items-center gap-6">
           {contactInfo.map((info, index) => (
-            <div key={index} className="group w-full lg:max-w-[380px]">
+            <div key={index} className="group w-full lg:max-w-[381px]">
               <a
                 href={info.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
-                  "flex flex-col lg:flex-row items-center gap-4 p-[30px] bg-yellow-light rounded-3xl w-full group-hover:-translate-y-1 transition-all duration-300",
-                  index === 0 && "bg-blue-light"
+                  "flex flex-col lg:flex-row items-center gap-4 p-[30px] bg-white border border-blue-light rounded-3xl w-full group-hover:-translate-y-1 transition-all duration-300"
                 )}
               >
                 <Image

@@ -11,9 +11,7 @@ interface PromiseCardProps {
 }
 
 export function PromiseCard({ promise, index }: PromiseCardProps) {
-  const containerClasses = `flex flex-col sm:flex-row md:flex-col lg:flex-row gap-4 lg:gap-8 items-start rounded-4xl px-8 py-12 ${
-    index % 3 === 0 ? "md:bg-blue-light" : "md:bg-yellow-light"
-  } ${index % 2 === 0 ? "bg-blue-light" : "bg-yellow-light"}`;
+  const containerClasses = `flex flex-col sm:flex-row md:flex-col lg:flex-row gap-4 lg:gap-8 items-start rounded-4xl px-8 py-12 bg-white border border-blue-light`;
 
   return (
     <div className={containerClasses}>

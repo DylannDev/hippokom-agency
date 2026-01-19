@@ -56,10 +56,10 @@ export function Typography({
 
   const getWeightClass = () => {
     switch (weight) {
-      // case "light":
-      //   return "font-light";
-      // case "normal":
-      //   return "font-normal";
+      case "light":
+        return "font-light";
+      case "normal":
+        return "font-normal";
       case "medium":
         return "font-medium";
       case "semibold":

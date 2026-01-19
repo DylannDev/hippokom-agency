@@ -8,14 +8,14 @@ import Image from "next/image";
 
 const AchievementsSection = () => {
   return (
-    <section className="my-20 sm:my-40 py-20 sm:py-32 px-5 sm:px-6 md:px-8 bg-transparent rounded-5xl relative">
-      <div className="w-full h-full aspect-square absolute inset-0 overflow-hidden rounded-5xl -z-10">
+    <section className="py-20 sm:py-32 px-5 sm:px-6 md:px-8 relative [clip-path:ellipse(200%_100%_at_50%_0%)]">
+      <div className="w-full h-full aspect-square absolute inset-0 overflow-hidden -z-10">
         <Image
-          src="/bg-three-blue.svg"
+          src="/bg-light-blue.svg"
           alt="hippokom hero background illustration"
           fill
           sizes="100vw"
-          className="object-cover object-center rounded-5xl"
+          className="object-cover object-center"
         />
       </div>
       <div className="max-w-7xl mx-auto">
@@ -50,7 +50,7 @@ const AchievementsSection = () => {
           ))}
         </div>
         <div className="flex justify-center w-full mt-10">
-          <ButtonArrow href="/case-studies" variant="yellow">
+          <ButtonArrow href="/realisations" variant="yellow">
             Voir nos réalisations
           </ButtonArrow>
         </div>
