@@ -1,5 +1,3 @@
-import { ContactForm } from "../forms/contact-form";
-import { Badge } from "../ui/badge";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { cn } from "@/lib/utils";

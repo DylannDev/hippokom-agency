@@ -16,7 +16,7 @@ interface ServiceCardProps {
 
 export function ServiceCard({ service, index }: ServiceCardProps) {
   return (
-    <Link href={`/services/${service.slug}`} className="group">
+    <Link href={`/${service.slug}`} className="group">
       <div
         className={`text-black border cursor-pointer h-full flex flex-col sm:flex-row md:flex-col gap-4 sm:gap-8 items-start rounded-4xl px-8 py-12 transition-all duration-300 hover:-translate-y-2 ${
           index % 2 === 0

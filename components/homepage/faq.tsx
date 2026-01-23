@@ -99,7 +99,7 @@ export function Faq({
 
           {/* Contact Section - Right (Sticky) */}
           <div className="lg:w-[430px] hidden lg:block">
-            <div className="sticky top-8">
+            <div className="sticky top-28">
               <ContactSection />
             </div>
           </div>

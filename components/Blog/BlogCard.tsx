@@ -40,7 +40,7 @@ const BlogCard = ({ article }: BlogCardProps) => {
             </Typography>
             <Typography
               as="p"
-              variant="lg"
+              variant="base"
               className="text-black line-clamp-2 mb-0"
             >
               {article.content}

@@ -7,7 +7,7 @@ import {
   RiInstagramFill,
   RiWhatsappFill,
 } from "react-icons/ri";
-import { phoneNumber, contactInfo } from "@/data";
+import { phoneNumber, contactInfo, navbarLinks } from "@/data";
 
 const socials = [
   {
@@ -25,13 +25,6 @@ const socials = [
     href: `https://wa.me/${phoneNumber.raw}`,
     icon: RiWhatsappFill,
   },
-];
-
-const navigation = [
-  { label: "Services", href: "/services" },
-  { label: "Réalisations", href: "/realisations" },
-  { label: "Agence", href: "/agence" },
-  { label: "Blog", href: "/blog" },
 ];
 
 export function Footer() {
@@ -73,11 +66,11 @@ export function Footer() {
             <div className="flex flex-col items-center md:items-start">
               <h3 className="text-xl font-semibold mb-4">Navigation</h3>
               <ul className="flex flex-col gap-3 text-center md:text-left">
-                {navigation.map((item) => (
+                {navbarLinks.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="hover:text-blue transition-colors"
+                      className="hover:text-blue transition-colors capitalize"
                     >
                       {item.label}
                     </Link>

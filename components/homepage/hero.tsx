@@ -3,7 +3,7 @@ import { CalendlyButton } from "../ui/calendly-button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-full max-h-[1200px] overflow-hidden [clip-path:ellipse(150%_100%_at_50%_0%)]">
+    <section className="relative w-full h-[85vh] max-h-[900px] overflow-hidden [clip-path:ellipse(150%_100%_at_50%_0%)]">
       {/* Background Image */}
       <Image
         src="/bg-light-blue.svg"

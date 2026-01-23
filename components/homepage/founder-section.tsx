@@ -138,9 +138,9 @@ export function FounderSection() {
                 visuel et la stratégie au cœur de chaque projet.
               </Typography>
 
-              <div className="relative p-6 bg-blue-background border border-blue-light rounded-2xl">
-                <BiSolidQuoteAltRight className="absolute bottom-3 right-4 text-blue-light text-4xl" />
-                <BiSolidQuoteAltLeft className="absolute top-3 left-4 text-blue-light text-4xl" />
+              <div className="relative p-6 bg-blue-light border border-blue rounded-2xl">
+                <BiSolidQuoteAltRight className="absolute bottom-3 right-4 text-blue/50 text-4xl" />
+                <BiSolidQuoteAltLeft className="absolute top-3 left-4 text-blue/50 text-4xl" />
                 <Typography
                   as="p"
                   variant="lg"

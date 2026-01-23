@@ -7,9 +7,8 @@ export const calendlyLink =
   "https://calendly.com/agencehippokom?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAPKJ5xleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaexp8aN2mG4SD9OLw29UNOvKi8PYEgUD5CnZDng24shCfFjxr6PU6pYnHwlFw_aem_k4siwn-jhMcEOsjvuZ6_ZA";
 
 export const navbarLinks = [
-  { href: "services", label: "services" },
+  { href: "/#services", label: "services" },
   { href: "realisations", label: "réalisations" },
-  { href: "agence", label: "agence" },
   { href: "blog", label: "blog" },
 ];
 
@@ -252,6 +251,58 @@ export const caseStudiesArticles = [
 `,
   },
   {
+    slug: "strategie-multicanale-emission-musicale",
+    title:
+      "Comment avons-nous renforcé la visibilité d’une émission musicale grâce au digital",
+    client: "Windies Médias – Émission Nina Soul Session",
+    service: "Stratégie digitale multicanale & captation vidéo",
+    highlights: [
+      { value: "+38%", label: "d’interactions sociales sur Instagram" },
+      { value: "+25%", label: "de croissance de la communauté en 1 mois" },
+    ],
+    category: "Communication Audiovisuelle",
+    image: "/nina-soul-1.jpg",
+    content: `
+      <h3>Le contexte : une émission télé ambitieuse mais une présence digitale à structurer</h3>
+      <p>Windies Médias, producteur de l’émission musicale Nina Soul Session (diffusée en partenariat avec Martinique La 1ère), souhaitait aller plus loin que la simple diffusion TV. L’objectif : créer une expérience transmedia complète, capable de fidéliser une audience jeune et connectée, tout en valorisant les artistes invités.</p>
+      <p>Mais pour y parvenir, plusieurs défis se posaient :</p>
+      <ul>
+        <li>une fragmentation des canaux de diffusion,</li>
+        <li>un manque de stratégie cohérente entre les supports,</li>
+        <li>et une sous-exploitation des contenus riches produits lors des tournages.</li>
+      </ul>
+      <p>Il devenait essentiel de penser la communication comme un écosystème complet, cohérent et engageant.</p>
+  
+      <h3>La mission : concevoir une stratégie multicanale connectée à la culture musicale</h3>
+      <p>L’accompagnement proposé par Hippô’kom a consisté à créer un pont intelligent entre la télévision et le digital.</p>
+      <ul>
+        <li>Définition d’une stratégie éditoriale multicanale : Instagram, Facebook, YouTube, LinkedIn</li>
+        <li>Création de contenus exclusifs et immersifs : coulisses, interviews, sondages, revues de presse</li>
+        <li>Lancement d’un jeu concours communautaire : les Nina Soul Awards</li>
+        <li>Captation et diffusion d’extraits vidéo clés</li>
+        <li>Coordination de la communication entre la chaîne TV et les réseaux sociaux</li>
+      </ul>
+  
+      <h3>Résultats : engagement accru, notoriété renforcée, audience fidélisée</h3>
+      <ul>
+        <li>Hausse significative des interactions (partages, votes, commentaires)</li>
+        <li>Notoriété renforcée des artistes auprès d’un public jeune et digital</li>
+        <li>Croissance de la communauté sur les réseaux sociaux</li>
+        <li>Création d’un rituel de consommation cross-canal</li>
+        <li>Renforcement de l’attachement à la marque Windies TV</li>
+      </ul>
+  
+      <h3>Pourquoi faire appel à Hippô’kom pour votre stratégie de communication audiovisuelle ?</h3>
+      <p>Si, comme Windies TV, vous produisez du contenu culturel ou audiovisuel, votre enjeu n’est pas seulement d’informer ou divertir. Vous devez créer un lien durable avec votre audience, valoriser vos artistes et déclencher de l’engagement sur plusieurs canaux.</p>
+      <p>Chez Hippô’kom, nous construisons des stratégies multicanales sur-mesure, qui prolongent l’impact de vos contenus bien au-delà de leur diffusion. De la captation vidéo au jeu concours, en passant par la narration sur les réseaux sociaux, chaque action est pensée pour renforcer l’expérience et faire rayonner votre projet.</p>
+  
+      <h3>Le mot de la fin</h3>
+      <p>Une émission, c’est plus qu’un format TV. C’est un levier d’impact culturel, social et émotionnel — à condition de l’activer avec les bons outils de communication.</p>
+      <p><strong>Vous produisez du contenu audiovisuel et souhaitez maximiser son rayonnement ?</strong></p>
+      <p>👉 <strong>Discutons de votre projet et transformons chaque diffusion en une expérience mémorable.</strong></p>
+    `,
+  },
+  {
     slug: "communication-evenementielle-festival-bien-etre",
     title:
       "Création d'une communication événementielle impactante pour un festival",
@@ -262,7 +313,7 @@ export const caseStudiesArticles = [
       { value: "+150", label: "abonnés Instagram" },
     ],
     category: "Communication",
-    image: "/error.webp",
+    image: "/festival-1.jpg",
     content: `
       <h3>Le contexte : un événement santé à valoriser mais aucune stratégie de communication en place</h3>
       <p>En janvier 2025, le <strong>Festival du Bien Manger, Bien Bouger</strong> (FBMBB), organisé en partenariat avec la <strong>Maison Sport Santé Aquater</strong>, souhaitait toucher un large public autour des thématiques du sport, de la nutrition et du bien-être.</p>
@@ -310,57 +361,663 @@ export const caseStudiesArticles = [
       <p>👉 <strong>Besoin d’accompagnement pour votre prochain événement ? Parlons-en dès maintenant et transformons votre projet en un rendez-vous marquant.</strong></p>
     `,
   },
+];
+
+export const services = [
   {
-    slug: "strategie-multicanale-emission-musicale",
-    title:
-      "Comment avons-nous renforcé la visibilité d’une émission musicale grâce au digital",
-    client: "Windies Médias – Émission Nina Soul Session",
-    service: "Stratégie digitale multicanale & captation vidéo",
-    highlights: [
-      { value: "+38%", label: "d’interactions sociales sur Instagram" },
-      { value: "+25%", label: "de croissance de la communauté en 1 mois" },
+    slug: "community-management",
+    icon: "/assets/icons/community.svg",
+    title: "Community Management",
+    shortDescription:
+      "Faites grandir votre communauté et transformez vos abonnés en clients fidèles.",
+    hero: {
+      title: "Community Management",
+      subtitle:
+        "Développez votre présence sur les réseaux sociaux avec une stratégie de contenu personnalisée qui engage, fidélise et convertit.",
+    },
+    benefits: [
+      {
+        icon: "target",
+        title: "Stratégie sur-mesure",
+        description:
+          "Un plan de contenu adapté à votre audience et vos objectifs business.",
+      },
+      {
+        icon: "pencil",
+        title: "Contenus engageants",
+        description:
+          "Des visuels et textes qui captent l'attention et génèrent des interactions.",
+      },
+      {
+        icon: "users",
+        title: "Gestion de communauté",
+        description:
+          "Animation quotidienne, modération et réponses pour fidéliser votre audience.",
+      },
+      {
+        icon: "chart",
+        title: "Suivi des performances",
+        description:
+          "Rapports mensuels détaillés pour mesurer l'impact de vos actions.",
+      },
+      {
+        icon: "clock",
+        title: "Gain de temps",
+        description:
+          "Déléguez la gestion de vos réseaux et concentrez-vous sur votre cœur de métier.",
+      },
+      {
+        icon: "trend",
+        title: "Croissance organique",
+        description:
+          "Développez une communauté qualifiée qui devient ambassadrice de votre marque.",
+      },
+    ],
+    method: [
+      {
+        title: "Audit & Stratégie",
+        description:
+          "Analyse de votre présence actuelle, de votre audience cible et définition d'une stratégie personnalisée alignée sur vos objectifs.",
+        icon: "/search.svg",
+      },
+      {
+        title: "Création de contenu",
+        description:
+          "Élaboration d'un calendrier éditorial, création de visuels percutants et rédaction de textes engageants adaptés à chaque plateforme.",
+        icon: "/assets/icons/design.svg",
+      },
+      {
+        title: "Animation & Modération",
+        description:
+          "Publication régulière, interaction avec votre communauté, gestion des commentaires et messages pour maintenir l'engagement.",
+        icon: "/assets/icons/message.svg",
+      },
+      {
+        title: "Analyse & Optimisation",
+        description:
+          "Suivi des KPIs, rapports de performance mensuels et ajustements continus pour maximiser vos résultats.",
+        icon: "/credibility.svg",
+      },
+    ],
+    faq: [
+      {
+        id: "cm-1",
+        question: "Quels réseaux sociaux gérez-vous ?",
+        answer:
+          "Nous gérons principalement Instagram, Facebook, LinkedIn et TikTok. Selon votre secteur d'activité et votre audience cible, nous vous recommandons les plateformes les plus pertinentes pour maximiser votre impact.",
+      },
+      {
+        id: "cm-2",
+        question: "À quelle fréquence publiez-vous du contenu ?",
+        answer:
+          "La fréquence de publication est définie selon vos objectifs et votre budget. En moyenne, nous recommandons 3 à 5 publications par semaine, complétées par des stories quotidiennes pour maintenir l'engagement de votre communauté.",
+      },
+      {
+        id: "cm-3",
+        question: "Puis-je valider les contenus avant publication ?",
+        answer:
+          "Absolument ! Chaque mois, vous recevez le calendrier éditorial avec l'ensemble des contenus prévus. Vous pouvez demander des modifications avant validation et publication.",
+      },
+      {
+        id: "cm-4",
+        question: "Combien de temps avant de voir des résultats ?",
+        answer:
+          "Les premiers résultats sont généralement visibles après 1 à 3 mois : augmentation de l'engagement, croissance de la communauté, premières prises de contact via les réseaux. Une stratégie de community management est un investissement sur le long terme.",
+      },
+      {
+        id: "cm-5",
+        question: "Proposez-vous des shootings photo ?",
+        answer:
+          "Oui, nous pouvons organiser des shootings photo professionnels pour alimenter vos réseaux avec des visuels authentiques et de qualité. C'est un service complémentaire qui renforce considérablement l'impact de votre communication.",
+      },
+    ],
+    category: "Community Management",
+  },
+  {
+    slug: "productions-audiovisuelles",
+    icon: "/assets/icons/audiovisuel.svg",
+    title: "Productions Audiovisuelles",
+    shortDescription:
+      "Des vidéos professionnelles qui captent l'attention et renforcent votre crédibilité.",
+    hero: {
+      title: "Productions Audiovisuelles",
+      subtitle:
+        "Valorisez votre image de marque avec des contenus vidéo percutants, du tournage au montage, pour tous vos supports de communication.",
+    },
+    benefits: [
+      {
+        icon: "camera",
+        title: "Captation professionnelle",
+        description:
+          "Tournages réalisés avec du matériel professionnel pour un rendu cinématographique.",
+      },
+      {
+        icon: "film",
+        title: "Montage créatif",
+        description:
+          "Post-production soignée avec motion design, étalonnage et sound design.",
+      },
+      {
+        icon: "sparkle",
+        title: "Qualité premium",
+        description:
+          "Un rendu haut de gamme qui positionne votre marque comme une référence.",
+      },
+      {
+        icon: "target",
+        title: "Vidéos stratégiques",
+        description:
+          "Chaque production est pensée pour atteindre vos objectifs : notoriété, conversion ou engagement.",
+      },
+      {
+        icon: "devices",
+        title: "Multi-format",
+        description:
+          "Déclinaisons adaptées à chaque plateforme : Reels, YouTube, site web, écrans événementiels.",
+      },
+      {
+        icon: "trend",
+        title: "Impact mesurable",
+        description:
+          "Des contenus vidéo qui génèrent des vues, de l'engagement et des conversions.",
+      },
+    ],
+    method: [
+      {
+        title: "Briefing & Concept",
+        description:
+          "Définition de vos objectifs, identification de votre audience et conception du scénario adapté à votre message.",
+        icon: "/assets/method-section/strategy.svg",
+      },
+      {
+        title: "Pré-production",
+        description:
+          "Planification du tournage, repérage, casting si nécessaire et préparation technique complète.",
+        icon: "/search.svg",
+      },
+      {
+        title: "Tournage",
+        description:
+          "Captation sur site avec une équipe professionnelle, direction artistique et gestion du timing.",
+        icon: "/assets/icons/audiovisuel.svg",
+      },
+      {
+        title: "Post-production & Livraison",
+        description:
+          "Montage, étalonnage, habillage sonore et déclinaisons multi-format pour tous vos canaux.",
+        icon: "/assets/method-section/execution.svg",
+      },
+    ],
+    faq: [
+      {
+        id: "av-1",
+        question: "Quels types de vidéos réalisez-vous ?",
+        answer:
+          "Nous produisons des films corporate, spots publicitaires, captations événementielles, interviews, vidéos pour les réseaux sociaux (Reels, TikTok), aftermovies et vidéos de présentation produit/service.",
+      },
+      {
+        id: "av-2",
+        question: "Combien de temps dure une production vidéo ?",
+        answer:
+          "Selon la complexité du projet, comptez entre 1 et 4 semaines entre le briefing initial et la livraison finale. Les projets urgents peuvent être traités en délai réduit avec un planning adapté.",
+      },
+      {
+        id: "av-3",
+        question: "Intervenez-vous en Martinique et à distance ?",
+        answer:
+          "Oui, nous intervenons en Martinique pour les tournages sur place, et nous gérons la pré-production, le montage et la post-production à distance pour les clients situés ailleurs.",
+      },
+      {
+        id: "av-4",
+        question: "Fournissez-vous les déclinaisons pour les réseaux sociaux ?",
+        answer:
+          "Absolument. Chaque production est déclinée dans les formats adaptés à vos plateformes : format carré, vertical 9:16, horizontal 16:9, avec sous-titres intégrés si nécessaire.",
+      },
+      {
+        id: "av-5",
+        question: "Quel budget prévoir pour une vidéo professionnelle ?",
+        answer:
+          "Le budget dépend de la durée, du lieu de tournage, du nombre de jours de captation et de la complexité du montage. Nous proposons des formules adaptées à chaque besoin, du Reel rapide au film corporate complet.",
+      },
     ],
     category: "Communication Audiovisuelle",
-    image: "/strategy.webp",
-    content: `
-      <h3>Le contexte : une émission télé ambitieuse mais une présence digitale à structurer</h3>
-      <p>Windies Médias, producteur de l’émission musicale Nina Soul Session (diffusée en partenariat avec Martinique La 1ère), souhaitait aller plus loin que la simple diffusion TV. L’objectif : créer une expérience transmedia complète, capable de fidéliser une audience jeune et connectée, tout en valorisant les artistes invités.</p>
-      <p>Mais pour y parvenir, plusieurs défis se posaient :</p>
-      <ul>
-        <li>une fragmentation des canaux de diffusion,</li>
-        <li>un manque de stratégie cohérente entre les supports,</li>
-        <li>et une sous-exploitation des contenus riches produits lors des tournages.</li>
-      </ul>
-      <p>Il devenait essentiel de penser la communication comme un écosystème complet, cohérent et engageant.</p>
-  
-      <h3>La mission : concevoir une stratégie multicanale connectée à la culture musicale</h3>
-      <p>L’accompagnement proposé par Hippô’kom a consisté à créer un pont intelligent entre la télévision et le digital.</p>
-      <ul>
-        <li>Définition d’une stratégie éditoriale multicanale : Instagram, Facebook, YouTube, LinkedIn</li>
-        <li>Création de contenus exclusifs et immersifs : coulisses, interviews, sondages, revues de presse</li>
-        <li>Lancement d’un jeu concours communautaire : les Nina Soul Awards</li>
-        <li>Captation et diffusion d’extraits vidéo clés</li>
-        <li>Coordination de la communication entre la chaîne TV et les réseaux sociaux</li>
-      </ul>
-  
-      <h3>Résultats : engagement accru, notoriété renforcée, audience fidélisée</h3>
-      <ul>
-        <li>Hausse significative des interactions (partages, votes, commentaires)</li>
-        <li>Notoriété renforcée des artistes auprès d’un public jeune et digital</li>
-        <li>Croissance de la communauté sur les réseaux sociaux</li>
-        <li>Création d’un rituel de consommation cross-canal</li>
-        <li>Renforcement de l’attachement à la marque Windies TV</li>
-      </ul>
-  
-      <h3>Pourquoi faire appel à Hippô’kom pour votre stratégie de communication audiovisuelle ?</h3>
-      <p>Si, comme Windies TV, vous produisez du contenu culturel ou audiovisuel, votre enjeu n’est pas seulement d’informer ou divertir. Vous devez créer un lien durable avec votre audience, valoriser vos artistes et déclencher de l’engagement sur plusieurs canaux.</p>
-      <p>Chez Hippô’kom, nous construisons des stratégies multicanales sur-mesure, qui prolongent l’impact de vos contenus bien au-delà de leur diffusion. De la captation vidéo au jeu concours, en passant par la narration sur les réseaux sociaux, chaque action est pensée pour renforcer l’expérience et faire rayonner votre projet.</p>
-  
-      <h3>Le mot de la fin</h3>
-      <p>Une émission, c’est plus qu’un format TV. C’est un levier d’impact culturel, social et émotionnel — à condition de l’activer avec les bons outils de communication.</p>
-      <p><strong>Vous produisez du contenu audiovisuel et souhaitez maximiser son rayonnement ?</strong></p>
-      <p>👉 <strong>Discutons de votre projet et transformons chaque diffusion en une expérience mémorable.</strong></p>
-    `,
+  },
+  {
+    slug: "site-web-webdesign",
+    icon: "/assets/icons/web-development.svg",
+    title: "Site Web & Webdesign",
+    shortDescription:
+      "Des sites web performants et esthétiques qui convertissent vos visiteurs en clients.",
+    hero: {
+      title: "Site Web & Webdesign",
+      subtitle:
+        "Créez une vitrine digitale à la hauteur de votre ambition avec un site web sur-mesure, optimisé pour la performance et la conversion.",
+    },
+    benefits: [
+      {
+        icon: "globe",
+        title: "Site sur-mesure",
+        description:
+          "Un design unique, pensé pour refléter votre identité et se démarquer de la concurrence.",
+      },
+      {
+        icon: "palette",
+        title: "Design premium",
+        description:
+          "Une direction artistique soignée qui inspire confiance et professionnalisme dès le premier regard.",
+      },
+      {
+        icon: "devices",
+        title: "100% responsive",
+        description:
+          "Une expérience fluide sur mobile, tablette et desktop pour ne perdre aucun visiteur.",
+      },
+      {
+        icon: "rocket",
+        title: "Performance & SEO",
+        description:
+          "Un site rapide et optimisé pour le référencement naturel afin d'attirer du trafic qualifié.",
+      },
+      {
+        icon: "shield",
+        title: "Sécurité & maintenance",
+        description:
+          "Hébergement sécurisé, mises à jour régulières et support technique pour un site toujours opérationnel.",
+      },
+      {
+        icon: "chart",
+        title: "Analytics intégrés",
+        description:
+          "Suivi des performances, du comportement utilisateur et des conversions pour optimiser en continu.",
+      },
+    ],
+    method: [
+      {
+        title: "Audit & Cahier des charges",
+        description:
+          "Analyse de votre besoin, étude de la concurrence et définition du périmètre fonctionnel de votre site.",
+        icon: "/assets/method-section/audit.svg",
+      },
+      {
+        title: "Maquettes & Design",
+        description:
+          "Création des maquettes UI/UX avec votre identité visuelle, validées étape par étape avant développement.",
+        icon: "/assets/icons/design.svg",
+      },
+      {
+        title: "Développement",
+        description:
+          "Intégration et développement du site avec les meilleures technologies, responsive et optimisé SEO.",
+        icon: "/assets/icons/web-development.svg",
+      },
+      {
+        title: "Mise en ligne & Suivi",
+        description:
+          "Déploiement, configuration du nom de domaine, formation à l'utilisation et suivi post-lancement.",
+        icon: "/assets/method-section/execution.svg",
+      },
+    ],
+    faq: [
+      {
+        id: "web-1",
+        question: "Quels types de sites web réalisez-vous ?",
+        answer:
+          "Nous créons des sites vitrines, des sites e-commerce, des landing pages et des applications web. Chaque projet est développé sur-mesure avec des technologies modernes pour garantir performance et évolutivité.",
+      },
+      {
+        id: "web-2",
+        question: "Combien coûte un site web professionnel ?",
+        answer:
+          "Le tarif dépend de la complexité du projet : nombre de pages, fonctionnalités spécifiques, e-commerce, etc. Nous proposons des formules adaptées à chaque budget, avec un devis transparent et détaillé.",
+      },
+      {
+        id: "web-3",
+        question: "Mon site sera-t-il optimisé pour Google (SEO) ?",
+        answer:
+          "Oui, chaque site est construit avec les bonnes pratiques SEO : structure sémantique, vitesse de chargement optimisée, balises meta, sitemap et intégration Google Search Console.",
+      },
+      {
+        id: "web-4",
+        question: "Puis-je modifier le contenu moi-même après la livraison ?",
+        answer:
+          "Selon la solution choisie, nous pouvons intégrer un CMS (système de gestion de contenu) qui vous permet de modifier textes et images en toute autonomie. Une formation est incluse à la livraison.",
+      },
+      {
+        id: "web-5",
+        question: "Proposez-vous l'hébergement et la maintenance ?",
+        answer:
+          "Oui, nous proposons des forfaits d'hébergement et de maintenance incluant les mises à jour de sécurité, les sauvegardes régulières et le support technique en cas de besoin.",
+      },
+    ],
+    category: "Webdesign",
+  },
+  {
+    slug: "redaction-web",
+    icon: "/assets/icons/redaction-web.svg",
+    title: "Rédaction Web",
+    shortDescription:
+      "Des contenus rédactionnels optimisés qui attirent, convainquent et convertissent.",
+    hero: {
+      title: "Rédaction Web",
+      subtitle:
+        "Boostez votre visibilité sur Google et engagez votre audience avec des contenus rédactionnels stratégiques, optimisés SEO et orientés conversion.",
+    },
+    benefits: [
+      {
+        icon: "pencil",
+        title: "Rédaction experte",
+        description:
+          "Des textes professionnels, adaptés à votre ton de marque et à votre audience cible.",
+      },
+      {
+        icon: "target",
+        title: "Stratégie SEO",
+        description:
+          "Recherche de mots-clés, optimisation on-page et structuration pour un positionnement durable.",
+      },
+      {
+        icon: "article",
+        title: "Contenus variés",
+        description:
+          "Articles de blog, pages web, fiches produits, newsletters et scripts pour vos réseaux sociaux.",
+      },
+      {
+        icon: "eye",
+        title: "Visibilité Google",
+        description:
+          "Des contenus pensés pour remonter dans les résultats de recherche et capter du trafic qualifié.",
+      },
+      {
+        icon: "users",
+        title: "Audience qualifiée",
+        description:
+          "Attirez des visiteurs qui correspondent à votre client idéal grâce à un contenu ciblé.",
+      },
+      {
+        icon: "trend",
+        title: "Conversion accrue",
+        description:
+          "Des textes persuasifs qui transforment vos lecteurs en prospects puis en clients.",
+      },
+    ],
+    method: [
+      {
+        title: "Audit éditorial & mots-clés",
+        description:
+          "Analyse de votre contenu existant, étude de la concurrence et recherche des mots-clés stratégiques pour votre secteur.",
+        icon: "/search.svg",
+      },
+      {
+        title: "Stratégie de contenu",
+        description:
+          "Définition du calendrier éditorial, des thématiques prioritaires et du ton rédactionnel adapté à votre marque.",
+        icon: "/assets/method-section/strategy.svg",
+      },
+      {
+        title: "Rédaction & Optimisation",
+        description:
+          "Rédaction des contenus avec intégration des mots-clés, structuration SEO et appels à l'action percutants.",
+        icon: "/assets/icons/redaction-web.svg",
+      },
+      {
+        title: "Publication & Suivi",
+        description:
+          "Mise en ligne des contenus, suivi du positionnement Google et ajustements pour maximiser les performances.",
+        icon: "/assets/method-section/analytics.svg",
+      },
+    ],
+    faq: [
+      {
+        id: "red-1",
+        question: "Quels types de contenus rédigez-vous ?",
+        answer:
+          "Nous rédigeons des articles de blog, des pages de site web (accueil, services, à propos), des fiches produits, des newsletters, des scripts vidéo et des publications pour les réseaux sociaux.",
+      },
+      {
+        id: "red-2",
+        question: "Vos contenus sont-ils optimisés pour le SEO ?",
+        answer:
+          "Oui, chaque contenu est rédigé avec une stratégie SEO : recherche de mots-clés, balises Hn, maillage interne, méta-descriptions et structuration sémantique pour un positionnement optimal sur Google.",
+      },
+      {
+        id: "red-3",
+        question: "Comment définissez-vous le ton et le style rédactionnel ?",
+        answer:
+          "Lors du briefing initial, nous étudions votre marque, votre audience et vos concurrents pour définir une ligne éditoriale cohérente. Chaque texte est validé par vos soins avant publication.",
+      },
+      {
+        id: "red-4",
+        question: "À quelle fréquence faut-il publier du contenu ?",
+        answer:
+          "Pour un impact SEO significatif, nous recommandons minimum 2 à 4 articles par mois. La régularité est clé pour construire votre autorité auprès de Google et fidéliser votre audience.",
+      },
+      {
+        id: "red-5",
+        question: "Puis-je commander un article unique ou faut-il un forfait ?",
+        answer:
+          "Les deux sont possibles. Nous proposons des articles à l'unité pour des besoins ponctuels, ainsi que des forfaits mensuels pour une stratégie de contenu régulière et plus impactante.",
+      },
+    ],
+    category: "Rédaction Web",
+  },
+  {
+    slug: "communication-evenementielle",
+    icon: "/assets/icons/communication.svg",
+    title: "Communication Événementielle",
+    shortDescription:
+      "Transformez vos événements en expériences mémorables grâce à une stratégie de communication impactante.",
+    hero: {
+      title: "Communication Événementielle",
+      subtitle:
+        "Maximisez l'impact de vos événements avec une stratégie de communication complète : avant, pendant et après le jour J.",
+    },
+    benefits: [
+      {
+        icon: "calendar",
+        title: "Planification stratégique",
+        description:
+          "Un plan de communication détaillé pour maximiser la visibilité de votre événement à chaque étape.",
+      },
+      {
+        icon: "megaphone",
+        title: "Promotion multicanal",
+        description:
+          "Campagnes sur les réseaux sociaux, emailing, presse et supports imprimés pour toucher votre cible.",
+      },
+      {
+        icon: "camera",
+        title: "Captation jour J",
+        description:
+          "Photos et vidéos professionnelles pour documenter votre événement et prolonger son impact.",
+      },
+      {
+        icon: "sparkle",
+        title: "Expérience immersive",
+        description:
+          "Animations phygitales, stories live et interactions en temps réel pour engager votre audience.",
+      },
+      {
+        icon: "users",
+        title: "Engagement public",
+        description:
+          "Stratégies d'interaction avant, pendant et après pour créer une communauté autour de votre événement.",
+      },
+      {
+        icon: "chart",
+        title: "Bilan & Mesure",
+        description:
+          "Rapport complet post-événement avec les KPIs clés pour mesurer le retour sur investissement.",
+      },
+    ],
+    method: [
+      {
+        title: "Stratégie & Planning",
+        description:
+          "Définition des objectifs, identification des cibles et élaboration du plan de communication pré-événement.",
+        icon: "/assets/method-section/strategy.svg",
+      },
+      {
+        title: "Création des supports",
+        description:
+          "Conception des visuels, affiches, contenus réseaux sociaux, invitations et supports promotionnels.",
+        icon: "/assets/icons/design.svg",
+      },
+      {
+        title: "Activation & Jour J",
+        description:
+          "Lancement des campagnes, couverture live de l'événement, animations phygitales et interactions en temps réel.",
+        icon: "/assets/icons/communication.svg",
+      },
+      {
+        title: "Bilan & Prolongation",
+        description:
+          "Diffusion des contenus post-événement, analyse des performances et recommandations pour les prochaines éditions.",
+        icon: "/assets/method-section/analytics.svg",
+      },
+    ],
+    faq: [
+      {
+        id: "evt-1",
+        question: "Quels types d'événements accompagnez-vous ?",
+        answer:
+          "Nous accompagnons tous types d'événements : séminaires, lancements de produits, festivals, soirées d'entreprise, conférences, salons professionnels et événements associatifs ou institutionnels.",
+      },
+      {
+        id: "evt-2",
+        question:
+          "Intervenez-vous uniquement sur la communication ou aussi sur la logistique ?",
+        answer:
+          "Notre expertise porte sur la stratégie et l'exécution de la communication événementielle. Pour la logistique pure (lieu, traiteur, technique), nous travaillons en coordination avec vos prestataires ou nos partenaires de confiance.",
+      },
+      {
+        id: "evt-3",
+        question: "Combien de temps à l'avance faut-il vous solliciter ?",
+        answer:
+          "Idéalement 1 à 2 mois avant l'événement pour une campagne complète. Nous pouvons intervenir en délai réduit pour des besoins urgents, mais un temps de préparation suffisant garantit de meilleurs résultats.",
+      },
+      {
+        id: "evt-4",
+        question: "Proposez-vous la captation photo et vidéo le jour J ?",
+        answer:
+          "Oui, nous proposons un service complet de captation photo et vidéo professionnelle pendant votre événement. Ces contenus servent ensuite à prolonger la visibilité de l'événement sur vos réseaux et supports de communication.",
+      },
+      {
+        id: "evt-5",
+        question: "Comment mesurez-vous le succès d'un événement ?",
+        answer:
+          "Nous suivons des indicateurs précis : nombre de participants, engagement sur les réseaux sociaux, couverture médiatique, leads générés et satisfaction des participants. Un bilan détaillé vous est remis après chaque événement.",
+      },
+    ],
+    category: "Communication Événementielle",
+  },
+  {
+    slug: "campagnes-publicitaires",
+    icon: "/assets/icons/ads.svg",
+    title: "Campagnes Publicitaires",
+    shortDescription:
+      "Des campagnes ciblées qui génèrent de la visibilité, des leads et un retour sur investissement concret.",
+    hero: {
+      title: "Campagnes Publicitaires",
+      subtitle:
+        "Atteignez votre audience idéale avec des campagnes publicitaires ciblées sur les réseaux sociaux et Google, optimisées pour la conversion.",
+    },
+    benefits: [
+      {
+        icon: "rocket",
+        title: "Résultats rapides",
+        description:
+          "Générez de la visibilité et des leads dès les premiers jours de diffusion de vos campagnes.",
+      },
+      {
+        icon: "target",
+        title: "Ciblage précis",
+        description:
+          "Touchez exactement les bonnes personnes grâce à un ciblage démographique, comportemental et par centres d'intérêt.",
+      },
+      {
+        icon: "money",
+        title: "ROI optimisé",
+        description:
+          "Chaque euro investi est optimisé pour maximiser votre retour sur investissement publicitaire.",
+      },
+      {
+        icon: "funnel",
+        title: "Tunnel de conversion",
+        description:
+          "Des campagnes structurées en entonnoir pour accompagner vos prospects de la découverte à l'achat.",
+      },
+      {
+        icon: "chart",
+        title: "Analytics avancés",
+        description:
+          "Suivi en temps réel des performances, A/B testing et optimisation continue de vos campagnes.",
+      },
+      {
+        icon: "eye",
+        title: "Visibilité immédiate",
+        description:
+          "Positionnez votre marque devant des milliers de prospects qualifiés sur les plateformes clés.",
+      },
+    ],
+    method: [
+      {
+        title: "Audit & Stratégie",
+        description:
+          "Analyse de votre marché, définition des objectifs publicitaires et élaboration de la stratégie de ciblage.",
+        icon: "/assets/method-section/audit.svg",
+      },
+      {
+        title: "Création des campagnes",
+        description:
+          "Conception des visuels, rédaction des accroches, paramétrage du ciblage et configuration des audiences.",
+        icon: "/assets/icons/ads.svg",
+      },
+      {
+        title: "Lancement & Optimisation",
+        description:
+          "Mise en ligne des campagnes, suivi quotidien des performances et ajustements en temps réel.",
+        icon: "/assets/method-section/execution.svg",
+      },
+      {
+        title: "Reporting & Scaling",
+        description:
+          "Analyse des résultats, rapports détaillés et recommandations pour augmenter les investissements rentables.",
+        icon: "/assets/method-section/analytics.svg",
+      },
+    ],
+    faq: [
+      {
+        id: "ads-1",
+        question: "Sur quelles plateformes diffusez-vous les campagnes ?",
+        answer:
+          "Nous gérons des campagnes sur Meta (Facebook & Instagram Ads), Google Ads (Search & Display), TikTok Ads et LinkedIn Ads. Le choix des plateformes dépend de votre audience cible et de vos objectifs.",
+      },
+      {
+        id: "ads-2",
+        question: "Quel budget minimum faut-il prévoir pour une campagne ?",
+        answer:
+          "Le budget publicitaire dépend de vos objectifs et de votre zone géographique. En règle générale, nous recommandons un minimum de 300 à 500€/mois de budget média pour obtenir des résultats significatifs, en plus des frais de gestion.",
+      },
+      {
+        id: "ads-3",
+        question: "Combien de temps pour voir les premiers résultats ?",
+        answer:
+          "Les premières données arrivent dès les 48-72h suivant le lancement. La phase d'apprentissage des algorithmes dure généralement 7 à 14 jours, après quoi les performances se stabilisent et s'optimisent.",
+      },
+      {
+        id: "ads-4",
+        question: "Créez-vous aussi les visuels et les landing pages ?",
+        answer:
+          "Oui, nous prenons en charge la création des visuels publicitaires, la rédaction des accroches et, si nécessaire, la conception de landing pages optimisées pour maximiser vos taux de conversion.",
+      },
+      {
+        id: "ads-5",
+        question: "Comment mesurez-vous la performance des campagnes ?",
+        answer:
+          "Nous suivons les KPIs clés : coût par clic (CPC), coût par acquisition (CPA), taux de conversion, ROAS et nombre de leads générés. Un reporting mensuel détaillé vous est envoyé avec nos recommandations.",
+      },
+    ],
+    category: "Campagnes Publicitaires",
   },
 ];
 

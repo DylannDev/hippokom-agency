@@ -45,7 +45,7 @@ const AchievementsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-8">
-          {caseStudiesArticles.map((caseStudy, index) => (
+          {caseStudiesArticles.slice(0, 4).map((caseStudy, index) => (
             <AchievementsCard key={index} article={caseStudy} />
           ))}
         </div>

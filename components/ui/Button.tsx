@@ -11,10 +11,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        blue: "bg-blue text-white hover:bg-blue-dark",
+        blue: "bg-blue text-white",
         "blue-dark": "bg-blue-dark text-white",
-        yellow: "bg-yellow text-black hover:bg-yellow-hover",
-        white: "bg-white text-blue-dark hover:bg-blue-dark hover:text-white",
+        yellow: "bg-yellow text-black",
+        white: "bg-white text-blue-dark",
       },
       size: {
         sm: "px-4 py-2 sm:px-5 sm:py-3 text-sm sm:text-base",

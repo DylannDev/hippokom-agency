@@ -1,18 +1,28 @@
 import BlogCard from "@/components/Blog/BlogCard";
 import { blogArticles } from "@/data";
-import React from "react";
+import { PageHero } from "@/components/services";
 
-const BlogList = () => {
+const BlogPage = () => {
   return (
-    <div className="max-w-[1200px] mx-auto flex flex-col gap-10 pt-36">
-      <h1 className="text-5xl font-semibold">Blog</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 min-[1200px]:grid-cols-3 gap-x-8 gap-y-16">
-        {blogArticles.map((article) => (
-          <BlogCard key={article.slug} article={article} />
-        ))}
-      </div>
-    </div>
+    <>
+      <PageHero
+        title="Blog"
+        subtitle="Conseils, tendances et bonnes pratiques pour booster votre communication digitale."
+        variant="small"
+      />
+
+      {/* Blog Grid */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogArticles.map((article) => (
+              <BlogCard key={article.slug} article={article} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
-export default BlogList;
+export default BlogPage;

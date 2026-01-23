@@ -1,23 +1,17 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Navlinks from "./Navlinks";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const pathname = usePathname();
-  const isHomepage = pathname === "/";
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
-    // Only track scroll on homepage
-    if (!isHomepage) return;
-
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      // Start transition after 500px
-      const progress = scrollY <= 500 ? 0 : Math.min((scrollY - 500) / 200, 1);
+      // Start transition after 200px
+      const progress = scrollY <= 200 ? 0 : Math.min((scrollY - 200) / 20, 1);
       setScrollProgress(progress);
     };
 
@@ -26,10 +20,9 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHomepage]);
+  }, []);
 
-  // On homepage: white/20 -> blue-dark/90, on other pages: always blue-dark/90
-  const progress = isHomepage ? scrollProgress : 1;
+  const progress = scrollProgress;
 
   // Background: white/20 -> blue-dark/90 (#15214B = rgb(21, 33, 75))
   const bgR = Math.round(255 - 234 * progress);
@@ -43,8 +36,8 @@ const Navbar = () => {
   const borderB = Math.round(255 - 180 * progress);
   const borderOpacity = 0.3 + 0.6 * progress;
 
-  // Top position: 32px -> 20px on homepage, always 20px on other pages
-  const topPosition = isHomepage ? 32 - 12 * scrollProgress : 20;
+  // Top position: 32px -> 20px on scroll
+  const topPosition = 32 - 12 * scrollProgress;
 
   return (
     <div

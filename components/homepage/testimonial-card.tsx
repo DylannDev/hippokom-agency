@@ -26,7 +26,7 @@ export const TestimonialCard = ({
         // isEven ? "bg-blue-light" : "bg-yellow-light"
       )}
     >
-      <blockquote className="text-black font-medium text-lg sm:line-clamp-4">
+      <blockquote className="text-black font-medium text-lg">
         "{capitalizeFirstLetter(quote)}"
       </blockquote>
 

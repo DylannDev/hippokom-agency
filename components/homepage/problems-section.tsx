@@ -37,7 +37,7 @@ export function ProblemsSection() {
     <section id="problems" className="py-20 bg-blue-background">
       <div>
         {/* Header */}
-        <div className="max-w-3xl mx-auto px-5 sm:px-8 mb-10 sticky top-10">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 mb-10 sticky top-32">
           <div className="w-full text-center">
             <Badge>Le Problème</Badge>
             <Typography
@@ -57,7 +57,7 @@ export function ProblemsSection() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="flex items-center justify-center sticky top-60"
+              className="flex items-center justify-center sticky top-80"
             >
               <div className="max-w-3xl mx-auto px-5 sm:px-8 w-full">
                 <div

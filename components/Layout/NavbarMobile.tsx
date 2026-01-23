@@ -2,45 +2,40 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { PiCaretRightBold, PiList, PiX } from "react-icons/pi";
+import { PiCaretDownBold, PiCaretRightBold, PiList, PiX } from "react-icons/pi";
 import Link from "next/link";
 import Logo from "./Logo";
-import { navbarLinks } from "@/data";
+import { navbarLinks, services } from "@/data";
 
 const NavbarMobile = () => {
   const pathname = usePathname();
   const isHomepage = pathname === "/";
   const [isOpen, setIsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
-    // Only track scroll on homepage
     if (!isHomepage) return;
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      // Start transition after 500px
       const progress = scrollY <= 500 ? 0 : Math.min((scrollY - 500) / 200, 1);
       setScrollProgress(progress);
     };
 
-    // Check initial scroll position on mount
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isHomepage]);
 
-  // On homepage: white/20 -> blue-dark/90, on other pages: always blue-dark/90
   const progress = isHomepage ? scrollProgress : 1;
 
-  // Background: white/20 -> blue-dark/90 (#15214B = rgb(21, 33, 75))
   const bgR = Math.round(255 - 234 * progress);
   const bgG = Math.round(255 - 222 * progress);
   const bgB = Math.round(255 - 180 * progress);
   const bgOpacity = 0.2 + 0.7 * progress;
 
-  // Border: white/30 -> blue-dark/90
   const borderR = Math.round(255 - 234 * progress);
   const borderG = Math.round(255 - 222 * progress);
   const borderB = Math.round(255 - 180 * progress);
@@ -84,18 +79,61 @@ const NavbarMobile = () => {
                 <PiCaretRightBold className="text-xs" />
               </Link>
             </li>
-            {navbarLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={`/${link.href}`}
-                  onClick={() => setIsOpen(false)}
-                  className="text-blue-light text-lg hover:text-yellow transition-colors flex items-center gap-1 capitalize"
-                >
-                  {link.label}
-                  <PiCaretRightBold className="text-xs" />
-                </Link>
-              </li>
-            ))}
+            {navbarLinks.map((link) => {
+              if (link.href === "services") {
+                return (
+                  <li key={link.href}>
+                    <button
+                      onClick={() => setIsServicesOpen(!isServicesOpen)}
+                      className="text-blue-light text-lg hover:text-yellow transition-colors flex items-center gap-1 capitalize"
+                    >
+                      {link.label}
+                      <PiCaretDownBold
+                        className={`text-xs transition-transform duration-300 ${
+                          isServicesOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        isServicesOpen ? "max-h-[500px] mt-3" : "max-h-0"
+                      }`}
+                    >
+                      <ul className="flex flex-col gap-2 pl-4 border-l border-white/20">
+                        {services.map((service) => (
+                          <li key={service.slug}>
+                            <Link
+                              href={`/services/${service.slug}`}
+                              onClick={() => {
+                                setIsOpen(false);
+                                setIsServicesOpen(false);
+                              }}
+                              className="text-white/70 text-base hover:text-yellow transition-colors flex items-center gap-2"
+                            >
+                              <PiCaretRightBold className="text-[10px]" />
+                              {service.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </li>
+                );
+              }
+
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={`/${link.href}`}
+                    onClick={() => setIsOpen(false)}
+                    className="text-blue-light text-lg hover:text-yellow transition-colors flex items-center gap-1 capitalize"
+                  >
+                    {link.label}
+                    <PiCaretRightBold className="text-xs" />
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
