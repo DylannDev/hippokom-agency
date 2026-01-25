@@ -36,7 +36,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {/* Timeline line container */}
         <div className="absolute inset-0 flex md:justify-center">
           <div className="relative w-[4px] h-full md:h-[85%] lg:h-[90%] left-0 md:left-auto">
-            <div className="absolute inset-0 bg-blue-medium" />
+            <div className="absolute inset-0 bg-blue-background" />
             <motion.div
               style={{
                 height: heightTransform,

@@ -1,14 +1,14 @@
 <svg width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="127" height="127" rx="15" fill="#B7E9FD"/>
+<rect x="0.5" y="0.5" width="126" height="126" rx="14.5" fill="#B3F1FE" stroke="#01CFFD"/>
 <rect x="18.3057" y="28.75" width="90.8" height="69.5" rx="8.04257" fill="white" stroke="#121229" stroke-width="1.5"/>
-<rect x="26.1533" y="38.0923" width="39.9789" height="31.3842" rx="2.98684" fill="#B7E9FD" stroke="#121229" stroke-width="1.5"/>
-<path d="M40.3533 48.7891C40.3535 47.4885 41.7224 46.6651 42.8601 47.2334L42.9695 47.293L51.1443 52.1006C52.2856 52.7719 52.2856 54.4234 51.1443 55.0947L42.9695 59.9023C41.8121 60.5828 40.3536 59.7488 40.3533 58.4062V48.7891Z" fill="white" stroke="#121229" stroke-width="1.5"/>
-<circle cx="33.2507" cy="82.1843" r="7.09737" fill="#B7E9FD" stroke="#121229" stroke-width="1.5"/>
+<rect x="26.1533" y="38.0923" width="39.9789" height="31.3842" rx="2.98684" fill="#01CFFD" stroke="#121229" stroke-width="1.5"/>
+<path d="M40.3533 48.7891C40.3535 47.4465 41.8121 46.6125 42.9695 47.293L51.1443 52.1006C52.2856 52.7719 52.2856 54.4234 51.1443 55.0947L42.9695 59.9023C41.8121 60.5828 40.3536 59.7488 40.3533 58.4062V48.7891Z" fill="white" stroke="#121229" stroke-width="1.5"/>
+<circle cx="33.2507" cy="82.1843" r="7.09737" fill="#01CFFD" stroke="#121229" stroke-width="1.5"/>
 <line x1="45.2112" y1="76.2026" x2="91.9164" y2="76.2026" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="45.2112" y1="81.4341" x2="98.6428" y2="81.4341" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="45.2112" y1="86.6658" x2="89.3007" y2="86.6658" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
-<rect x="70.9951" y="38.0923" width="15.6895" height="13.0737" rx="1.86579" fill="#FFF799" stroke="#121229" stroke-width="1.5"/>
-<rect x="70.9951" y="56.4028" width="15.6895" height="13.0737" rx="1.86579" fill="#FFF799" stroke="#121229" stroke-width="1.5"/>
+<rect x="70.9951" y="38.0923" width="15.6895" height="13.0737" rx="1.86579" fill="#FFEC18" stroke="#121229" stroke-width="1.5"/>
+<rect x="70.9951" y="56.4028" width="15.6895" height="13.0737" rx="1.86579" fill="#FFEC18" stroke="#121229" stroke-width="1.5"/>
 <line x1="89.6797" y1="42.1978" x2="101.632" y2="42.1978" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="89.6797" y1="45.9346" x2="98.6428" y2="45.9346" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="89.6797" y1="60.5083" x2="101.632" y2="60.5083" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>

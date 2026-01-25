@@ -5,6 +5,7 @@ import { CalendlyButton } from "@/components/ui/calendly-button";
 interface PageHeroProps {
   title: string;
   subtitle: string;
+  icon?: string;
   showCta?: boolean;
   variant?: "default" | "small";
 }
@@ -12,6 +13,7 @@ interface PageHeroProps {
 export function PageHero({
   title,
   subtitle,
+  icon,
   showCta = false,
   variant = "default",
 }: PageHeroProps) {
@@ -33,6 +35,17 @@ export function PageHero({
 
       <div className="relative h-full max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-center">
         <div className="text-center text-white max-w-3xl mx-auto pt-20">
+          {icon && (
+            <div className="flex justify-center mb-6">
+              <Image
+                src={icon}
+                alt={title}
+                width={120}
+                height={120}
+                className="object-contain"
+              />
+            </div>
+          )}
           <Typography
             as="h1"
             weight="semibold"

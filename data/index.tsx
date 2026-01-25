@@ -377,37 +377,37 @@ export const services = [
     },
     benefits: [
       {
-        icon: "target",
+        icon: "assets/icons/strategy.svg",
         title: "Stratégie sur-mesure",
         description:
           "Un plan de contenu adapté à votre audience et vos objectifs business.",
       },
       {
-        icon: "pencil",
+        icon: "/assets/icons/content-small.svg",
         title: "Contenus engageants",
         description:
           "Des visuels et textes qui captent l'attention et génèrent des interactions.",
       },
       {
-        icon: "users",
+        icon: "assets/icons/community.svg",
         title: "Gestion de communauté",
         description:
           "Animation quotidienne, modération et réponses pour fidéliser votre audience.",
       },
       {
-        icon: "chart",
+        icon: "assets/icons/tracking.svg",
         title: "Suivi des performances",
         description:
           "Rapports mensuels détaillés pour mesurer l'impact de vos actions.",
       },
       {
-        icon: "clock",
+        icon: "/time.svg",
         title: "Gain de temps",
         description:
           "Déléguez la gestion de vos réseaux et concentrez-vous sur votre cœur de métier.",
       },
       {
-        icon: "trend",
+        icon: "assets/icons/growth.svg",
         title: "Croissance organique",
         description:
           "Développez une communauté qualifiée qui devient ambassadrice de votre marque.",
@@ -424,13 +424,13 @@ export const services = [
         title: "Création de contenu",
         description:
           "Élaboration d'un calendrier éditorial, création de visuels percutants et rédaction de textes engageants adaptés à chaque plateforme.",
-        icon: "/assets/icons/design.svg",
+        icon: "assets/icons/content-2.svg",
       },
       {
         title: "Animation & Modération",
         description:
           "Publication régulière, interaction avec votre communauté, gestion des commentaires et messages pour maintenir l'engagement.",
-        icon: "/assets/icons/message.svg",
+        icon: "assets/icons/community.svg",
       },
       {
         title: "Analyse & Optimisation",
@@ -486,37 +486,37 @@ export const services = [
     },
     benefits: [
       {
-        icon: "camera",
+        icon: "assets/icons/camera.svg",
         title: "Captation professionnelle",
         description:
           "Tournages réalisés avec du matériel professionnel pour un rendu cinématographique.",
       },
       {
-        icon: "film",
+        icon: "assets/icons/montage.svg",
         title: "Montage créatif",
         description:
           "Post-production soignée avec motion design, étalonnage et sound design.",
       },
       {
-        icon: "sparkle",
+        icon: "assets/icons/quality.svg",
         title: "Qualité premium",
         description:
           "Un rendu haut de gamme qui positionne votre marque comme une référence.",
       },
       {
-        icon: "target",
+        icon: "assets/icons/video.svg",
         title: "Vidéos stratégiques",
         description:
           "Chaque production est pensée pour atteindre vos objectifs : notoriété, conversion ou engagement.",
       },
       {
-        icon: "devices",
+        icon: "assets/icons/content-3.svg",
         title: "Multi-format",
         description:
           "Déclinaisons adaptées à chaque plateforme : Reels, YouTube, site web, écrans événementiels.",
       },
       {
-        icon: "trend",
+        icon: "assets/icons/tracking.svg",
         title: "Impact mesurable",
         description:
           "Des contenus vidéo qui génèrent des vues, de l'engagement et des conversions.",
@@ -527,7 +527,7 @@ export const services = [
         title: "Briefing & Concept",
         description:
           "Définition de vos objectifs, identification de votre audience et conception du scénario adapté à votre message.",
-        icon: "/assets/method-section/strategy.svg",
+        icon: "/assets/icons/brief.svg",
       },
       {
         title: "Pré-production",
@@ -539,13 +539,13 @@ export const services = [
         title: "Tournage",
         description:
           "Captation sur site avec une équipe professionnelle, direction artistique et gestion du timing.",
-        icon: "/assets/icons/audiovisuel.svg",
+        icon: "/assets/icons/camera.svg",
       },
       {
         title: "Post-production & Livraison",
         description:
           "Montage, étalonnage, habillage sonore et déclinaisons multi-format pour tous vos canaux.",
-        icon: "/assets/method-section/execution.svg",
+        icon: "/assets/icons/audiovisuel-2.svg",
       },
     ],
     faq: [
@@ -595,40 +595,40 @@ export const services = [
     },
     benefits: [
       {
-        icon: "globe",
+        icon: "assets/icons/sur-mesure.svg",
         title: "Site sur-mesure",
         description:
           "Un design unique, pensé pour refléter votre identité et se démarquer de la concurrence.",
       },
       {
-        icon: "palette",
+        icon: "credibility.svg",
         title: "Design premium",
         description:
           "Une direction artistique soignée qui inspire confiance et professionnalisme dès le premier regard.",
       },
       {
-        icon: "devices",
+        icon: "assets/icons/responsive.svg",
         title: "100% responsive",
         description:
           "Une expérience fluide sur mobile, tablette et desktop pour ne perdre aucun visiteur.",
       },
       {
-        icon: "rocket",
+        icon: "assets/icons/search-2.svg",
         title: "Performance & SEO",
         description:
           "Un site rapide et optimisé pour le référencement naturel afin d'attirer du trafic qualifié.",
       },
       {
-        icon: "shield",
+        icon: "assets/icons/security.svg",
         title: "Sécurité & maintenance",
         description:
           "Hébergement sécurisé, mises à jour régulières et support technique pour un site toujours opérationnel.",
       },
       {
-        icon: "chart",
-        title: "Analytics intégrés",
+        icon: "commitment.svg",
+        title: "Optimisé pour la Conversion",
         description:
-          "Suivi des performances, du comportement utilisateur et des conversions pour optimiser en continu.",
+          "Design et parcours utilisateur pensés pour transformer vos visiteurs en clients grâce aux meilleures pratiques CRO.",
       },
     ],
     method: [
@@ -636,13 +636,13 @@ export const services = [
         title: "Audit & Cahier des charges",
         description:
           "Analyse de votre besoin, étude de la concurrence et définition du périmètre fonctionnel de votre site.",
-        icon: "/assets/method-section/audit.svg",
+        icon: "/assets/icons/brief.svg",
       },
       {
         title: "Maquettes & Design",
         description:
           "Création des maquettes UI/UX avec votre identité visuelle, validées étape par étape avant développement.",
-        icon: "/assets/icons/design.svg",
+        icon: "/assets/icons/content.svg",
       },
       {
         title: "Développement",
@@ -654,7 +654,7 @@ export const services = [
         title: "Mise en ligne & Suivi",
         description:
           "Déploiement, configuration du nom de domaine, formation à l'utilisation et suivi post-lancement.",
-        icon: "/assets/method-section/execution.svg",
+        icon: "/assets/icons/site.svg",
       },
     ],
     faq: [
@@ -704,37 +704,37 @@ export const services = [
     },
     benefits: [
       {
-        icon: "pencil",
+        icon: "assets/icons/redaction-web-small.svg",
         title: "Rédaction experte",
         description:
           "Des textes professionnels, adaptés à votre ton de marque et à votre audience cible.",
       },
       {
-        icon: "target",
+        icon: "assets/icons/search-2.svg",
         title: "Stratégie SEO",
         description:
           "Recherche de mots-clés, optimisation on-page et structuration pour un positionnement durable.",
       },
       {
-        icon: "article",
+        icon: "assets/icons/site.svg",
         title: "Contenus variés",
         description:
           "Articles de blog, pages web, fiches produits, newsletters et scripts pour vos réseaux sociaux.",
       },
       {
-        icon: "eye",
+        icon: "assets/icons/tracking.svg",
         title: "Visibilité Google",
         description:
           "Des contenus pensés pour remonter dans les résultats de recherche et capter du trafic qualifié.",
       },
       {
-        icon: "users",
+        icon: "assets/icons/community-small.svg",
         title: "Audience qualifiée",
         description:
           "Attirez des visiteurs qui correspondent à votre client idéal grâce à un contenu ciblé.",
       },
       {
-        icon: "trend",
+        icon: "assets/icons/conversion.svg",
         title: "Conversion accrue",
         description:
           "Des textes persuasifs qui transforment vos lecteurs en prospects puis en clients.",
@@ -751,7 +751,7 @@ export const services = [
         title: "Stratégie de contenu",
         description:
           "Définition du calendrier éditorial, des thématiques prioritaires et du ton rédactionnel adapté à votre marque.",
-        icon: "/assets/method-section/strategy.svg",
+        icon: "/assets/icons/strategy.svg",
       },
       {
         title: "Rédaction & Optimisation",
@@ -763,7 +763,7 @@ export const services = [
         title: "Publication & Suivi",
         description:
           "Mise en ligne des contenus, suivi du positionnement Google et ajustements pour maximiser les performances.",
-        icon: "/assets/method-section/analytics.svg",
+        icon: "/assets/icons/site.svg",
       },
     ],
     faq: [
@@ -813,37 +813,37 @@ export const services = [
     },
     benefits: [
       {
-        icon: "calendar",
+        icon: "/assets/icons/communication.svg",
         title: "Planification stratégique",
         description:
           "Un plan de communication détaillé pour maximiser la visibilité de votre événement à chaque étape.",
       },
       {
-        icon: "megaphone",
+        icon: "/assets/icons/communication.svg",
         title: "Promotion multicanal",
         description:
           "Campagnes sur les réseaux sociaux, emailing, presse et supports imprimés pour toucher votre cible.",
       },
       {
-        icon: "camera",
+        icon: "/assets/icons/camera.svg",
         title: "Captation jour J",
         description:
           "Photos et vidéos professionnelles pour documenter votre événement et prolonger son impact.",
       },
       {
-        icon: "sparkle",
+        icon: "/assets/icons/communication.svg",
         title: "Expérience immersive",
         description:
           "Animations phygitales, stories live et interactions en temps réel pour engager votre audience.",
       },
       {
-        icon: "users",
+        icon: "/assets/icons/communication.svg",
         title: "Engagement public",
         description:
           "Stratégies d'interaction avant, pendant et après pour créer une communauté autour de votre événement.",
       },
       {
-        icon: "chart",
+        icon: "/assets/icons/communication.svg",
         title: "Bilan & Mesure",
         description:
           "Rapport complet post-événement avec les KPIs clés pour mesurer le retour sur investissement.",
@@ -860,7 +860,7 @@ export const services = [
         title: "Création des supports",
         description:
           "Conception des visuels, affiches, contenus réseaux sociaux, invitations et supports promotionnels.",
-        icon: "/assets/icons/design.svg",
+        icon: "/assets/icons/content.svg",
       },
       {
         title: "Activation & Jour J",

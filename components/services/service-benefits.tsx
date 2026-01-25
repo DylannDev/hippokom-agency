@@ -3,55 +3,11 @@
 import { Typography } from "@/components/ui/typography";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import {
-  PiTarget,
-  PiPencilLine,
-  PiUsersThree,
-  PiChartLine,
-  PiClock,
-  PiTrendUp,
-  PiVideoCamera,
-  PiFilmStrip,
-  PiSparkle,
-  PiDevices,
-  PiGlobe,
-  PiPalette,
-  PiRocket,
-  PiShieldCheck,
-  PiArticle,
-  PiEye,
-  PiCalendarBlank,
-  PiMegaphone,
-  PiCurrencyDollar,
-  PiFunnel,
-} from "react-icons/pi";
-import { IconType } from "react-icons";
-
-const iconMap: Record<string, IconType> = {
-  target: PiTarget,
-  pencil: PiPencilLine,
-  users: PiUsersThree,
-  chart: PiChartLine,
-  clock: PiClock,
-  trend: PiTrendUp,
-  camera: PiVideoCamera,
-  film: PiFilmStrip,
-  sparkle: PiSparkle,
-  devices: PiDevices,
-  globe: PiGlobe,
-  palette: PiPalette,
-  rocket: PiRocket,
-  shield: PiShieldCheck,
-  article: PiArticle,
-  eye: PiEye,
-  calendar: PiCalendarBlank,
-  megaphone: PiMegaphone,
-  money: PiCurrencyDollar,
-  funnel: PiFunnel,
-};
+import Image from "next/image";
 
 interface Benefit {
   icon: string;
+  iconSize?: number;
   title: string;
   description: string;
 }
@@ -91,7 +47,6 @@ export function ServiceBenefits({
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => {
-            const Icon = iconMap[benefit.icon] || PiTarget;
             const isEven = index % 2 === 0;
 
             return (
@@ -108,13 +63,19 @@ export function ServiceBenefits({
                 }`}
               >
                 <div
-                  className={`w-14 h-14 rounded-2xl flex border items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 ${
-                    isEven
-                      ? " border-blue bg-blue/30"
-                      : " border-yellow bg-yellow/30"
-                  }`}
+                  className="rounded-2xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
+                  style={{
+                    width: benefit.iconSize || 80,
+                    height: benefit.iconSize || 80,
+                  }}
                 >
-                  <Icon className={`text-3xl text-black`} />
+                  <Image
+                    src={benefit.icon}
+                    alt={benefit.title}
+                    width={benefit.iconSize || 80}
+                    height={benefit.iconSize || 80}
+                    className="object-contain"
+                  />
                 </div>
                 <Typography
                   as="h3"

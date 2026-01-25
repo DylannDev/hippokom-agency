@@ -49,6 +49,7 @@ const ServicePage = async ({ params }: ServicePageProps) => {
       <PageHero
         title={service.hero.title}
         subtitle={service.hero.subtitle}
+        icon={service.icon}
         showCta
       />
 

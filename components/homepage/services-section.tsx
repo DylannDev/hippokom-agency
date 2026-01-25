@@ -11,7 +11,7 @@ const services = [
       "Animez vos réseaux sociaux avec une stratégie de contenu régulière, engageante et alignée avec vos objectifs business.",
   },
   {
-    icon: "/assets/icons/design.svg",
+    icon: "/assets/icons/content.svg",
     title: "Productions audiovisuelles",
     slug: "productions-audiovisuelles",
     description:
