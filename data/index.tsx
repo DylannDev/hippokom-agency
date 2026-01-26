@@ -16,8 +16,8 @@ export const contactInfo = [
   {
     icon: "/assets/icons/message.svg",
     title: "Email",
-    content: "contact@hippokom-agency.com",
-    link: "mailto:contact@hippokom-agency.com",
+    content: "agencehippokom@gmail.com",
+    link: "mailto:agencehippokom@gmail.com",
   },
   {
     icon: "/assets/icons/calling.svg",
@@ -29,55 +29,6 @@ export const contactInfo = [
 
 export const reviewLink =
   "https://www.google.com/search?client=safari&sca_esv=dffffd1eb0412f15&hl=fr-fr&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0RFoyliMGhkffbIjCfrB5lICgBL_-56aHZygcpVbNvRE5R5ypS7ROtivd9CjAEYHpq1ZOlMK7oVEm-Jg02Uew63vRRS&q=HIPP%C3%94%27KOM+Avis&sa=X&ved=2ahUKEwj_rtS-zcmNAxW-TaQEHe0BEVYQ0bkNegQIJhAC&biw=1800&bih=1004&dpr=2";
-
-export const blogArticles = [
-  {
-    slug: "creer-visuels-percutants",
-    title: "Comment créer des visuels percutants pour vos réseaux sociaux",
-    date: "2025-01-10",
-    category: "Design",
-    image: "/visuals.webp",
-    content:
-      "Dans cet article, nous explorons des outils et techniques pour concevoir des visuels qui boostent votre engagement sur les réseaux sociaux.",
-  },
-  {
-    slug: "strategies-community-management",
-    title:
-      "Stratégies de community management pour augmenter votre présence en ligne",
-    date: "2025-01-12",
-    category: "Communication",
-    image: "/strategy.webp",
-    content:
-      "Le community management est au cœur d'une stratégie digitale réussie. Découvrez les outils et astuces pour fidéliser votre audience.",
-  },
-  {
-    slug: "erreurs-communication-reseaux",
-    title: "Les erreurs courantes en communication sur les réseaux sociaux",
-    date: "2025-01-14",
-    category: "Réseaux Sociaux",
-    image: "/error.webp",
-    content:
-      "Un mauvais message ou un visuel inadapté peut ternir votre réputation. Voici comment éviter ces erreurs.",
-  },
-  {
-    slug: "erreurs-communication-reseaux1",
-    title: "Les erreurs courantes en communication sur les réseaux sociaux",
-    date: "2025-01-14",
-    category: "Réseaux Sociaux",
-    image: "/error.webp",
-    content:
-      "Un mauvais message ou un visuel inadapté peut ternir votre réputation. Voici comment éviter ces erreurs.",
-  },
-  {
-    slug: "erreurs-communication-reseaux2",
-    title: "Les erreurs courantes en communication sur les réseaux sociaux",
-    date: "2025-01-14",
-    category: "Réseaux Sociaux",
-    image: "/error.webp",
-    content:
-      "Un mauvais message ou un visuel inadapté peut ternir votre réputation. Voici comment éviter ces erreurs.",
-  },
-];
 
 export const caseStudiesArticles = [
   {
@@ -389,7 +340,7 @@ export const services = [
           "Des visuels et textes qui captent l'attention et génèrent des interactions.",
       },
       {
-        icon: "assets/icons/community.svg",
+        icon: "assets/icons/community-small.svg",
         title: "Gestion de communauté",
         description:
           "Animation quotidienne, modération et réponses pour fidéliser votre audience.",
@@ -430,7 +381,7 @@ export const services = [
         title: "Animation & Modération",
         description:
           "Publication régulière, interaction avec votre communauté, gestion des commentaires et messages pour maintenir l'engagement.",
-        icon: "assets/icons/community.svg",
+        icon: "assets/icons/community-small.svg",
       },
       {
         title: "Analyse & Optimisation",
@@ -648,7 +599,7 @@ export const services = [
         title: "Développement",
         description:
           "Intégration et développement du site avec les meilleures technologies, responsive et optimisé SEO.",
-        icon: "/assets/icons/web-development.svg",
+        icon: "/assets/icons/montage.svg",
       },
       {
         title: "Mise en ligne & Suivi",
@@ -813,13 +764,13 @@ export const services = [
     },
     benefits: [
       {
-        icon: "/assets/icons/communication.svg",
+        icon: "/assets/icons/redaction-web-small-2.svg",
         title: "Planification stratégique",
         description:
           "Un plan de communication détaillé pour maximiser la visibilité de votre événement à chaque étape.",
       },
       {
-        icon: "/assets/icons/communication.svg",
+        icon: "/assets/icons/communication-small.svg",
         title: "Promotion multicanal",
         description:
           "Campagnes sur les réseaux sociaux, emailing, presse et supports imprimés pour toucher votre cible.",
@@ -831,19 +782,19 @@ export const services = [
           "Photos et vidéos professionnelles pour documenter votre événement et prolonger son impact.",
       },
       {
-        icon: "/assets/icons/communication.svg",
+        icon: "/assets/icons/smartphone.svg",
         title: "Expérience immersive",
         description:
           "Animations phygitales, stories live et interactions en temps réel pour engager votre audience.",
       },
       {
-        icon: "/assets/icons/communication.svg",
+        icon: "/assets/icons/community.svg",
         title: "Engagement public",
         description:
           "Stratégies d'interaction avant, pendant et après pour créer une communauté autour de votre événement.",
       },
       {
-        icon: "/assets/icons/communication.svg",
+        icon: "/assets/icons/bilan.svg",
         title: "Bilan & Mesure",
         description:
           "Rapport complet post-événement avec les KPIs clés pour mesurer le retour sur investissement.",
@@ -854,7 +805,7 @@ export const services = [
         title: "Stratégie & Planning",
         description:
           "Définition des objectifs, identification des cibles et élaboration du plan de communication pré-événement.",
-        icon: "/assets/method-section/strategy.svg",
+        icon: "/assets/icons/redaction-web.svg",
       },
       {
         title: "Création des supports",
@@ -872,7 +823,7 @@ export const services = [
         title: "Bilan & Prolongation",
         description:
           "Diffusion des contenus post-événement, analyse des performances et recommandations pour les prochaines éditions.",
-        icon: "/assets/method-section/analytics.svg",
+        icon: "/assets/icons/bilan.svg",
       },
     ],
     faq: [
@@ -923,37 +874,37 @@ export const services = [
     },
     benefits: [
       {
-        icon: "rocket",
+        icon: "/assets/icons/tracking-2.svg",
         title: "Résultats rapides",
         description:
           "Générez de la visibilité et des leads dès les premiers jours de diffusion de vos campagnes.",
       },
       {
-        icon: "target",
+        icon: "/commitment.svg",
         title: "Ciblage précis",
         description:
           "Touchez exactement les bonnes personnes grâce à un ciblage démographique, comportemental et par centres d'intérêt.",
       },
       {
-        icon: "money",
+        icon: "/assets/icons/ads-small.svg",
         title: "ROI optimisé",
         description:
           "Chaque euro investi est optimisé pour maximiser votre retour sur investissement publicitaire.",
       },
       {
-        icon: "funnel",
+        icon: "/assets/icons/conversion.svg",
         title: "Tunnel de conversion",
         description:
           "Des campagnes structurées en entonnoir pour accompagner vos prospects de la découverte à l'achat.",
       },
       {
-        icon: "chart",
+        icon: "/assets/icons/analytics.svg",
         title: "Analytics avancés",
         description:
           "Suivi en temps réel des performances, A/B testing et optimisation continue de vos campagnes.",
       },
       {
-        icon: "eye",
+        icon: "/assets/icons/search-2.svg",
         title: "Visibilité immédiate",
         description:
           "Positionnez votre marque devant des milliers de prospects qualifiés sur les plateformes clés.",
@@ -964,7 +915,7 @@ export const services = [
         title: "Audit & Stratégie",
         description:
           "Analyse de votre marché, définition des objectifs publicitaires et élaboration de la stratégie de ciblage.",
-        icon: "/assets/method-section/audit.svg",
+        icon: "/assets/icons/redaction-web.svg",
       },
       {
         title: "Création des campagnes",
@@ -976,13 +927,13 @@ export const services = [
         title: "Lancement & Optimisation",
         description:
           "Mise en ligne des campagnes, suivi quotidien des performances et ajustements en temps réel.",
-        icon: "/assets/method-section/execution.svg",
+        icon: "/assets/icons/strategy.svg",
       },
       {
         title: "Reporting & Scaling",
         description:
           "Analyse des résultats, rapports détaillés et recommandations pour augmenter les investissements rentables.",
-        icon: "/assets/method-section/analytics.svg",
+        icon: "/assets/icons/brief.svg",
       },
     ],
     faq: [

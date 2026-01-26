@@ -3,11 +3,26 @@
 import Navlinks from "./Navlinks";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useNavbar } from "@/contexts/NavbarContext";
+
+// Pages où la navbar reste toujours en style dark (pas de transition)
+const DARK_NAVBAR_PAGES = ["/mentions-legales", "/cgv"];
 
 const Navbar = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
+  const pathname = usePathname();
+  const { forceDarkNavbar } = useNavbar();
+
+  // Check if current page should have dark navbar
+  const isDarkNavbarPage = DARK_NAVBAR_PAGES.includes(pathname) || forceDarkNavbar;
 
   useEffect(() => {
+    if (isDarkNavbarPage) {
+      setScrollProgress(1);
+      return;
+    }
+
     const handleScroll = () => {
       const scrollY = window.scrollY;
       // Start transition after 200px
@@ -20,7 +35,7 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isDarkNavbarPage]);
 
   const progress = scrollProgress;
 

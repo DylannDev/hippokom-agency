@@ -27,7 +27,7 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
         <div className="w-full aspect-square max-h-[100px] sm:max-h-[160px] max-w-[100px] sm:max-w-[160px] relative mb-4 transition-transform duration-300 group-hover:scale-105">
           <Image
             src={service.icon}
-            alt={`${service.title} - Illustration Hippokom`}
+            alt={`${service.title} - Illustration Hippô'kom`}
             fill
             className="object-contain"
           />

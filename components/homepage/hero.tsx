@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background Image */}
       <Image
         src="/bg-light-blue.svg"
-        alt="hippokom hero background illustration"
+        alt="Hippô'kom hero background illustration"
         fill
         priority
         sizes="100vw"

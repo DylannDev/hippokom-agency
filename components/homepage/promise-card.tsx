@@ -18,7 +18,7 @@ export function PromiseCard({ promise, index }: PromiseCardProps) {
       <div className="w-full aspect-square max-h-[90px] max-w-[90px] relative mb-4">
         <Image
           src={promise.image}
-          alt={`${promise.title} - Illustration Hippokom`}
+          alt={`${promise.title} - Illustration Hippô'kom`}
           fill
           className="object-contain"
         />

@@ -8,7 +8,7 @@ export function PreFooter() {
       <div className="w-full relative overflow-hidden rounded-3xl">
         <Image
           src="/bg-light-blue.svg"
-          alt="hippokom hero background illustration"
+          alt="Hippô'kom hero background illustration"
           fill
           sizes="100vw"
           className="object-cover object-center rounded-3xl"

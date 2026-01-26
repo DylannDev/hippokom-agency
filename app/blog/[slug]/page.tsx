@@ -1,4 +1,4 @@
-import { blogArticles } from "@/data";
+import { blogArticles } from "@/data/blog-articles";
 import { ArticleFinder } from "@/components/Blog/article-finder";
 
 const BlogSinglePage = () => {

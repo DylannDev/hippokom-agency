@@ -1,25 +1,35 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 import { PiCaretDownBold, PiCaretRightBold, PiList, PiX } from "react-icons/pi";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 import { navbarLinks, services } from "@/data";
+import { useNavbar } from "@/contexts/NavbarContext";
+
+// Pages où la navbar reste toujours en style dark (pas de transition)
+const DARK_NAVBAR_PAGES = ["/mentions-legales", "/cgv"];
 
 const NavbarMobile = () => {
-  const pathname = usePathname();
-  const isHomepage = pathname === "/";
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const pathname = usePathname();
+  const { forceDarkNavbar } = useNavbar();
+
+  // Check if current page should have dark navbar
+  const isDarkNavbarPage = DARK_NAVBAR_PAGES.includes(pathname) || forceDarkNavbar;
 
   useEffect(() => {
-    if (!isHomepage) return;
+    if (isDarkNavbarPage) {
+      setScrollProgress(1);
+      return;
+    }
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const progress = scrollY <= 500 ? 0 : Math.min((scrollY - 500) / 200, 1);
+      const progress = scrollY <= 200 ? 0 : Math.min((scrollY - 200) / 20, 1);
       setScrollProgress(progress);
     };
 
@@ -27,9 +37,9 @@ const NavbarMobile = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHomepage]);
+  }, [isDarkNavbarPage]);
 
-  const progress = isHomepage ? scrollProgress : 1;
+  const progress = scrollProgress;
 
   const bgR = Math.round(255 - 234 * progress);
   const bgG = Math.round(255 - 222 * progress);
@@ -54,7 +64,7 @@ const NavbarMobile = () => {
         <Logo size={150} />
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="p-1 rounded-lg text-3xl bg-white text-blue-dark"
+          className="p-2 rounded-lg text-2xl bg-white text-blue-dark"
           aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
         >
           {isOpen ? <PiX /> : <PiList />}
@@ -80,9 +90,9 @@ const NavbarMobile = () => {
               </Link>
             </li>
             {navbarLinks.map((link) => {
-              if (link.href === "services") {
+              if (link.label === "services") {
                 return (
-                  <li key={link.href}>
+                  <li key={link.label}>
                     <button
                       onClick={() => setIsServicesOpen(!isServicesOpen)}
                       className="text-blue-light text-lg hover:text-yellow transition-colors flex items-center gap-1 capitalize"
@@ -103,7 +113,7 @@ const NavbarMobile = () => {
                         {services.map((service) => (
                           <li key={service.slug}>
                             <Link
-                              href={`/services/${service.slug}`}
+                              href={`/${service.slug}`}
                               onClick={() => {
                                 setIsOpen(false);
                                 setIsServicesOpen(false);
@@ -124,7 +134,9 @@ const NavbarMobile = () => {
               return (
                 <li key={link.href}>
                   <Link
-                    href={`/${link.href}`}
+                    href={
+                      link.href.startsWith("/") ? link.href : `/${link.href}`
+                    }
                     onClick={() => setIsOpen(false)}
                     className="text-blue-light text-lg hover:text-yellow transition-colors flex items-center gap-1 capitalize"
                   >

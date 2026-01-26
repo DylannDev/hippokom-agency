@@ -20,7 +20,7 @@ const Logo = ({ color = "white", size }: LogoProps) => {
     <Link href={"/"}>
       <Image
         src={logoSrc}
-        alt={`Logo Hippokom - ${color}`}
+        alt={`Logo Hippô'kom - ${color}`}
         width={size ? size : 180}
         height={size ? size : 180}
       />

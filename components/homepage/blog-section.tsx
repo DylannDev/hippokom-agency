@@ -1,6 +1,4 @@
-import React from "react";
-
-import { blogArticles } from "@/data";
+import { blogArticles } from "@/data/blog-articles";
 import { CarouselBlog } from "./carousel-blog";
 
 const BlogSection = () => {

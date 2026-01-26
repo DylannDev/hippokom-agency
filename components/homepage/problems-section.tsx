@@ -8,7 +8,7 @@ import { CalendlyButton } from "../ui/calendly-button";
 const problems = [
   {
     img: "/target.svg",
-    alt: "Cible illustration - Hippokom",
+    alt: "Cible illustration - Hippô'kom",
     title: "Aucune stratégie claire",
     description:
       "Vous publiez au feeling, sans réel plan. Vos posts manquent d'impact et ne parlent pas à vos clients cibles. Avec nous, chaque contenu a un but précis : engager, convaincre, convertir !",
@@ -16,7 +16,7 @@ const problems = [
   },
   {
     img: "/directions.svg",
-    alt: "Panneau Directions illustration - Hippokom",
+    alt: "Panneau Directions illustration - Hippô'kom",
     title: "Message dispersé, zéro impact",
     description:
       "Vous ne savez pas quoi publier ni comment mesurer l'efficacité de vos actions. On vous guide avec un plan de contenu précis et des formats adaptés pour valoriser votre expertise.",
@@ -24,10 +24,10 @@ const problems = [
   },
   {
     img: "/sandtimer.svg",
-    alt: "Sablier illustration - Hippokom",
+    alt: "Sablier illustration - Hippô'kom",
     title: "Du temps perdu",
     description:
-      "Vous passez des heures à gérer vos réseaux, mais vos efforts n'apportent ni visibilité ni nouveaux clients. Chez Hippokom, nous boostons votre visibilité.",
+      "Vous passez des heures à gérer vos réseaux, mais vos efforts n'apportent ni visibilité ni nouveaux clients. Chez Hippô'kom, nous boostons votre visibilité.",
     bgColor: "bg-white",
   },
 ];
@@ -110,7 +110,7 @@ export function ProblemsSection() {
           </Typography>
 
           <Typography as="p" variant="xl" className="text-gray text-balance">
-            Chez <strong>Hippokom</strong>, on transforme cette frustration en
+            Chez <strong>Hippô'kom</strong>, on transforme cette frustration en
             résultats concrets, grâce à une stratégie digitale sur-mesure qui
             vous fait gagner du temps, de la visibilité et des clients.
           </Typography>

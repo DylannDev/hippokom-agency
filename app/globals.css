@@ -86,30 +86,82 @@ body {
 }
 
 .rich-text {
+  /* Base typography */
+  @apply text-base sm:text-lg text-gray leading-relaxed font-medium;
+
+  /* Headings */
   h2 {
-    @apply text-[32px] sm:text-[50px] leading-tight font-semibold text-black my-8;
+    @apply text-2xl sm:text-3xl leading-snug font-semibold text-black mt-12 mb-6;
   }
+
   h3 {
-    @apply text-[24px] sm:text-[34px] leading-tight font-semibold text-black mb-4 mt-12;
+    @apply text-xl sm:text-2xl leading-snug font-semibold text-black mt-10 mb-4;
   }
+
   h4 {
-    @apply text-[22px] sm:text-[28px] leading-tight font-semibold text-black mb-2 mt-6;
+    @apply text-lg sm:text-xl leading-snug font-semibold text-black mt-8 mb-3;
   }
+
+  /* Paragraphs */
   p {
-    margin-bottom: 0.75rem;
+    @apply mb-5 leading-relaxed;
+  }
+
+  /* Lists */
+  ul,
+  ol {
+    @apply mb-6 pl-6 space-y-2;
   }
 
   ul {
-    margin-bottom: 0.75rem;
-    padding-left: 1rem;
-    @apply list-disc list-inside space-y-1;
+    @apply list-disc;
   }
 
-  strong {
-    @apply font-semibold;
+  ol {
+    @apply list-decimal;
   }
 
-  @apply text-base sm:text-lg text-gray leading-relaxed font-medium;
+  li {
+    @apply leading-relaxed pl-1;
+  }
+
+  /* Links */
+  a {
+    @apply text-blue underline underline-offset-2 hover:text-blue-dark transition-colors duration-200;
+  }
+
+  /* Bold & emphasis */
+  strong,
+  b {
+    @apply font-semibold text-black;
+  }
+
+  em,
+  i {
+    @apply italic;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    @apply border-l-4 border-blue pl-6 py-2 my-8 italic text-gray bg-blue-light/20 rounded-r-lg;
+  }
+
+  /* Horizontal rule */
+  hr {
+    @apply my-10 border-gray/20;
+  }
+
+  /* First paragraph after heading - remove top margin */
+  h2 + p,
+  h3 + p,
+  h4 + p {
+    @apply mt-0;
+  }
+
+  /* Remove margin from last element */
+  > *:last-child {
+    @apply mb-0;
+  }
 }
 
 @layer base {
@@ -136,4 +188,123 @@ body {
       transform: translateY(calc(-100% - var(--gap)));
     }
   }
+}
+
+/* Styles pour les pages légales */
+.prose {
+  color: #39394f; /* gray */
+  line-height: 1.75;
+  font-weight: 500;
+}
+
+.prose h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #15214b; /* blue-dark */
+  margin-bottom: 2rem;
+  margin-top: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #b3f1fe;
+}
+
+@media (min-width: 640px) {
+  .prose h1 {
+    font-size: 3rem;
+  }
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #15214b; /* blue-dark */
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .prose h2 {
+    font-size: 1.75rem;
+  }
+}
+
+.prose h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 2px;
+  height: 80%;
+  background-color: #b3f1fe; /* blue */
+}
+
+.prose h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #15214b; /* blue-dark */
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .prose h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.prose p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #15214b; /* blue-dark */
+}
+
+.prose ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.prose ul li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose ul li::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.65rem;
+  width: 8px;
+  height: 8px;
+  background-color: #15214b;
+  border-radius: 30%;
+}
+
+.prose hr {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  border: 0;
+  border-top: 2px solid #b3f1fe;
+}
+
+.prose a {
+  color: #01cffd;
+  text-decoration: underline;
+  text-decoration-color: #01cffd;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  transition: all 0.2s;
+}
+
+.prose a:hover {
+  color: #15214b; /* blue-dark */
+  text-decoration-color: #01cffd;
 }

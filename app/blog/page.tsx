@@ -1,5 +1,5 @@
 import BlogCard from "@/components/Blog/BlogCard";
-import { blogArticles } from "@/data";
+import { blogArticles } from "@/data/blog-articles";
 import { PageHero } from "@/components/services";
 
 const BlogPage = () => {
@@ -14,7 +14,7 @@ const BlogPage = () => {
       {/* Blog Grid */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogArticles.map((article) => (
               <BlogCard key={article.slug} article={article} />
             ))}

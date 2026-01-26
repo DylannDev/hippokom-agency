@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { cn, formatDate } from "@/lib/utils";
 import CategoryBadge from "@/components/Blog/CategoryBadge";
@@ -105,51 +104,68 @@ const ProjectResults = ({ article }: { article: Article }) => {
 // Composant client qui gère l'affichage de l'article
 export const ArticleContentClient = ({ article }: { article: Article }) => {
   return (
-    <div className="flex flex-col gap-8 max-w-[1200px] mx-auto pt-40">
-      {/* Header */}
-      <div className="flex justify-center items-center gap-4">
-        <CategoryBadge category={article.category} />
-        {isBlogArticle(article) && (
+    <div className="flex flex-col">
+      {/* Hero Section with Background */}
+      <section className="relative">
+        <div className="absolute w-full min-h-[450px] sm:min-h-[700px] [clip-path:ellipse(250%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
+          <Image
+            src="/bg-light-blue.svg"
+            alt="Hippô'kom background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center z-0"
+          />
+        </div>
+
+        <div className="relative z-10 h-full max-w-[1200px] mx-auto px-5 sm:px-8 pt-32 sm:pt-40">
+          {/* Header */}
+          <div className="flex justify-center items-center gap-4 mb-6">
+            <CategoryBadge category={article.category} />
+            {isBlogArticle(article) && (
+              <Typography
+                as="p"
+                variant="base"
+                weight="medium"
+                className="mb-0 capitalize text-white"
+              >
+                le {formatDate(article.date)}
+              </Typography>
+            )}
+          </div>
+
           <Typography
-            as="p"
-            variant="base"
-            weight="medium"
-            className="mb-0 capitalize"
+            as="h1"
+            weight="semibold"
+            lineHeight="tight"
+            className="text-balance text-3xl sm:text-5xl text-center text-white max-w-4xl mx-auto mb-10"
           >
-            le {formatDate(article.date)}
+            {article.title}
           </Typography>
-        )}
-      </div>
+        </div>
 
-      <Typography
-        as="h1"
-        variant="5xl"
-        weight="semibold"
-        lineHeight="tight"
-        className="text-balance text-center mb-8"
-      >
-        {article.title}
-      </Typography>
-
-      <div className="relative w-full aspect-video border border-blue-dark rounded-4xl">
-        <Image
-          src={article.image}
-          alt={article.title}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-          className="object-cover rounded-4xl"
-          priority
-        />
-      </div>
-
-      {/* Content */}
-      <div className="py-12">
-        <ProjectResults article={article} />
-        <div
-          className="rich-text max-w-4xl mx-auto"
-          dangerouslySetInnerHTML={{ __html: article.content }}
-        />
-      </div>
+        {/* Image overlapping hero and content */}
+        <div className="px-5">
+          <div className="relative z-20 max-w-[1000px] mx-auto w-full aspect-[3/2] sm:aspect-video ring-2 sm:ring ring-blue/30 rounded-2xl sm:rounded-4xl overflow-hidden">
+            <Image
+              src={article.image}
+              alt={article.title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+              className="object-cover"
+              priority
+            />
+          </div>
+          {/* Content */}
+          <div className="relative z-10 py-10 sm:py-16 max-w-[1200px] mx-auto">
+            <ProjectResults article={article} />
+            <article
+              className="rich-text max-w-4xl mx-auto"
+              dangerouslySetInnerHTML={{ __html: article.content }}
+            />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
