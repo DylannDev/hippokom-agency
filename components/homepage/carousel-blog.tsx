@@ -1,4 +1,3 @@
-import * as React from "react";
 import {
   Carousel,
   CarouselContent,
@@ -35,19 +34,6 @@ export function CarouselBlog({ data }: { data: BlogArticle[] }) {
               Consultez nos derniers articles de blog
             </Typography>
           </div>
-
-          {/* <div className="flex justify-center w-full lg:w-fit lg:h-fit">
-            <Button
-              href="/blog"
-              variant="blue"
-              icon={
-                <RiArrowRightLine className="group-hover:translate-x-2 transition-all duration-300" />
-              }
-              iconPosition="right"
-            >
-              Découvrir nos articles
-            </Button>
-          </div> */}
           <div className="flex items-center justify-center gap-4 mt-8">
             <CarouselPrevious className="static translate-y-0" />
             <CarouselNext className="static translate-y-0" />
