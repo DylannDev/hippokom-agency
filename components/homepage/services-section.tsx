@@ -8,7 +8,7 @@ const services = [
     title: "Community management",
     slug: "community-management",
     description:
-      "Animez vos réseaux sociaux avec une stratégie de contenu régulière, engageante et alignée avec vos objectifs business.",
+      "Développez votre présence sur les réseaux sociaux avec une stratégie de contenu personnalisée qui inspire, fidélise et convertit.",
   },
   {
     icon: "/assets/icons/content.svg",
@@ -60,7 +60,7 @@ export function ServicesSection() {
             lineHeight="tightest"
             className="mb-8 text-center"
           >
-            On s'occupe de votre com' !
+            On s'occupe de votre Kom' !
           </Typography>
 
           <Typography
@@ -70,7 +70,7 @@ export function ServicesSection() {
             className="text-gray text-balance text-center"
           >
             Des services sur-mesure pour booster votre visibilité, votre image
-            et vos résultats, en ligne comme sur le terrain.
+            de marque et vos résultats, en ligne comme sur le terrain.
           </Typography>
         </div>
 

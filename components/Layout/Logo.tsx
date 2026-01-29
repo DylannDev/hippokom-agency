@@ -23,6 +23,7 @@ const Logo = ({ color = "white", size }: LogoProps) => {
         alt={`Logo Hippô'kom - ${color}`}
         width={size ? size : 180}
         height={size ? size : 180}
+        priority
       />
     </Link>
   );

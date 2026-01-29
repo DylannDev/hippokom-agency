@@ -23,9 +23,10 @@ export default function NotFound() {
         <div className="relative w-full aspect-video max-w-[600px]">
           <Image
             src="/404.svg"
-            alt="Hippô'kom background"
+            alt="Illustration page non trouvée"
             width={600}
             height={600}
+            priority
             className="object-cover object-center"
           />
         </div>
@@ -51,7 +52,7 @@ export default function NotFound() {
           </Typography>
 
           <Link href="/">
-            <Button variant="yellow">
+            <Button variant="yellow-medium">
               Retour à l'accueil
               <RiArrowRightLine className="text-xl ml-2" />
             </Button>

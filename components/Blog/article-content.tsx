@@ -4,7 +4,14 @@ import Image from "next/image";
 import { cn, formatDate } from "@/lib/utils";
 import CategoryBadge from "@/components/Blog/CategoryBadge";
 import { Typography } from "../ui/typography";
-import { Article, isBlogArticle, isCaseStudyArticle } from "@/types/articles";
+import {
+  Article,
+  BlogArticle,
+  CaseStudyArticle,
+  isBlogArticle,
+  isCaseStudyArticle,
+} from "@/types/articles";
+import { ArticleCarousel } from "./ArticleCarousel";
 
 // Composant pour afficher un highlight individuel
 const ProjectHighlight = ({
@@ -102,7 +109,15 @@ const ProjectResults = ({ article }: { article: Article }) => {
 };
 
 // Composant client qui gère l'affichage de l'article
-export const ArticleContentClient = ({ article }: { article: Article }) => {
+export const ArticleContentClient = ({
+  article,
+  allArticles,
+}: {
+  article: Article;
+  allArticles: BlogArticle[] | CaseStudyArticle[];
+}) => {
+  const isBlog = isBlogArticle(article);
+
   return (
     <div className="flex flex-col">
       {/* Hero Section with Background */}
@@ -122,7 +137,7 @@ export const ArticleContentClient = ({ article }: { article: Article }) => {
           {/* Header */}
           <div className="flex justify-center items-center gap-4 mb-6">
             <CategoryBadge category={article.category} />
-            {isBlogArticle(article) && (
+            {isBlog && (
               <Typography
                 as="p"
                 variant="base"
@@ -166,6 +181,19 @@ export const ArticleContentClient = ({ article }: { article: Article }) => {
           </div>
         </div>
       </section>
+
+      {/* Recommendations Section */}
+      <div className="px-5 max-w-7xl mx-auto">
+        <ArticleCarousel
+          title={
+            isBlog ? "Lire un autre article" : "Lire d'autres études de cas"
+          }
+          items={allArticles}
+          excludeSlug={article.slug}
+          type={isBlog ? "blog" : "case-study"}
+          maxItems={6}
+        />
+      </div>
     </div>
   );
 };

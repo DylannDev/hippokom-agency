@@ -32,6 +32,7 @@ export function ServiceCaseStudies({
           src="/bg-light-blue.svg"
           alt=""
           fill
+          loading="lazy"
           sizes="100vw"
           className="object-cover object-center scale-125"
         />
@@ -79,7 +80,7 @@ export function ServiceCaseStudies({
         </div>
 
         <div className="flex justify-center w-full mt-10">
-          <ButtonArrow href="/realisations" variant="yellow">
+          <ButtonArrow href="/realisations" variant="yellow-medium">
             Voir nos réalisations
           </ButtonArrow>
         </div>

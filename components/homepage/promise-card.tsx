@@ -20,6 +20,8 @@ export function PromiseCard({ promise, index }: PromiseCardProps) {
           src={promise.image}
           alt={`${promise.title} - Illustration Hippô'kom`}
           fill
+          loading="lazy"
+          sizes="90px"
           className="object-contain"
         />
       </div>

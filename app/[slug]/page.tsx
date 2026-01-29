@@ -31,7 +31,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${service.title} | Hippô'Kom - Agence de Communication`,
+    title: `${service.title} | Hippô'Kom - Agence de Communication Martinique`,
     description: service.hero.subtitle,
   };
 }

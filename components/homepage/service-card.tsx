@@ -29,6 +29,8 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
             src={service.icon}
             alt={`${service.title} - Illustration Hippô'kom`}
             fill
+            loading="lazy"
+            sizes="160px"
             className="object-contain"
           />
         </div>

@@ -4,6 +4,7 @@ import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
 import { CalendlyButton } from "../ui/calendly-button";
+import Button from "../ui/Button";
 
 const problems = [
   {
@@ -71,6 +72,7 @@ export function ProblemsSection() {
                         alt={problem.alt}
                         fill
                         loading="lazy"
+                        sizes="(max-width: 768px) 150px, 200px"
                         className="object-contain"
                       />
                     </div>
@@ -116,7 +118,10 @@ export function ProblemsSection() {
           </Typography>
         </div>
         <div className="mt-8 sm:mt-10 w-full flex justify-center">
-          <CalendlyButton variant="blue" />
+          <CalendlyButton
+            label="Concevons une stratégie sur mesure"
+            variant="blue"
+          />
         </div>
       </div>
     </section>

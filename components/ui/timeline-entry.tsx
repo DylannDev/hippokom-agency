@@ -40,6 +40,8 @@ export function TimelineEntryDesktop({ item, index }: TimelineEntryProps) {
             src={item.icon}
             alt={item.title}
             fill
+            loading="lazy"
+            sizes="180px"
             className="object-contain"
           />
         </div>
@@ -70,6 +72,8 @@ export function TimelineEntryMobile({ item, index }: TimelineEntryProps) {
           src={item.icon}
           alt={item.title}
           fill
+          loading="lazy"
+          sizes="100px"
           className="object-contain"
         />
       </div>

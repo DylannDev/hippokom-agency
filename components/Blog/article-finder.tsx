@@ -18,5 +18,5 @@ export const ArticleFinder = ({
     return <NotFound />;
   }
 
-  return <ArticleContentClient article={article} />;
+  return <ArticleContentClient article={article} allArticles={articles} />;
 };

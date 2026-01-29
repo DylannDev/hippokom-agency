@@ -4,14 +4,16 @@ import { cn } from "@/lib/utils";
 import { CalendarCheck } from "lucide-react";
 
 interface CalendlyButtonProps {
-  variant?: "white" | "yellow" | "blue";
+  variant?: "white" | "yellow" | "yellow-medium" | "blue";
   size?: "sm" | "default" | "md" | "lg";
   className?: string;
+  label?: string;
 }
 
 export function CalendlyButton({
   variant = "yellow",
   size = "default",
+  label = "Réserver un appel",
   className,
 }: CalendlyButtonProps) {
   return (
@@ -23,7 +25,7 @@ export function CalendlyButton({
       icon={<CalendarCheck size={20} />}
       className={className}
     >
-      Réserver un appel
+      {label}
     </Button>
   );
 }

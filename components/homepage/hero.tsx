@@ -3,7 +3,7 @@ import { CalendlyButton } from "../ui/calendly-button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[85vh] max-h-[900px] overflow-hidden [clip-path:ellipse(150%_100%_at_50%_0%)]">
+    <section className="relative w-full h-[85vh] max-h-[900px] overflow-hidden [clip-path:ellipse(250%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
       {/* Background Image */}
       <Image
         src="/bg-light-blue.svg"
@@ -27,7 +27,7 @@ const Hero = () => {
               attirer, engager et faire la différence.
             </p>
             <div className="flex justify-center gap-2 lg:justify-start">
-              <CalendlyButton variant="yellow" />
+              <CalendlyButton variant="yellow-medium" />
             </div>
           </div>
 
@@ -38,6 +38,7 @@ const Hero = () => {
               alt="megaphone with social media icons illustration"
               width={500}
               height={400}
+              priority
               className="w-full max-w-[350px] lg:max-w-none h-auto"
             />
           </div>

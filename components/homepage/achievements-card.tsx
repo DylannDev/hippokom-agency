@@ -77,7 +77,7 @@ const AchievementsCard = ({
               as="h3"
               weight="semibold"
               lineHeight="tight"
-              className={`text-xl md:text-2xl mb-0 transition-colors duration-300 ${styles.text} ${styles.hover}`}
+              className={`flex-1 text-xl md:text-2xl mb-0 transition-colors duration-300 ${styles.text} ${styles.hover}`}
             >
               {article.client}
             </Typography>

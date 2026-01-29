@@ -13,6 +13,7 @@ export function ContactSection() {
         src="/bg-light-blue.svg"
         alt="background"
         fill
+        loading="lazy"
         sizes="100vw"
         className="object-cover object-center"
       />

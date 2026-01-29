@@ -94,9 +94,9 @@ export const caseStudiesArticles = [
     `,
   },
   {
-    slug: "identite-visuelle-dessinatrice-batiment-martinique",
+    slug: "identite-visuelle-dessinatrice-plans-martinique",
     title:
-      "Création d'une identité visuelle percutante pour une dessinatrice en bâtiment",
+      "Création d'une identité visuelle percutante pour une dessinatrice de plans",
     client: "SPM Plans — Martinique",
     service: "Création d’identité visuelle & charte graphique",
     highlights: [
@@ -110,7 +110,7 @@ export const caseStudiesArticles = [
     image: "/spm-plans.jpg",
     content: `
   <h3>Le contexte : un besoin d'image professionnelle et alignée</h3>
-  <p>Avant de collaborer avec <strong>Hippô'kom</strong>, <em>SPM Plans</em>, dessinatrice en bâtiment, exprimait le besoin de mieux structurer son image de marque. Elle souhaitait disposer d’une identité visuelle claire, cohérente et professionnelle, capable de refléter la précision et le sérieux de son activité.</p>
+  <p>Avant de collaborer avec <strong>Hippô'kom</strong>, <em>SPM Plans</em>, dessinatrice de plans, exprimait le besoin de mieux structurer son image de marque. Elle souhaitait disposer d’une identité visuelle claire, cohérente et professionnelle, capable de refléter la précision et le sérieux de son activité.</p>
   <p>Les enjeux étaient multiples :</p>
   <ul>
   <li>Renforcer son positionnement,</li>
@@ -156,13 +156,13 @@ export const caseStudiesArticles = [
     client: "Naomi Coiffure — Martinique",
     service: "Stratégie de contenu",
     highlights: [
-      { value: "X4", label: "de CA/Mois" },
-      { value: "+375", label: "nouveaux abonnés qualifiés" },
+      { value: "+40%", label: "de passages en salon" },
+      { value: "+700", label: "abonnés qualifiés" },
     ],
     category: "Community Management",
     image: "/naomi-coiffure.jpg",
     content: `
-  <h3>Le contexte : une présence digitale inexistante</h3>
+  <h3>Le contexte : une présence digitale inexistante, des visuels peu valorisants</h3>
   <p>Avant de faire appel à <strong>Hippô'kom</strong>, <em>Naomi Coiffure</em> faisait face à un problème courant chez de nombreux entrepreneurs : une envie de se développer via les réseaux sociaux, mais sans réelle stratégie. Le compte Instagram du salon était peu attractif : à peine 25 abonnés, une biographie confuse, des visuels mal cadrés et aucune cohérence éditoriale. Il n’y avait ni rubriques en Story à la Une, ni appel à l’action pour réserver.</p>
   <p><strong>Résultat ?</strong> Une image peu professionnelle, un manque de visibilité et peu (voire aucun) retour client via le digital. Et pourtant, le potentiel était bien là.</p>
   
@@ -215,7 +215,7 @@ export const caseStudiesArticles = [
     image: "/nina-soul-1.jpg",
     content: `
       <h3>Le contexte : une émission télé ambitieuse mais une présence digitale à structurer</h3>
-      <p>Windies Médias, producteur de l’émission musicale Nina Soul Session (diffusée en partenariat avec Martinique La 1ère), souhaitait aller plus loin que la simple diffusion TV. L’objectif : créer une expérience transmedia complète, capable de fidéliser une audience jeune et connectée, tout en valorisant les artistes invités.</p>
+      <p>Windies Médias, producteur de l’émission musicale Nina Soul Session (diffusée en partenariat avec Martinique La 1ère), souhaitait aller plus loin que la simple diffusion TV. L’objectif : créer une expérience transmedia complète, capable de fidéliser une audience passionnée de musique et connectée, tout en valorisant les artistes invités.</p>
       <p>Mais pour y parvenir, plusieurs défis se posaient :</p>
       <ul>
         <li>une fragmentation des canaux de diffusion,</li>
@@ -228,7 +228,7 @@ export const caseStudiesArticles = [
       <p>L’accompagnement proposé par Hippô’kom a consisté à créer un pont intelligent entre la télévision et le digital.</p>
       <ul>
         <li>Définition d’une stratégie éditoriale multicanale : Instagram, Facebook, YouTube, LinkedIn</li>
-        <li>Création de contenus exclusifs et immersifs : coulisses, interviews, sondages, revues de presse</li>
+        <li>Création de contenus exclusifs et immersifs : coulisses, interviews, sondages</li>
         <li>Lancement d’un jeu concours communautaire : les Nina Soul Awards</li>
         <li>Captation et diffusion d’extraits vidéo clés</li>
         <li>Coordination de la communication entre la chaîne TV et les réseaux sociaux</li>
@@ -267,7 +267,7 @@ export const caseStudiesArticles = [
     image: "/festival-1.jpg",
     content: `
       <h3>Le contexte : un événement santé à valoriser mais aucune stratégie de communication en place</h3>
-      <p>En janvier 2025, le <strong>Festival du Bien Manger, Bien Bouger</strong> (FBMBB), organisé en partenariat avec la <strong>Maison Sport Santé Aquater</strong>, souhaitait toucher un large public autour des thématiques du sport, de la nutrition et du bien-être.</p>
+      <p>En janvier 2025, le <strong>Festival du Bien Manger, Bien Bouger</strong> (FBMBB), organisé par la <strong>Maison Sport Santé AQUATER</strong>, souhaitait toucher un large public autour des thématiques du sport, de la nutrition et du bien-être.</p>
       <p>Mais comme c’est souvent le cas dans l’organisation d’événements à impact territorial ou associatif :</p>
       <ul>
         <li>Aucune stratégie de communication claire n’avait encore été mise en place,</li>
@@ -343,7 +343,7 @@ export const services = [
         icon: "assets/icons/community-small.svg",
         title: "Gestion de communauté",
         description:
-          "Animation quotidienne, modération et réponses pour fidéliser votre audience.",
+          "Animation régulière, échanges et interactions ciblées pour fidéliser votre audience.",
       },
       {
         icon: "assets/icons/tracking.svg",
@@ -440,7 +440,7 @@ export const services = [
         icon: "assets/icons/camera.svg",
         title: "Captation professionnelle",
         description:
-          "Tournages réalisés avec du matériel professionnel pour un rendu cinématographique.",
+          "Tournages réalisés avec du matériel professionnel pour un rendu qualitatif.",
       },
       {
         icon: "assets/icons/montage.svg",
@@ -773,7 +773,7 @@ export const services = [
         icon: "/assets/icons/communication-small.svg",
         title: "Promotion multicanal",
         description:
-          "Campagnes sur les réseaux sociaux, emailing, presse et supports imprimés pour toucher votre cible.",
+          "Campagnes sur les réseaux sociaux, emailing et supports imprimés pour toucher votre cible.",
       },
       {
         icon: "/assets/icons/camera.svg",

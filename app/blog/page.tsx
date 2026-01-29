@@ -1,6 +1,13 @@
+import { Metadata } from "next";
 import BlogCard from "@/components/Blog/BlogCard";
 import { blogArticles } from "@/data/blog-articles";
 import { PageHero } from "@/components/services";
+
+export const metadata: Metadata = {
+  title: "Blog - Hippô'kom",
+  description:
+    "Conseils, tendances et bonnes pratiques pour booster votre communication digitale.",
+};
 
 const BlogPage = () => {
   return (

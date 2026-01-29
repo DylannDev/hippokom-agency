@@ -69,6 +69,7 @@ export function FounderSection() {
                 src="/founder-1.jpg"
                 alt="Aurélie Ciril - Fondatrice Hippô'Kom"
                 fill
+                loading="lazy"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover object-center transition-opacity duration-500 group-hover:opacity-0"
               />
@@ -77,6 +78,7 @@ export function FounderSection() {
                 src="/founder-2.jpg"
                 alt="Aurélie Ciril - Fondatrice Hippô'Kom"
                 fill
+                loading="lazy"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover object-center opacity-0 transition-opacity duration-500 group-hover:opacity-100"
               />

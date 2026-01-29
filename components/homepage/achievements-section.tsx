@@ -8,12 +8,13 @@ import Image from "next/image";
 
 const AchievementsSection = () => {
   return (
-    <section className="py-20 sm:py-32 px-5 sm:px-6 md:px-8 relative [clip-path:ellipse(200%_100%_at_50%_0%)]">
+    <section className="py-20 sm:py-32 px-5 sm:px-6 md:px-8 relative [clip-path:ellipse(250%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
       <div className="w-full h-full aspect-square absolute inset-0 overflow-hidden -z-10">
         <Image
           src="/bg-light-blue.svg"
           alt="Hippô'kom hero background illustration"
           fill
+          loading="lazy"
           sizes="100vw"
           className="object-cover object-center"
         />
@@ -50,7 +51,7 @@ const AchievementsSection = () => {
           ))}
         </div>
         <div className="flex justify-center w-full mt-10">
-          <ButtonArrow href="/realisations" variant="yellow">
+          <ButtonArrow href="/realisations" variant="yellow-medium">
             Voir nos réalisations
           </ButtonArrow>
         </div>

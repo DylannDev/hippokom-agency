@@ -42,7 +42,7 @@ const config: Config = {
         },
         yellow: {
           light: "#FFF799",
-          // hover: "#FFEC18",
+          medium: "#FFEE33",
           DEFAULT: "#FFEA00",
         },
         border: "hsl(var(--border))",

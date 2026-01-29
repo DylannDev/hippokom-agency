@@ -1,7 +1,7 @@
 <svg width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="126" height="126" rx="14.5" fill="#FFF799" stroke="#FFEA00"/>
+<rect x="0.5" y="0.5" width="126" height="126" rx="14.5" fill="#FFF799" stroke="#FFEE33"/>
 <rect x="18.8054" y="20.7502" width="62.2473" height="74.1218" rx="8.6246" fill="white" stroke="#121229" stroke-width="1.5"/>
-<rect x="31.9299" y="32.084" width="35.9984" height="9.12455" rx="1.74989" fill="#FFEC18" stroke="#121229" stroke-width="1.5"/>
+<rect x="31.9299" y="32.084" width="35.9984" height="9.12455" rx="1.74989" fill="#FFEE33" stroke="#121229" stroke-width="1.5"/>
 <line x1="27.5549" y1="49.333" x2="72.303" y2="49.333" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="27.5549" y1="53.708" x2="62.9284" y2="53.708" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="27.5549" y1="58.7075" x2="71.053" y2="58.7075" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
@@ -12,8 +12,8 @@
 <circle cx="29.6173" cy="74.1444" r="2.06238" fill="#01CFFD" stroke="#121229" stroke-width="1.5"/>
 <circle cx="29.6173" cy="82.2692" r="2.06238" fill="#01CFFD" stroke="#121229" stroke-width="1.5"/>
 <rect x="46.8519" y="25.8319" width="62.2473" height="74.1218" rx="8.6246" transform="rotate(6.65528 46.8519 25.8319)" fill="white" stroke="#121229" stroke-width="1.5"/>
-<rect x="54.3836" y="36.7779" width="9.12455" height="9.12455" rx="1.74989" transform="rotate(6.65528 54.3836 36.7779)" fill="#FFEC18" stroke="#121229" stroke-width="1.5"/>
-<rect x="52.5728" y="52.297" width="9.12455" height="9.12455" rx="1.74989" transform="rotate(6.65528 52.5728 52.297)" fill="#FFEC18" stroke="#121229" stroke-width="1.5"/>
+<rect x="54.3836" y="36.7779" width="9.12455" height="9.12455" rx="1.74989" transform="rotate(6.65528 54.3836 36.7779)" fill="#FFEE33" stroke="#121229" stroke-width="1.5"/>
+<rect x="52.5728" y="52.297" width="9.12455" height="9.12455" rx="1.74989" transform="rotate(6.65528 52.5728 52.297)" fill="#FFEE33" stroke="#121229" stroke-width="1.5"/>
 <line x1="66.9415" y1="42.3959" x2="92.7651" y2="45.4091" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="64.9857" y1="59.1569" x2="96.3962" y2="62.8219" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
 <rect x="50.7618" y="67.816" width="44.748" height="22.874" rx="3.62481" transform="rotate(6.65528 50.7618 67.816)" fill="#67E2FE" stroke="#121229" stroke-width="1.5"/>

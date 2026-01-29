@@ -10,6 +10,7 @@ export function PreFooter() {
           src="/bg-light-blue.svg"
           alt="Hippô'kom hero background illustration"
           fill
+          loading="lazy"
           sizes="100vw"
           className="object-cover object-center rounded-3xl"
         />
@@ -26,7 +27,7 @@ export function PreFooter() {
           </div>
 
           <div className="flex justify-center flex-shrink-0">
-            <CalendlyButton variant="yellow" />
+            <CalendlyButton variant="yellow-medium" />
           </div>
         </div>
       </div>

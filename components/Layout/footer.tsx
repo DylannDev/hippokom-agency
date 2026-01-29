@@ -29,7 +29,7 @@ const socials = [
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white relative z-10 [clip-path:ellipse(150%_100%_at_50%_100%)] overflow-hidden pt-40">
+    <footer className="bg-black text-white relative z-10 [clip-path:ellipse(250%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)] overflow-hidden pt-40">
       <div className="max-w-7xl mx-auto px-6 pt-16 relative">
         {/* Main Content - 3 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-16">

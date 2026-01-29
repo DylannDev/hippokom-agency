@@ -7,8 +7,8 @@
 <line x1="45.2112" y1="76.2026" x2="91.9164" y2="76.2026" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="45.2112" y1="81.4341" x2="98.6428" y2="81.4341" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="45.2112" y1="86.6658" x2="89.3007" y2="86.6658" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
-<rect x="70.9951" y="38.0923" width="15.6895" height="13.0737" rx="1.86579" fill="#FFEC18" stroke="#121229" stroke-width="1.5"/>
-<rect x="70.9951" y="56.4028" width="15.6895" height="13.0737" rx="1.86579" fill="#FFEC18" stroke="#121229" stroke-width="1.5"/>
+<rect x="70.9951" y="38.0923" width="15.6895" height="13.0737" rx="1.86579" fill="#FFEE33" stroke="#121229" stroke-width="1.5"/>
+<rect x="70.9951" y="56.4028" width="15.6895" height="13.0737" rx="1.86579" fill="#FFEE33" stroke="#121229" stroke-width="1.5"/>
 <line x1="89.6797" y1="42.1978" x2="101.632" y2="42.1978" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="89.6797" y1="45.9346" x2="98.6428" y2="45.9346" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>
 <line x1="89.6797" y1="60.5083" x2="101.632" y2="60.5083" stroke="#121229" stroke-width="1.5" stroke-linecap="round"/>

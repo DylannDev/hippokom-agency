@@ -1,9 +1,7 @@
 "use client";
 
-import { ReactNode } from "react";
-import Image from "next/image";
+import { ReactNode, useEffect } from "react";
 import { useNavbar } from "@/contexts/NavbarContext";
-import { useEffect } from "react";
 
 interface LegalLayoutProps {
   children: ReactNode;
