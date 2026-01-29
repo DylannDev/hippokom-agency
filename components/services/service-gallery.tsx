@@ -2,7 +2,7 @@
 
 import { Typography } from "@/components/ui/typography";
 import { Badge } from "@/components/ui/badge";
-import { motion } from "framer-motion";
+import AnimatedSection from "@/components/ui/animated-section";
 
 interface ServiceGalleryProps {
   title?: string;
@@ -16,11 +16,9 @@ export function ServiceGallery({
   return (
     <section className="py-16 md:py-20 bg-blue-background">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+        <AnimatedSection
+          direction="up"
+          delay={0.1}
           className="text-center mb-12"
         >
           <Badge>{badge}</Badge>
@@ -33,14 +31,12 @@ export function ServiceGallery({
           >
             {title}
           </Typography>
-        </motion.div>
+        </AnimatedSection>
 
         {/* Gallery Placeholder */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
+        <AnimatedSection
+          direction="up"
+          delay={0.2}
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
         >
           {[...Array(8)].map((_, index) => (
@@ -58,7 +54,7 @@ export function ServiceGallery({
               </Typography>
             </div>
           ))}
-        </motion.div>
+        </AnimatedSection>
 
         <Typography
           as="p"

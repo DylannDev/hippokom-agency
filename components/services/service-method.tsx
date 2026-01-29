@@ -3,8 +3,8 @@
 import { Typography } from "@/components/ui/typography";
 import { Badge } from "@/components/ui/badge";
 import { CalendlyButton } from "@/components/ui/calendly-button";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import AnimatedSection from "@/components/ui/animated-section";
 
 interface MethodStep {
   title: string;
@@ -31,11 +31,9 @@ export function ServiceMethod({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Column - Sticky */}
           <div className="lg:sticky lg:top-28 lg:h-fit">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+            <AnimatedSection
+              direction="up"
+              delay={0.1}
               className="text-center lg:text-left"
             >
               <Badge variant="left">{badge}</Badge>
@@ -59,22 +57,22 @@ export function ServiceMethod({
               <div className="hidden lg:block">
                 <CalendlyButton variant="blue" />
               </div>
-            </motion.div>
+            </AnimatedSection>
           </div>
 
           {/* Right Column - Scrollable Steps */}
-          <div className="flex flex-col gap-6">
+          <AnimatedSection
+            direction="up"
+            delay={0.2}
+            className="flex flex-col gap-6"
+          >
             {steps.map((step, index) => {
               const isOdd = index % 2 === 0;
               const stepNumber = String(index + 1).padStart(2, "0");
 
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
                   className={`group rounded-3xl text-black p-6 sm:p-8 border transition-all duration-300 hover:-translate-y-1 bg-white border-blue-light`}
                 >
                   {/* Mobile: Vertical layout */}
@@ -160,10 +158,10 @@ export function ServiceMethod({
                       />
                     </div>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
-          </div>
+          </AnimatedSection>
 
           {/* Mobile CTA */}
           <div className="lg:hidden flex justify-center mt-4">

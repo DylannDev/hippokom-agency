@@ -2,11 +2,11 @@
 
 import { Typography } from "@/components/ui/typography";
 import { Badge } from "@/components/ui/badge";
-import { motion } from "framer-motion";
 import { ServiceCaseStudyCard } from "./service-case-study-card";
 import { ButtonArrow } from "@/components/ui/button-arrow";
 import Image from "next/image";
 import { CaseStudyArticle } from "@/types/articles";
+import AnimatedSection from "@/components/ui/animated-section";
 
 interface ServiceCaseStudiesProps {
   caseStudies: CaseStudyArticle[];
@@ -38,11 +38,9 @@ export function ServiceCaseStudies({
         />
       </div>
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+        <AnimatedSection
+          direction="up"
+          delay={0.1}
           className="text-center mb-12"
         >
           <Badge color="white">{badge}</Badge>
@@ -63,27 +61,28 @@ export function ServiceCaseStudies({
           >
             Découvrez comment nous avons accompagné nos clients avec ce service.
           </Typography>
-        </motion.div>
+        </AnimatedSection>
 
-        <div className="flex flex-col gap-8">
-          {filteredCaseStudies.map((article, index) => (
-            <motion.div
-              key={article.slug}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <ServiceCaseStudyCard article={article} />
-            </motion.div>
+        <AnimatedSection
+          direction="up"
+          delay={0.2}
+          className="flex flex-col gap-8"
+        >
+          {filteredCaseStudies.map((article) => (
+            <ServiceCaseStudyCard key={article.slug} article={article} />
           ))}
-        </div>
+        </AnimatedSection>
 
-        <div className="flex justify-center w-full mt-10">
+        <AnimatedSection
+          direction="up"
+          delay={0.3}
+          staggerChildren={0}
+          className="flex justify-center w-full mt-10"
+        >
           <ButtonArrow href="/realisations" variant="yellow">
             Voir nos réalisations
           </ButtonArrow>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

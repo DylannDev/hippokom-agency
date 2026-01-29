@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
-import { motion } from "framer-motion";
+import AnimatedSection from "@/components/ui/animated-section";
 
 interface FaqItem {
   id: string;
@@ -38,11 +38,9 @@ export function ServiceFaq({
   return (
     <section className={`${sectionBg} py-16 md:py-20 ${className || ""}`}>
       <div className="max-w-3xl mx-auto px-5 sm:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+        <AnimatedSection
+          direction="up"
+          delay={0.1}
           className="text-center mb-10"
         >
           <Badge>{badge}</Badge>
@@ -58,31 +56,27 @@ export function ServiceFaq({
           <Typography as="p" variant="xl" weight="medium" className="text-gray">
             Des réponses concrètes pour vous aider à faire le bon choix.
           </Typography>
-        </motion.div>
+        </AnimatedSection>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <Accordion className="flex flex-col gap-6" type="single" collapsible>
-            {data.map((faq, index) => (
-              <motion.div
+        <Accordion type="single" collapsible>
+          <AnimatedSection
+            direction="up"
+            delay={0.2}
+            staggerChildren={0.2}
+            className="flex flex-col gap-6"
+          >
+            {data.map((faq) => (
+              <AccordionItem
                 key={faq.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
+                value={faq.id}
+                className={itemClassName}
               >
-                <AccordionItem value={faq.id} className={itemClassName}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>{faq.answer}</AccordionContent>
-                </AccordionItem>
-              </motion.div>
+                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionContent>{faq.answer}</AccordionContent>
+              </AccordionItem>
             ))}
-          </Accordion>
-        </motion.div>
+          </AnimatedSection>
+        </Accordion>
       </div>
     </section>
   );

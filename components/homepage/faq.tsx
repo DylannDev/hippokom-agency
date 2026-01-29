@@ -58,42 +58,35 @@ export function Faq({
         </AnimatedSection>
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex-1">
-            <AnimatedSection
-              direction="up"
-              delay={0.2}
-              staggerChildren={0}
-              className=""
+            <Accordion
+              className="flex flex-col gap-6"
+              type="single"
+              collapsible
             >
-              <Accordion
-                className="flex flex-col gap-6"
-                type="single"
-                collapsible
-              >
-                {data.map((faq, index) => (
-                  <motion.div
-                    key={faq.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <AccordionItem value={faq.id}>
-                      <AccordionTrigger>{faq.question}</AccordionTrigger>
-                      <AccordionContent>
-                        {isRichText ? (
-                          <div
-                            className="rich-text"
-                            dangerouslySetInnerHTML={{ __html: faq.answer }}
-                          />
-                        ) : (
-                          faq.answer
-                        )}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </motion.div>
-                ))}
-              </Accordion>
-            </AnimatedSection>
+              {data.map((faq, index) => (
+                <motion.div
+                  key={faq.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <AccordionItem value={faq.id}>
+                    <AccordionTrigger>{faq.question}</AccordionTrigger>
+                    <AccordionContent>
+                      {isRichText ? (
+                        <div
+                          className="rich-text"
+                          dangerouslySetInnerHTML={{ __html: faq.answer }}
+                        />
+                      ) : (
+                        faq.answer
+                      )}
+                    </AccordionContent>
+                  </AccordionItem>
+                </motion.div>
+              ))}
+            </Accordion>
           </div>
 
           {/* Contact Section - Right (Sticky) */}
