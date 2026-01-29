@@ -1,5 +1,6 @@
 import { blogArticles } from "@/data/blog-articles";
 import { CarouselBlog } from "./carousel-blog";
+import AnimatedSection from "../ui/animated-section";
 
 const BlogSection = () => {
   return (

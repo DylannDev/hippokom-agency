@@ -10,6 +10,7 @@ import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import { motion } from "framer-motion";
 import { ContactSection } from "./contact-section";
+import AnimatedSection from "../ui/animated-section";
 
 interface FaqItem {
   id: string;
@@ -36,11 +37,9 @@ export function Faq({
     <section className={`relative bg-blue-background ${className}`}>
       <div className="max-w-7xl mx-auto py-10 md:py-20 px-5">
         {/* FAQ Content - Left */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+        <AnimatedSection
+          direction="up"
+          delay={0.1}
           className="text-center lg:text-left mb-10"
         >
           <Badge variant="left">{badge}</Badge>
@@ -56,14 +55,14 @@ export function Faq({
           <Typography as="p" variant="xl" weight="medium" className="text-gray">
             Des réponses concrètes pour prendre la meilleure décision.
           </Typography>
-        </motion.div>
+        </AnimatedSection>
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex-1">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
+            <AnimatedSection
+              direction="up"
+              delay={0.2}
+              staggerChildren={0}
+              className=""
             >
               <Accordion
                 className="flex flex-col gap-6"
@@ -94,7 +93,7 @@ export function Faq({
                   </motion.div>
                 ))}
               </Accordion>
-            </motion.div>
+            </AnimatedSection>
           </div>
 
           {/* Contact Section - Right (Sticky) */}

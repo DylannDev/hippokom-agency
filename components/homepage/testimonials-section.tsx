@@ -6,6 +6,7 @@ import { Typography } from "../ui/typography";
 import { reviewLink } from "@/data";
 import { Marquee } from "../ui/marquee";
 import { TestimonialCard } from "./testimonial-card";
+import AnimatedSection from "../ui/animated-section";
 
 const testimonials = [
   {
@@ -73,7 +74,12 @@ export function TestimonialsSection() {
     <section id="testimonials" className="py-20 bg-blue-background">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-5 mb-12">
-        <div className="flex justify-center lg:justify-between items-center">
+        <AnimatedSection
+          direction="up"
+          delay={0.2}
+          staggerChildren={0.4}
+          className="flex justify-center lg:justify-between items-center"
+        >
           {/* Left - Title */}
           <div className="text-center lg:text-left">
             <Badge variant="left">avis clients</Badge>
@@ -108,7 +114,7 @@ export function TestimonialsSection() {
               Laisser un avis
             </Button>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
 
       {/* Testimonials Marquee */}

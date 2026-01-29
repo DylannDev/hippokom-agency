@@ -22,7 +22,7 @@ export function PageHero({
 
   return (
     <section
-      className={`relative w-full ${heightClasses} overflow-hidden [clip-path:ellipse(250%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]`}
+      className={`relative w-full ${heightClasses} overflow-hidden [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]`}
     >
       <Image
         src="/bg-light-blue.svg"

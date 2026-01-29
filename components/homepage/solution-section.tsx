@@ -2,6 +2,7 @@ import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import { CalendlyButton } from "../ui/calendly-button";
 import { PromiseCard } from "./promise-card";
+import AnimatedSection from "../ui/animated-section";
 
 const promises = [
   {
@@ -30,7 +31,11 @@ export function SolutionSection() {
   return (
     <section id="solution" className="py-20 bg-blue-background">
       <div className="w-full max-w-7xl mx-auto p-4 sm:px-6 md:px-8">
-        <div className="max-w-4xl mx-auto">
+        <AnimatedSection
+          direction="up"
+          delay={0.1}
+          className="max-w-4xl mx-auto"
+        >
           <Badge>Notre Promesse</Badge>
           <Typography
             as="h2"
@@ -53,16 +58,25 @@ export function SolutionSection() {
             visuels percutants, site web cohérent, pour attirer vos clients
             idéaux et soutenir votre croissance.
           </Typography>
-        </div>
+        </AnimatedSection>
 
-        <div className="grid gap-8 md:grid-cols-2 mt-10">
+        <AnimatedSection
+          direction="up"
+          delay={0.2}
+          className="grid gap-8 md:grid-cols-2 mt-10"
+        >
           {promises.map((promise, index) => (
             <PromiseCard key={index} promise={promise} index={index} />
           ))}
-        </div>
-        <div className="mt-8 sm:mt-10 w-full flex justify-center">
+        </AnimatedSection>
+        <AnimatedSection
+          direction="up"
+          delay={0.3}
+          staggerChildren={0}
+          className="mt-8 sm:mt-10 w-full flex justify-center"
+        >
           <CalendlyButton variant="blue" />
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

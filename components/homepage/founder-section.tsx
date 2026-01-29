@@ -8,6 +8,7 @@ import { IoMdStar } from "react-icons/io";
 import { PiUsers } from "react-icons/pi";
 import { cn } from "@/lib/utils";
 import { IconType } from "react-icons";
+import AnimatedSection from "../ui/animated-section";
 
 const founderInfo = {
   name: "Aurélie Ciril",
@@ -38,7 +39,7 @@ export function FounderSection() {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-5">
         {/* Header */}
-        <div className="text-center mb-12">
+        <AnimatedSection direction="up" delay={0} className="text-center mb-12">
           <Badge>À propos</Badge>
           <Typography
             as="h2"
@@ -57,12 +58,16 @@ export function FounderSection() {
           >
             Une vision créative, une exigence stratégique, une approche humaine.
           </Typography>
-        </div>
+        </AnimatedSection>
 
         {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 items-center">
           {/* Left - Image */}
-          <div className="relative group">
+          <AnimatedSection
+            direction="up"
+            delay={0.4}
+            className="relative group"
+          >
             <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden">
               {/* Image 1 - Default */}
               <Image
@@ -112,10 +117,14 @@ export function FounderSection() {
                 </Typography>
               </div>
             </div>
-          </div>
+          </AnimatedSection>
 
           {/* Right - Text */}
-          <div>
+          <AnimatedSection
+            direction="up"
+            delay={0.8}
+            className="flex flex-col gap-4 text-gray"
+          >
             <Typography
               as="h3"
               variant="3xl"
@@ -126,68 +135,66 @@ export function FounderSection() {
               Pourquoi ai-je créé Hippô'Kom ?
             </Typography>
 
-            <div className="flex flex-col gap-4 text-gray">
-              <Typography as="p" variant="lg" className="mb-0">
-                Après plusieurs années passées à accompagner des entreprises
-                dans leur communication, j'ai réalisé que trop de marques
-                manquaient d'une image claire, cohérente et surtout alignée avec
-                ce qu'elles font vraiment.
-              </Typography>
+            <Typography as="p" variant="lg" className="mb-0">
+              Après plusieurs années passées à accompagner des entreprises dans
+              leur communication, j'ai réalisé que trop de marques manquaient
+              d'une image claire, cohérente et surtout alignée avec ce qu'elles
+              font vraiment.
+            </Typography>
 
-              <Typography as="p" variant="lg" className="mb-0">
-                C'est pour combler ce vide que j'ai lancé Hippô'Kom : une agence
-                à taille humaine, engagée, qui place l'authenticité, l'impact
-                visuel et la stratégie au cœur de chaque projet.
-              </Typography>
+            <Typography as="p" variant="lg" className="mb-0">
+              C'est pour combler ce vide que j'ai lancé Hippô'Kom : une agence à
+              taille humaine, engagée, qui place l'authenticité, l'impact visuel
+              et la stratégie au cœur de chaque projet.
+            </Typography>
 
-              <div className="relative p-6 bg-blue-light border border-blue rounded-2xl">
-                <BiSolidQuoteAltRight className="absolute bottom-3 right-4 text-blue/50 text-4xl" />
-                <BiSolidQuoteAltLeft className="absolute top-3 left-4 text-blue/50 text-4xl" />
-                <Typography
-                  as="p"
-                  variant="lg"
-                  weight="semibold"
-                  className="mb-0 relative z-10"
-                >
-                  Mon ambition ? Offrir aux TPE, PME et entrepreneurs une
-                  communication qui inspire confiance, attire les bons clients
-                  et les aide à grandir.
-                </Typography>
-              </div>
-              {/* Stats */}
-              <div className="grid grid-cols-2 gap-4">
-                {stats.map((stat, index) => (
-                  <div
-                    key={index}
-                    className={cn(
-                      "flex flex-col items-center text-blue-dark text-center p-8 border rounded-2xl bg-yellow-light border-yellow"
-                    )}
-                  >
-                    <Typography
-                      as="p"
-                      weight="semibold"
-                      className="text-3xl md:text-6xl mb-1"
-                    >
-                      {stat.value}
-                    </Typography>
-                    <Typography
-                      as="p"
-                      variant="base"
-                      weight="semibold"
-                      className="mb-2"
-                    >
-                      {stat.label}
-                    </Typography>
-                    <div className="flex gap-0.5">
-                      {[...Array(5)].map((_, i) => (
-                        <IoMdStar key={i} className="text-xl" />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="relative p-6 bg-blue-light border border-blue rounded-2xl">
+              <BiSolidQuoteAltRight className="absolute bottom-3 right-4 text-blue/50 text-4xl" />
+              <BiSolidQuoteAltLeft className="absolute top-3 left-4 text-blue/50 text-4xl" />
+              <Typography
+                as="p"
+                variant="lg"
+                weight="semibold"
+                className="mb-0 relative z-10"
+              >
+                Mon ambition ? Offrir aux TPE, PME et entrepreneurs une
+                communication qui inspire confiance, attire les bons clients et
+                les aide à grandir.
+              </Typography>
             </div>
-          </div>
+            {/* Stats */}
+            <div className="grid grid-cols-2 gap-4">
+              {stats.map((stat, index) => (
+                <div
+                  key={index}
+                  className={cn(
+                    "flex flex-col items-center text-blue-dark text-center p-8 border rounded-2xl bg-yellow-light border-yellow"
+                  )}
+                >
+                  <Typography
+                    as="p"
+                    weight="semibold"
+                    className="text-3xl md:text-6xl mb-1"
+                  >
+                    {stat.value}
+                  </Typography>
+                  <Typography
+                    as="p"
+                    variant="base"
+                    weight="semibold"
+                    className="mb-2"
+                  >
+                    {stat.label}
+                  </Typography>
+                  <div className="flex gap-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <IoMdStar key={i} className="text-xl" />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>

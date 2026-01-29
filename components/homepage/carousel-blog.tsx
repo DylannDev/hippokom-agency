@@ -9,6 +9,7 @@ import BlogCard from "../Blog/BlogCard";
 import { Typography } from "@/components/ui/typography";
 import { Badge } from "../ui/badge";
 import { BlogArticle } from "@/types/articles";
+import AnimatedSection from "../ui/animated-section";
 
 export function CarouselBlog({ data }: { data: BlogArticle[] }) {
   return (
@@ -21,7 +22,10 @@ export function CarouselBlog({ data }: { data: BlogArticle[] }) {
         className="w-full"
       >
         {/* Header */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-end justify-center lg:justify-between mb-8">
+        <AnimatedSection
+          delay={0.2}
+          className="flex flex-col lg:flex-row items-center lg:items-end justify-center lg:justify-between mb-8"
+        >
           <div className="mb-8 lg:mb-0">
             <Badge variant="left">blog</Badge>
             <Typography
@@ -38,17 +42,19 @@ export function CarouselBlog({ data }: { data: BlogArticle[] }) {
             <CarouselPrevious className="static translate-y-0" />
             <CarouselNext className="static translate-y-0" />
           </div>
-        </div>
-        <CarouselContent>
-          {data.map((data, index) => (
-            <CarouselItem
-              key={index}
-              className="md:basis-1/2 lg:basis-1/3 flex justify-center"
-            >
-              <BlogCard key={data.slug} article={data} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
+        </AnimatedSection>
+        <AnimatedSection delay={0.6}>
+          <CarouselContent>
+            {data.map((data, index) => (
+              <CarouselItem
+                key={index}
+                className="md:basis-1/2 lg:basis-1/3 flex justify-center"
+              >
+                <BlogCard key={data.slug} article={data} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </AnimatedSection>
       </Carousel>
     </div>
   );

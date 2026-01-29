@@ -122,7 +122,7 @@ export const ArticleContentClient = ({
     <div className="flex flex-col">
       {/* Hero Section with Background */}
       <section className="relative">
-        <div className="absolute w-full min-h-[450px] sm:min-h-[700px] [clip-path:ellipse(250%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
+        <div className="absolute w-full min-h-[450px] sm:min-h-[700px] [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
           <Image
             src="/bg-light-blue.svg"
             alt="Hippô'kom background"

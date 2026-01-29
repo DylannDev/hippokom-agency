@@ -20,9 +20,9 @@ export function PreFooter() {
               as="h2"
               weight="semibold"
               lineHeight="tightest"
-              className="mb-0 text-2xl sm:text-3xl md:text-4xl lg:text-[46px] leading-tight lg:leading-none text-balance"
+              className="mb-0 text-2xl sm:text-3xl md:text-4xl lg:text-[44px] leading-tight lg:leading-none text-balance"
             >
-              Passez à la vitesse supérieure avec une communication sur-mesure.
+              Démarquez-vous avec une stratégie digitale qui vous ressemble.
             </Typography>
           </div>
 
