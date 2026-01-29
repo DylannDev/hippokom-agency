@@ -52,7 +52,7 @@ export default function NotFound() {
           </Typography>
 
           <Link href="/">
-            <Button variant="yellow-medium">
+            <Button variant="yellow">
               Retour à l'accueil
               <RiArrowRightLine className="text-xl ml-2" />
             </Button>

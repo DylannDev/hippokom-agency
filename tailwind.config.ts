@@ -42,8 +42,7 @@ const config: Config = {
         },
         yellow: {
           light: "#FFF799",
-          medium: "#FFEE33",
-          DEFAULT: "#FFEA00",
+          DEFAULT: "#FFEE33",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

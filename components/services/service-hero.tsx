@@ -61,7 +61,7 @@ export function PageHero({
           >
             {subtitle}
           </Typography>
-          {showCta && <CalendlyButton variant="yellow-medium" />}
+          {showCta && <CalendlyButton variant="yellow" />}
         </div>
       </div>
     </section>

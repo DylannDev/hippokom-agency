@@ -27,7 +27,7 @@ const Hero = () => {
               attirer, engager et faire la différence.
             </p>
             <div className="flex justify-center gap-2 lg:justify-start">
-              <CalendlyButton variant="yellow-medium" />
+              <CalendlyButton variant="yellow" />
             </div>
           </div>
 

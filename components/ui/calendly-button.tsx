@@ -1,10 +1,9 @@
 import Button from "./Button";
 import { calendlyLink } from "@/data";
-import { cn } from "@/lib/utils";
 import { CalendarCheck } from "lucide-react";
 
 interface CalendlyButtonProps {
-  variant?: "white" | "yellow" | "yellow-medium" | "blue";
+  variant?: "white" | "yellow" | "blue";
   size?: "sm" | "default" | "md" | "lg";
   className?: string;
   label?: string;

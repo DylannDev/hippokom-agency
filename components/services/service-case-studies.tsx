@@ -80,7 +80,7 @@ export function ServiceCaseStudies({
         </div>
 
         <div className="flex justify-center w-full mt-10">
-          <ButtonArrow href="/realisations" variant="yellow-medium">
+          <ButtonArrow href="/realisations" variant="yellow">
             Voir nos réalisations
           </ButtonArrow>
         </div>
