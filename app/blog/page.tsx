@@ -15,7 +15,6 @@ const BlogPage = () => {
       <PageHero
         title="Blog"
         subtitle="Conseils, tendances et bonnes pratiques pour booster votre communication digitale."
-        variant="small"
       />
 
       {/* Blog Grid */}

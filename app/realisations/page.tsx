@@ -8,7 +8,6 @@ const RealisationsPage = () => {
       <PageHero
         title="Nos réalisations"
         subtitle="Découvrez comment nous avons accompagné nos clients dans leur transformation digitale et boosté leur communication."
-        variant="small"
       />
 
       {/* Case Studies Grid */}
