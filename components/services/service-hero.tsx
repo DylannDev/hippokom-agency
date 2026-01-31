@@ -7,7 +7,6 @@ interface PageHeroProps {
   subtitle: string;
   icon?: string;
   showCta?: boolean;
-  variant?: "default" | "small";
 }
 
 export function PageHero({
@@ -15,14 +14,10 @@ export function PageHero({
   subtitle,
   icon,
   showCta = false,
-  variant = "default",
 }: PageHeroProps) {
-  const heightClasses =
-    variant === "small" ? "h-[60vh] max-h-[600px]" : "h-[70vh] max-h-[700px]";
-
   return (
     <section
-      className={`relative w-full ${heightClasses} overflow-hidden [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]`}
+      className={`relative w-full h-[80vh] max-h-[800px] overflow-hidden [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]`}
     >
       <Image
         src="/bg-light-blue.svg"
@@ -42,7 +37,7 @@ export function PageHero({
                 alt={title}
                 width={120}
                 height={120}
-                className="object-contain"
+                className="object-contain w-20 h-20 sm:w-32 sm:h-32"
               />
             </div>
           )}

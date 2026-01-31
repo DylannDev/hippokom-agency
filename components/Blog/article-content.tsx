@@ -180,20 +180,20 @@ export const ArticleContentClient = ({
             />
           </div>
         </div>
-      </section>
 
-      {/* Recommendations Section */}
-      <div className="px-5 max-w-7xl mx-auto">
-        <ArticleCarousel
-          title={
-            isBlog ? "Lire un autre article" : "Lire d'autres études de cas"
-          }
-          items={allArticles}
-          excludeSlug={article.slug}
-          type={isBlog ? "blog" : "case-study"}
-          maxItems={6}
-        />
-      </div>
+        {/* Recommendations Section */}
+        <div className="px-5 max-w-7xl mx-auto">
+          <ArticleCarousel
+            title={
+              isBlog ? "Lire un autre article" : "Lire d'autres études de cas"
+            }
+            items={allArticles}
+            excludeSlug={article.slug}
+            type={isBlog ? "blog" : "case-study"}
+            maxItems={6}
+          />
+        </div>
+      </section>
     </div>
   );
 };
