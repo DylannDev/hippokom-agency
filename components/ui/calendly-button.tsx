@@ -4,7 +4,7 @@ import { CalendarCheck } from "lucide-react";
 
 interface CalendlyButtonProps {
   variant?: "white" | "yellow" | "blue";
-  size?: "sm" | "default" | "md" | "lg";
+  size?: "sm" | "default";
   className?: string;
   label?: string;
 }

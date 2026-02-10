@@ -22,7 +22,7 @@ const stats: {
   showStars?: boolean;
 }[] = [
   {
-    value: "20+",
+    value: "30+",
     label: "Clients accompagnés",
     icon: PiUsers,
   },
