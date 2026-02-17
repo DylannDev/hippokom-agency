@@ -35,7 +35,7 @@ export const caseStudiesArticles = [
     slug: "ak-experience-strategie-evenementielle-medef",
     title:
       "Comment nous avons dynamisé un événement économique grâce à une stratégie Instagram phygitale",
-    client: "AK Expérience — MEDEF Martinique",
+    client: "AK Expérience - MEDEF Martinique",
     service: "Stratégie Instagram & animation phygitale",
     highlights: [
       { value: "+1", label: "événement transformé en expérience digitale" },
@@ -97,7 +97,7 @@ export const caseStudiesArticles = [
     slug: "identite-visuelle-dessinatrice-plans-martinique",
     title:
       "Création d'une identité visuelle percutante pour une dessinatrice de plans",
-    client: "SPM Plans — Martinique",
+    client: "SPM Plans - Martinique",
     service: "Création d’identité visuelle & charte graphique",
     highlights: [
       { value: "100%", label: "de cohérence visuelle" },
@@ -120,7 +120,7 @@ export const caseStudiesArticles = [
   <p>Une problématique fréquente chez <strong>les indépendants dans le BTP ou les métiers techniques</strong>, où la communication visuelle est parfois mise de côté, alors qu’elle représente un véritable <strong>levier de crédibilité et de différenciation</strong>.</p>
 
   <h3>La mission : poser les fondations d’une image cohérente et professionnelle</h3>
-  <p><strong>Hippô'kom</strong> est intervenu pour construire une <strong>identité visuelle stratégique</strong> — bien plus qu’un simple logo. Objectif : transmettre, en un coup d’œil, le sérieux, la précision et l’expertise de SPM Plans.</p>
+  <p><strong>Hippô'kom</strong> est intervenu pour construire une <strong>identité visuelle stratégique</strong>, bien plus qu'un simple logo. Objectif : transmettre, en un coup d'œil, le sérieux, la précision et l'expertise de SPM Plans.</p>
   <p>Les étapes du projet :</p>
   <ul>
     <li>Création d’un logo professionnel, en lien avec le secteur du dessin technique et du bâtiment</li>
@@ -153,7 +153,7 @@ export const caseStudiesArticles = [
     slug: "naomi-coiffure-community-management-martinique",
     title:
       "Comment nous avons boosté la visibilité d'un salon de coiffure grâce au community management",
-    client: "Naomi Coiffure — Martinique",
+    client: "Naomi Coiffure - Martinique",
     service: "Stratégie de contenu",
     highlights: [
       { value: "+40%", label: "de passages en salon" },
@@ -194,7 +194,7 @@ export const caseStudiesArticles = [
     <li>vous n’avez pas le temps de gérer vos réseaux,</li>
     <li>vous sentez que vos posts n’ont aucun impact…</li>
   </ul>
-  <p>Il est temps de déléguer cette partie à un expert <strong>community manager</strong>, qui connaît les réseaux sociaux et saura valoriser votre activité — quel que soit votre secteur ou votre localisation.</p>
+  <p>Il est temps de déléguer cette partie à un expert <strong>community manager</strong>, qui connaît les réseaux sociaux et saura valoriser votre activité, quel que soit votre secteur ou votre localisation.</p>
   
   <h3>Conclusion</h3>
   <p>Chez <strong>Hippô'kom</strong>, nous ne faisons pas de community management « à la chaîne ». Chaque entreprise est unique, chaque stratégie est personnalisée. L’exemple de <strong>Naomi Coiffure</strong> montre que même avec un compte inexistant, on peut atteindre une visibilité forte à condition d’avoir un bon accompagnement.</p>
@@ -248,7 +248,7 @@ export const caseStudiesArticles = [
       <p>Chez Hippô’kom, nous construisons des stratégies multicanales sur-mesure, qui prolongent l’impact de vos contenus bien au-delà de leur diffusion. De la captation vidéo au jeu concours, en passant par la narration sur les réseaux sociaux, chaque action est pensée pour renforcer l’expérience et faire rayonner votre projet.</p>
   
       <h3>Le mot de la fin</h3>
-      <p>Une émission, c’est plus qu’un format TV. C’est un levier d’impact culturel, social et émotionnel — à condition de l’activer avec les bons outils de communication.</p>
+      <p>Une émission, c'est plus qu'un format TV. C'est un levier d'impact culturel, social et émotionnel, à condition de l'activer avec les bons outils de communication.</p>
       <p><strong>Vous produisez du contenu audiovisuel et souhaitez maximiser son rayonnement ?</strong></p>
       <p>👉 <strong>Discutons de votre projet et transformons chaque diffusion en une expérience mémorable.</strong></p>
     `,
@@ -298,7 +298,7 @@ export const caseStudiesArticles = [
       <p>Mais plus que les chiffres, ce qui a marqué les esprits : <strong>un événement perçu comme professionnel, accessible et sincère</strong>, avec des retours enthousiastes de la part des partenaires, des intervenants… et du public.</p>
 
       <h3>Pourquoi faire appel à Hippô'kom pour votre communication événementielle ?</h3>
-      <p>Organiser un événement, c’est une chose. <strong>Faire en sorte qu’il ait un impact réel</strong>, qu’il attire du monde, qu’il touche les bonnes personnes — c’en est une autre.</p>
+      <p>Organiser un événement, c'est une chose. <strong>Faire en sorte qu'il ait un impact réel</strong>, qu'il attire du monde, qu'il touche les bonnes personnes, c'en est une autre.</p>
       <p>Chez <strong>Hippô'kom</strong>, chaque événement est traité comme un projet stratégique :</p>
       <ul>
         <li>on valorise les acteurs locaux,</li>
@@ -998,7 +998,7 @@ export const faqHomepage = [
     question:
       "Est-ce que vous travaillez uniquement avec des entreprises basées en Martinique ?",
     answer:
-      "Non. Nous accompagnons aussi bien les entreprises locales que celles basées ailleurs. La majorité de nos services — stratégie, design, rédaction, community management — peuvent être gérés à distance avec la même efficacité.",
+      "Non. Nous accompagnons aussi bien les entreprises locales que celles basées ailleurs. La majorité de nos services (stratégie, design, rédaction, community management) peuvent être gérés à distance avec la même efficacité.",
   },
   {
     id: "5",

@@ -10,6 +10,8 @@ export interface ArticleBase {
 // Type pour les articles de blog
 export interface BlogArticle extends ArticleBase {
   date: string;
+  description: string;
+  keywords: string[];
 }
 
 // Type pour les études de cas
