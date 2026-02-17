@@ -17,15 +17,15 @@ export default function Home() {
         <Hero />
       </div>
       <ProblemsSection />
-      <ServicesSection />
       <SolutionSection />
+      <ServicesSection />
       <div className="max-w-7xl mx-auto px-5">
         <MethodSection />
       </div>
       <AchievementsSection />
       <FounderSection />
       <TestimonialsSection />
-      <Faq data={faqHomepage} />
+      <Faq data={faqHomepage} title="Vous avez des questions, on a les réponses" />
       <div className="max-w-7xl mx-auto">
         <BlogSection />
       </div>

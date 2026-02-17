@@ -35,7 +35,7 @@ export function CarouselBlog({ data }: { data: BlogArticle[] }) {
               lineHeight="tightest"
               className="mb-0 max-w-xl text-balance text-center lg:text-left"
             >
-              Consultez nos derniers articles
+              Conseils concrets pour votre communication
             </Typography>
           </div>
           <div className="flex items-center justify-center gap-4 mt-8">

@@ -11,6 +11,41 @@ import {
   isBlogArticle,
   isCaseStudyArticle,
 } from "@/types/articles";
+
+const BlogPostingJsonLd = ({ article }: { article: BlogArticle }) => (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: article.title,
+        description: article.description,
+        image: `https://hippokomagency.fr${article.image}`,
+        datePublished: article.date,
+        author: {
+          "@type": "Person",
+          name: "Aurélie Ciril",
+          jobTitle: "Fondatrice & Directrice Créative",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Hippô'kom",
+          url: "https://hippokomagency.fr",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://hippokomagency.fr/logo.png",
+          },
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `https://hippokomagency.fr/blog/${article.slug}`,
+        },
+        keywords: article.keywords?.join(", "),
+      }),
+    }}
+  />
+);
 import { ArticleCarousel } from "./ArticleCarousel";
 
 // Composant pour afficher un highlight individuel
@@ -120,6 +155,7 @@ export const ArticleContentClient = ({
 
   return (
     <div className="flex flex-col">
+      {isBlog && <BlogPostingJsonLd article={article as BlogArticle} />}
       {/* Hero Section with Background */}
       <section className="relative">
         <div className="absolute w-full min-h-[450px] sm:min-h-[700px] [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">

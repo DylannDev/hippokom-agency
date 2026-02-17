@@ -88,9 +88,9 @@ export function TestimonialsSection() {
               variant="5xl"
               weight="semibold"
               lineHeight="tightest"
-              className="mb-4 text-balance"
+              className="mb-4 text-balance max-w-2xl mx-auto"
             >
-              Ils nous font confiance
+              Noté 5/5 sur Google par nos clients
             </Typography>
             <Typography
               as="p"
@@ -98,8 +98,8 @@ export function TestimonialsSection() {
               weight="medium"
               className="text-gray max-w-lg mx-auto lg:mx-0"
             >
-              Découvrez ce que nos clients disent de notre accompagnement et de
-              nos services.
+              Entrepreneurs, TPE, PME : ils nous ont confié leur communication
+              et partagent leur expérience.
             </Typography>
           </div>
 

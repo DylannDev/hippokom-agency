@@ -38,10 +38,9 @@ const BlogCard = ({ article }: BlogCardProps) => {
             >
               {article.title}
             </Typography>
-            <div
-              className="text-sm text-black line-clamp-3 mb-0 [&>*]:mb-0 [&>*]:inline"
-              dangerouslySetInnerHTML={{ __html: article.content }}
-            />
+            <p className="text-sm text-black line-clamp-2 mb-0">
+              {article.description}
+            </p>
           </div>
 
           {/* Footer */}

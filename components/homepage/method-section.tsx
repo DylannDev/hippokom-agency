@@ -33,7 +33,7 @@ export function MethodSection() {
   return (
     <section id="method" className="my-20 bg-white">
       <div className="max-w-5xl mx-auto mb-12 text-center">
-        <Badge>Notre Process</Badge>
+        <Badge>Notre méthode</Badge>
         <Typography
           as="h2"
           variant="5xl"
@@ -41,7 +41,7 @@ export function MethodSection() {
           lineHeight="tightest"
           className="mb-6 text-balance"
         >
-          Notre méthode en 4 étapes pour booster votre visibilité digitale !
+          Comment on passe de zéro à une communication qui performe
         </Typography>
         <Typography
           as="p"
@@ -49,9 +49,9 @@ export function MethodSection() {
           weight="medium"
           className="text-gray text-balance"
         >
-          On bâtit une stratégie solide autour de votre réalité terrain, vos
-          objectifs et vos ressources. Voici comment on travaille ensemble pour
-          propulser votre communication :
+          Un processus clair en 4 étapes, construit autour de votre réalité
+          terrain, vos objectifs et vos ressources. Pas de surprise, que des
+          résultats.
         </Typography>
       </div>
 

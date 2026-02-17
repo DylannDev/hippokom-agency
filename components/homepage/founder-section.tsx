@@ -46,17 +46,18 @@ export function FounderSection() {
             variant="5xl"
             weight="semibold"
             lineHeight="tightest"
-            className="mb-4 text-balance"
+            className="mb-4 text-balance max-w-2xl mx-auto"
           >
-            Une agence qui fait la différence
+            Derrière Hippô'Kom, il y a une conviction
           </Typography>
           <Typography
             as="p"
             variant="xl"
             weight="medium"
-            className="text-gray max-w-2xl mx-auto"
+            className="text-gray max-w-2xl mx-auto text-balance"
           >
-            Une vision créative, une exigence stratégique, une approche humaine.
+            Chaque entreprise mérite une communication à la hauteur de ce
+            qu'elle fait vraiment.
           </Typography>
         </AnimatedSection>
 
@@ -136,16 +137,15 @@ export function FounderSection() {
             </Typography>
 
             <Typography as="p" variant="lg" className="mb-0">
-              Après plusieurs années passées à accompagner des entreprises dans
-              leur communication, j'ai réalisé que trop de marques manquaient
-              d'une image claire, cohérente et surtout alignée avec ce qu'elles
-              font vraiment.
+              Après plusieurs années à accompagner des entreprises en Martinique
+              et aux Antilles, j'ai constaté que trop de marques avaient une
+              image qui ne reflétait pas la qualité de ce qu'elles proposent.
             </Typography>
 
             <Typography as="p" variant="lg" className="mb-0">
-              C'est pour combler ce vide que j'ai lancé Hippô'Kom : une agence à
-              taille humaine, engagée, qui place l'authenticité, l'impact visuel
-              et la stratégie au cœur de chaque projet.
+              C'est pour ça que j'ai créé Hippô'Kom : une agence à taille
+              humaine, basée en Martinique, qui place l'authenticité, l'impact
+              visuel et la stratégie au cœur de chaque projet.
             </Typography>
 
             <div className="relative p-6 bg-blue-light border border-blue rounded-2xl">

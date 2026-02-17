@@ -34,7 +34,7 @@ const AchievementsSection = () => {
             lineHeight="tightest"
             className="text-white mb-6 text-balance text-center"
           >
-            Des résultats concrets pour nos clients
+            Ce qu'on a fait pour eux, on peut le faire pour vous
           </Typography>
           <Typography
             as="p"
@@ -42,8 +42,8 @@ const AchievementsSection = () => {
             weight="medium"
             className="text-white text-balance text-center"
           >
-            Une stratégie 360° pour faire rayonner votre marque, <br /> engager
-            votre audience et convertir vos prospects en clients.
+            Études de cas réelles, avec les chiffres, les stratégies
+            déployées et les résultats obtenus.
           </Typography>
         </AnimatedSection>
 

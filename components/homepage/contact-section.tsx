@@ -28,7 +28,7 @@ export function ContactSection() {
             lineHeight="tightest"
             className="mb-4 text-balance"
           >
-            Contactez-nous pour une offre sur-mesure
+            Prêt à passer à l'action ?
           </Typography>
           <Typography
             as="p"
@@ -36,7 +36,7 @@ export function ContactSection() {
             weight="medium"
             className="text-white text-balance"
           >
-            On vous accompagne de A à Z.
+            Contactez-nous pour un premier échange gratuit et sans engagement.
           </Typography>
         </div>
         <div className="flex flex-col items-center gap-6">

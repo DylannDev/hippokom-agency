@@ -48,12 +48,13 @@ export function Faq({
             variant="5xl"
             weight="semibold"
             lineHeight="tightest"
-            className="mb-6 text-balance"
+            className="mb-6 text-balance max-w-2xl mx-auto lg:mx-0"
           >
             {title}
           </Typography>
           <Typography as="p" variant="xl" weight="medium" className="text-gray">
-            Des réponses concrètes pour prendre la meilleure décision.
+            Les questions qu'on nous pose le plus souvent, avec des réponses
+            claires.
           </Typography>
         </AnimatedSection>
         <div className="flex flex-col lg:flex-row gap-6">

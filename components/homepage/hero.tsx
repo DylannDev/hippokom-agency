@@ -25,14 +25,15 @@ const Hero = () => {
             className="lg:col-span-7 flex flex-col gap-4 text-white text-center lg:text-left"
           >
             <h1 className="font-semibold text-3xl sm:text-4xl md:text-6xl text-balance">
-              L'agence qui booste votre communication.
+              Votre communication mérite mieux qu'un post de temps en temps.
             </h1>
             <p className="text-base sm:text-xl font-medium max-w-xl mx-auto lg:mx-0">
-              Hippô'Kom, c'est une communication qui vous ressemble, pensée pour
-              attirer, engager et faire la différence.
+              Hippô'Kom accompagne les entreprises en Martinique et aux Antilles
+              avec une stratégie digitale complète : réseaux sociaux, contenus,
+              site web et publicité.
             </p>
             <div className="flex justify-center gap-2 lg:justify-start">
-              <CalendlyButton variant="yellow" />
+              <CalendlyButton variant="yellow" label="Réserver un appel découverte" />
             </div>
           </AnimatedSection>
 

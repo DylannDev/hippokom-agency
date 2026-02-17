@@ -6,23 +6,23 @@ import AnimatedSection from "../ui/animated-section";
 
 const promises = [
   {
-    title: "Visibilité",
-    text: "Augmentez votre présence locale et sectorielle avec une stratégie social media ciblée. Soyez vu par les bonnes personnes, au bon endroit.",
+    title: "Plus de visibilité locale",
+    text: "Vos clients idéaux en Martinique et aux Antilles vous trouvent sur Google et sur les réseaux sociaux, grâce à une stratégie ciblée.",
     image: "/search.svg",
   },
   {
-    title: "Engagement",
-    text: "Générez de vraies interactions avec des contenus conçus pour engager et attirer des prospects qualifiés sur vos réseaux sociaux.",
+    title: "Un engagement réel",
+    text: "Fini les posts sans réaction. Vos contenus génèrent des likes, des commentaires, des partages, et surtout des prises de contact.",
     image: "/commitment.svg",
   },
   {
-    title: "Crédibilité",
-    text: "Renforcez votre image de marque grâce à des visuels cohérents, des contenus professionnels et une communication différenciante.",
+    title: "Une image professionnelle",
+    text: "Visuels cohérents, ligne éditoriale claire, site web soigné : votre marque inspire confiance dès le premier regard.",
     image: "/credibility.svg",
   },
   {
-    title: "Liberté",
-    text: "Déléguez votre communication et concentrez-vous sur votre activité. Gagnez du temps tout en obtenant des résultats visibles.",
+    title: "Du temps retrouvé",
+    text: "On gère vos réseaux, vos contenus et votre site. Vous vous concentrez sur vos clients et votre activité.",
     image: "/time.svg",
   },
 ];
@@ -44,8 +44,7 @@ export function SolutionSection() {
             lineHeight="tightest"
             className="mb-8 text-center"
           >
-            Une stratégie digitale qui génère de vrais résultats pour votre
-            entreprise !
+            Ce que vous gagnez en travaillant avec nous
           </Typography>
 
           <Typography
@@ -54,9 +53,9 @@ export function SolutionSection() {
             weight="medium"
             className="text-gray text-balance text-center"
           >
-            On conçoit une communication digitale complète, contenus engageants,
-            visuels percutants, site web cohérent, pour attirer vos clients
-            idéaux et soutenir votre croissance.
+            On prend en charge votre communication de A à Z (contenus,
+            visuels, site web, publicité) pour que vous puissiez vous
+            concentrer sur votre activité pendant que votre visibilité grandit.
           </Typography>
         </AnimatedSection>
 
@@ -75,7 +74,7 @@ export function SolutionSection() {
           staggerChildren={0}
           className="mt-8 sm:mt-10 w-full flex justify-center"
         >
-          <CalendlyButton variant="blue" />
+          <CalendlyButton variant="blue" label="Discuter de mon projet" />
         </AnimatedSection>
       </div>
     </section>

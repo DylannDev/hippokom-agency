@@ -12,23 +12,23 @@ const problems = [
     alt: "Cible illustration - Hippô'kom",
     title: "Aucune stratégie claire",
     description:
-      "Vous publiez au feeling, sans réel plan. Vos posts manquent d'impact et ne parlent pas à vos clients cibles. Avec nous, chaque contenu a un but précis : engager, convaincre, convertir !",
+      "Vous publiez au feeling, sans plan défini. Vos contenus manquent d'impact et ne parlent pas à vos clients cibles. Résultat : peu de likes, peu de contacts, peu de retours.",
     bgColor: "bg-white",
   },
   {
     img: "/directions.svg",
     alt: "Panneau Directions illustration - Hippô'kom",
-    title: "Message dispersé, zéro impact",
+    title: "Un message flou, zéro impact",
     description:
-      "Vous ne savez pas quoi publier ni comment mesurer l'efficacité de vos actions. On vous guide avec un plan de contenu précis et des formats adaptés pour valoriser votre expertise.",
+      "Vous ne savez pas quoi publier, ni sur quel canal. Votre image de marque manque de cohérence et vos concurrents, eux, avancent avec une ligne éditoriale claire.",
     bgColor: "bg-white",
   },
   {
     img: "/sandtimer.svg",
     alt: "Sablier illustration - Hippô'kom",
-    title: "Du temps perdu",
+    title: "Des heures perdues sans résultat",
     description:
-      "Vous passez des heures à gérer vos réseaux, mais vos efforts n'apportent ni visibilité ni nouveaux clients. Chez Hippô'kom, nous boostons votre visibilité.",
+      "Vous passez du temps à créer des visuels, rédiger des posts, répondre aux messages… mais vos efforts ne génèrent ni visibilité ni nouveaux clients.",
     bgColor: "bg-white",
   },
 ];
@@ -116,18 +116,18 @@ export function ProblemsSection() {
       >
         <div className="max-w-4xl mx-auto text-center">
           <Typography as="p" weight="semibold" variant="3xl" className="mb-4">
-            Résultat ? <br /> Vous vous épuisez sans retour réel.
+            Résultat ? <br /> Vous vous épuisez sans retour concret.
           </Typography>
 
           <Typography as="p" variant="xl" className="text-gray text-balance">
             Chez <strong>Hippô'kom</strong>, on transforme cette frustration en
-            résultats concrets, grâce à une stratégie digitale sur-mesure qui
-            vous fait gagner du temps, de la visibilité et des clients.
+            clients, en visibilité et en crédibilité, grâce à une stratégie
+            pensée pour votre activité et votre marché local.
           </Typography>
         </div>
         <div className="mt-8 sm:mt-10 w-full flex justify-center">
           <CalendlyButton
-            label="Concevons une stratégie sur mesure"
+            label="Parlons de votre communication"
             variant="blue"
           />
         </div>
