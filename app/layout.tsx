@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Layout/Navbar";
 import NavbarMobile from "@/components/Layout/NavbarMobile";
@@ -12,6 +13,35 @@ import {
   SITE_URL,
   jsonLdScript,
 } from "@/lib/seo";
+
+const thicccboi = localFont({
+  src: [
+    {
+      path: "../public/fonts/THICCCBOI/THICCCBOI-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/THICCCBOI/THICCCBOI-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/THICCCBOI/THICCCBOI-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/THICCCBOI/THICCCBOI-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-thicccboi",
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -44,7 +74,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={thicccboi.variable}>
       <body>
         <script
           type="application/ld+json"

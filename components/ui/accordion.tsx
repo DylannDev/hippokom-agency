@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { motion, AnimatePresence } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 import { PiPlusBold } from "react-icons/pi";
@@ -53,19 +52,12 @@ const AccordionContent = React.forwardRef<
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
-      "max-w-[840px] px-6 sm:px-8 pb-6 sm:pb-8 overflow-hidden text-base sm:text-lg font-medium text-gray",
+      "max-w-[840px] px-6 sm:px-8 pb-6 sm:pb-8 overflow-hidden text-base sm:text-lg font-medium text-gray data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up",
       className
     )}
     {...props}
   >
-    <motion.div
-      initial={{ height: 0, opacity: 0, y: 20 }}
-      animate={{ height: "auto", opacity: 1, y: 0 }}
-      exit={{ height: 0, opacity: 0, y: -20 }}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-    >
-      {children}
-    </motion.div>
+    {children}
   </AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

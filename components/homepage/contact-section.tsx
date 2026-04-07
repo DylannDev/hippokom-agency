@@ -10,7 +10,7 @@ export function ContactSection() {
       className="relative w-full overflow-hidden rounded-3xl"
     >
       <Image
-        src="/bg-light-blue.svg"
+        src="/bg-light-blue.webp"
         alt=""
         aria-hidden="true"
         fill

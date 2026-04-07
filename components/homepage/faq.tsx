@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/accordion";
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
-import { motion } from "framer-motion";
 import { ContactSection } from "./contact-section";
 import AnimatedSection from "../ui/animated-section";
 import { buildFaqSchema, jsonLdScript } from "@/lib/seo";
@@ -69,29 +68,24 @@ export function Faq({
               type="single"
               collapsible
             >
-              {data.map((faq, index) => (
-                <motion.div
+              {data.map((faq) => (
+                <AccordionItem
                   key={faq.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+                  value={faq.id}
                   className="cursor-pointer"
                 >
-                  <AccordionItem value={faq.id}>
-                    <AccordionTrigger>{faq.question}</AccordionTrigger>
-                    <AccordionContent>
-                      {isRichText ? (
-                        <div
-                          className="rich-text"
-                          dangerouslySetInnerHTML={{ __html: faq.answer }}
-                        />
-                      ) : (
-                        faq.answer
-                      )}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
+                  <AccordionTrigger>{faq.question}</AccordionTrigger>
+                  <AccordionContent>
+                    {isRichText ? (
+                      <div
+                        className="rich-text"
+                        dangerouslySetInnerHTML={{ __html: faq.answer }}
+                      />
+                    ) : (
+                      faq.answer
+                    )}
+                  </AccordionContent>
+                </AccordionItem>
               ))}
             </Accordion>
           </div>

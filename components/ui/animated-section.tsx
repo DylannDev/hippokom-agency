@@ -1,7 +1,14 @@
-// components/AnimatedSection.tsx
 "use client";
-import { motion } from "framer-motion";
-import { Children, ReactNode } from "react";
+
+import {
+  Children,
+  ReactNode,
+  useEffect,
+  useRef,
+  useState,
+  CSSProperties,
+} from "react";
+import { cn } from "@/lib/utils";
 
 interface Props {
   children: ReactNode;
@@ -11,13 +18,6 @@ interface Props {
   staggerChildren?: number;
 }
 
-const directions = {
-  up: { y: 50 },
-  down: { y: -50 },
-  left: { x: 50 },
-  right: { x: -50 },
-};
-
 export default function AnimatedSection({
   children,
   delay = 0,
@@ -25,58 +25,64 @@ export default function AnimatedSection({
   className,
   staggerChildren = 0.2,
 }: Props) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-100px" }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  const directionClass =
+    direction === "down"
+      ? "reveal-down"
+      : direction === "left"
+        ? "reveal-left"
+        : direction === "right"
+          ? "reveal-right"
+          : "";
+
   if (staggerChildren) {
-    const containerVariants = {
-      hidden: {},
-      visible: {
-        transition: {
-          delayChildren: delay,
-          staggerChildren,
-        },
-      },
-    };
-
-    const childVariants = {
-      hidden: { opacity: 0, ...directions[direction] },
-      visible: {
-        opacity: 1,
-        y: 0,
-        x: 0,
-        transition: {
-          duration: 0.8,
-          ease: [0.22, 1, 0.36, 1],
-        },
-      },
-    };
-
     return (
-      <motion.div
-        className={className}
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-      >
-        {Children.map(children, (child) => (
-          <motion.div variants={childVariants}>{child}</motion.div>
-        ))}
-      </motion.div>
+      <div ref={ref} className={className}>
+        {Children.map(children, (child, i) => {
+          const childDelay = delay + i * staggerChildren;
+          return (
+            <div
+              className={cn("reveal", directionClass, visible && "is-visible")}
+              style={{ "--reveal-delay": `${childDelay}s` } as CSSProperties}
+            >
+              {child}
+            </div>
+          );
+        })}
+      </div>
     );
   }
 
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, ...directions[direction] }}
-      whileInView={{ opacity: 1, y: 0, x: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{
-        duration: 0.8,
-        delay,
-        ease: [0.22, 1, 0.36, 1],
-      }}
+    <div
+      ref={ref}
+      className={cn(
+        "reveal",
+        directionClass,
+        visible && "is-visible",
+        className
+      )}
+      style={{ "--reveal-delay": `${delay}s` } as CSSProperties}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

@@ -189,7 +189,7 @@ export const ArticleContentClient = ({
       <section className="relative">
         <div className="absolute w-full min-h-[450px] sm:min-h-[700px] [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
           <Image
-            src="/bg-light-blue.svg"
+            src="/bg-light-blue.webp"
             alt=""
             aria-hidden="true"
             fill

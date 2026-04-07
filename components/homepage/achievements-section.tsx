@@ -11,7 +11,7 @@ const AchievementsSection = () => {
     <section className="py-20 sm:py-32 px-5 sm:px-6 md:px-8 relative [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
       <div className="w-full h-full aspect-square absolute inset-0 overflow-hidden -z-10">
         <Image
-          src="/bg-light-blue.svg"
+          src="/bg-light-blue.webp"
           alt="Hippô'kom hero background illustration"
           fill
           loading="lazy"

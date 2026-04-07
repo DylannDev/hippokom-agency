@@ -23,7 +23,7 @@ const config: Config = {
         "4/3": "4 / 3",
       },
       fontFamily: {
-        thicccboi: ["THICCCBOI", "sans-serif"],
+        thicccboi: ["var(--font-thicccboi)", "system-ui", "sans-serif"],
       },
       colors: {
         gray: {
