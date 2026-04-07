@@ -24,11 +24,11 @@ const Hero = () => {
             delay={0.1}
             className="lg:col-span-7 flex flex-col gap-4 text-white text-center lg:text-left"
           >
-            <h1 className="font-semibold text-3xl sm:text-4xl md:text-6xl text-balance">
-              Votre communication mérite mieux qu'un post de temps en temps.
+            <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl text-balance">
+              L'agence de communication qui transforme votre présence en Martinique
             </h1>
             <p className="text-base sm:text-xl font-medium max-w-xl mx-auto lg:mx-0">
-              Hippô'Kom accompagne les entreprises en Martinique et aux Antilles
+              Hippô'Kom accompagne les entreprises aux Antilles
               avec une stratégie digitale complète : réseaux sociaux, contenus,
               site web et publicité.
             </p>
