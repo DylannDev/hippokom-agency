@@ -9,6 +9,7 @@ import {
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import AnimatedSection from "@/components/ui/animated-section";
+import { buildFaqSchema, jsonLdScript } from "@/lib/seo";
 
 interface FaqItem {
   id: string;
@@ -37,6 +38,10 @@ export function ServiceFaq({
 
   return (
     <section className={`${sectionBg} py-16 md:py-20 ${className || ""}`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(buildFaqSchema(data))}
+      />
       <div className="max-w-3xl mx-auto px-5 sm:px-8">
         <AnimatedSection
           direction="up"

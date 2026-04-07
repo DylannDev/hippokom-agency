@@ -23,30 +23,59 @@ const BlogPostingJsonLd = ({ article }: { article: BlogArticle }) => (
         description: article.description,
         image: `https://hippokomagency.fr${article.image}`,
         datePublished: article.date,
+        dateModified: article.date,
         author: {
-          "@type": "Person",
-          name: "Aurélie Ciril",
-          jobTitle: "Fondatrice & Directrice Créative",
+          "@id": "https://hippokomagency.fr/#aurelie-ciril",
         },
         publisher: {
-          "@type": "Organization",
-          name: "Hippô'kom",
-          url: "https://hippokomagency.fr",
-          logo: {
-            "@type": "ImageObject",
-            url: "https://hippokomagency.fr/logo.png",
-          },
+          "@id": "https://hippokomagency.fr/#organization",
         },
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id": `https://hippokomagency.fr/blog/${article.slug}`,
         },
         keywords: article.keywords?.join(", "),
+        inLanguage: "fr-FR",
       }),
     }}
   />
 );
 import { ArticleCarousel } from "./ArticleCarousel";
+
+const AuthorBio = () => (
+  <aside className="max-w-4xl mx-auto mt-12 p-6 sm:p-8 bg-blue-light/30 border border-blue-light rounded-3xl flex flex-col sm:flex-row items-center sm:items-start gap-6">
+    <Image
+      src="/founder-1.jpg"
+      alt="Aurélie Ciril, fondatrice de Hippô'kom"
+      width={96}
+      height={96}
+      className="w-24 h-24 rounded-full object-cover object-top flex-shrink-0"
+    />
+    <div className="text-center sm:text-left">
+      <Typography
+        as="p"
+        variant="lg"
+        weight="semibold"
+        className="mb-1 text-black"
+      >
+        Aurélie Ciril
+      </Typography>
+      <Typography
+        as="p"
+        variant="base"
+        weight="medium"
+        className="mb-2 text-gray"
+      >
+        Fondatrice & Directrice Créative — Hippô'kom
+      </Typography>
+      <Typography as="p" variant="base" className="mb-0 text-black">
+        J'accompagne depuis plus de 5 ans les entreprises de Martinique et des
+        Antilles dans leur stratégie de communication digitale : community
+        management, branding, vidéo et campagnes publicitaires.
+      </Typography>
+    </div>
+  </aside>
+);
 
 // Composant pour afficher un highlight individuel
 const ProjectHighlight = ({
@@ -161,7 +190,8 @@ export const ArticleContentClient = ({
         <div className="absolute w-full min-h-[450px] sm:min-h-[700px] [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
           <Image
             src="/bg-light-blue.svg"
-            alt="Hippô'kom background"
+            alt=""
+            aria-hidden="true"
             fill
             priority
             sizes="100vw"
@@ -214,6 +244,7 @@ export const ArticleContentClient = ({
               className="rich-text max-w-4xl mx-auto"
               dangerouslySetInnerHTML={{ __html: article.content }}
             />
+            {isBlog && <AuthorBio />}
           </div>
         </div>
 

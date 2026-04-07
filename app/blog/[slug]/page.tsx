@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { blogArticles } from "@/data/blog-articles";
 import { ArticleFinder } from "@/components/Blog/article-finder";
+import { SITE_URL, buildBreadcrumb, jsonLdScript } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -25,16 +26,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.description,
       type: "article",
       publishedTime: article.date,
-      url: `https://hippokomagency.fr/blog/${article.slug}`,
+      url: `${SITE_URL}/blog/${article.slug}`,
       images: [
         {
-          url: `https://hippokomagency.fr${article.image}`,
+          url: `${SITE_URL}${article.image}`,
           alt: article.title,
         },
       ],
     },
     alternates: {
-      canonical: `https://hippokomagency.fr/blog/${article.slug}`,
+      canonical: `${SITE_URL}/blog/${article.slug}`,
     },
   };
 }
@@ -45,38 +46,27 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogSinglePage() {
+export default async function BlogSinglePage({ params }: Props) {
+  const { slug } = await params;
+  const article = blogArticles.find((a) => a.slug === slug);
+
+  const breadcrumb = article
+    ? buildBreadcrumb([
+        { name: "Accueil", url: SITE_URL },
+        { name: "Blog", url: `${SITE_URL}/blog` },
+        { name: article.title, url: `${SITE_URL}/blog/${article.slug}` },
+      ])
+    : null;
+
   return (
     <>
+      {breadcrumb && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLdScript(breadcrumb)}
+        />
+      )}
       <ArticleFinder articles={blogArticles} />
-      <BlogJsonLd />
     </>
-  );
-}
-
-function BlogJsonLd() {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Blog",
-          name: "Blog Hippô'kom",
-          description:
-            "Conseils, tendances et bonnes pratiques pour booster votre communication digitale en Martinique.",
-          url: "https://hippokomagency.fr/blog",
-          publisher: {
-            "@type": "Organization",
-            name: "Hippô'kom",
-            url: "https://hippokomagency.fr",
-            logo: {
-              "@type": "ImageObject",
-              url: "https://hippokomagency.fr/logo.png",
-            },
-          },
-        }),
-      }}
-    />
   );
 }

@@ -9,6 +9,7 @@ import {
 } from "@/components/services";
 import { TestimonialsSection } from "@/components/homepage/testimonials-section";
 import { Metadata } from "next";
+import { SITE_URL, buildBreadcrumb, jsonLdScript } from "@/lib/seo";
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
@@ -30,9 +31,28 @@ export async function generateMetadata({
     return { title: "Service introuvable" };
   }
 
+  const url = `${SITE_URL}/${service.slug}`;
+
   return {
-    title: `${service.title} | Hippô'Kom - Agence de Communication Martinique`,
+    title: `${service.title} en Martinique | Hippô'kom`,
     description: service.hero.subtitle,
+    keywords: [
+      service.title.toLowerCase(),
+      `${service.title.toLowerCase()} martinique`,
+      `${service.title.toLowerCase()} antilles`,
+      `agence ${service.title.toLowerCase()} martinique`,
+      "hippokom",
+    ],
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      type: "website",
+      url,
+      title: `${service.title} en Martinique | Hippô'kom`,
+      description: service.hero.subtitle,
+      siteName: "Hippô'kom",
+    },
   };
 }
 
@@ -44,8 +64,50 @@ const ServicePage = async ({ params }: ServicePageProps) => {
     notFound();
   }
 
+  const url = `${SITE_URL}/${service.slug}`;
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: service.title,
+    serviceType: service.title,
+    description: service.hero.subtitle,
+    url,
+    provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: [
+      { "@type": "Place", name: "Martinique" },
+      { "@type": "Place", name: "Antilles" },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: service.title,
+      itemListElement: service.benefits.map((b) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: b.title,
+          description: b.description,
+        },
+      })),
+    },
+  };
+
+  const breadcrumbSchema = buildBreadcrumb([
+    { name: "Accueil", url: SITE_URL },
+    { name: service.title, url },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(serviceSchema)}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(breadcrumbSchema)}
+      />
       <PageHero
         title={service.hero.title}
         subtitle={service.hero.subtitle}

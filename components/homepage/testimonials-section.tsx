@@ -7,6 +7,7 @@ import { reviewLink } from "@/data";
 import { Marquee } from "../ui/marquee";
 import { TestimonialCard } from "./testimonial-card";
 import AnimatedSection from "../ui/animated-section";
+import { jsonLdScript, SITE_URL } from "@/lib/seo";
 
 const testimonials = [
   {
@@ -69,9 +70,42 @@ const firstColumn = testimonials.slice(0, 3);
 const secondColumn = testimonials.slice(3, 6);
 const thirdColumn = testimonials.slice(6, 9);
 
+const ratingValue =
+  testimonials.reduce((sum, t) => sum + t.stars, 0) / testimonials.length;
+
+const aggregateRatingSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
+  name: "Hippô'kom",
+  url: SITE_URL,
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: ratingValue.toFixed(1),
+    bestRating: "5",
+    worstRating: "1",
+    ratingCount: testimonials.length,
+    reviewCount: testimonials.length,
+  },
+  review: testimonials.map((t) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: t.author },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: t.stars,
+      bestRating: 5,
+    },
+    reviewBody: t.quote,
+  })),
+};
+
 export function TestimonialsSection() {
   return (
     <section id="testimonials" className="py-20 bg-blue-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(aggregateRatingSchema)}
+      />
       {/* Header */}
       <div className="max-w-7xl mx-auto px-5 mb-12">
         <AnimatedSection
@@ -110,6 +144,7 @@ export function TestimonialsSection() {
               iconPosition="right"
               href={reviewLink}
               target="_blank"
+              rel="nofollow noopener noreferrer"
             >
               Laisser un avis
             </Button>

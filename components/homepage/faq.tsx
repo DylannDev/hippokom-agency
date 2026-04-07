@@ -11,6 +11,7 @@ import { Badge } from "../ui/badge";
 import { motion } from "framer-motion";
 import { ContactSection } from "./contact-section";
 import AnimatedSection from "../ui/animated-section";
+import { buildFaqSchema, jsonLdScript } from "@/lib/seo";
 
 interface FaqItem {
   id: string;
@@ -35,6 +36,10 @@ export function Faq({
 }: FaqProps) {
   return (
     <section className={`relative bg-blue-background ${className}`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(buildFaqSchema(data))}
+      />
       <div className="max-w-7xl mx-auto py-10 md:py-20 px-5">
         {/* FAQ Content - Left */}
         <AnimatedSection
