@@ -19,6 +19,7 @@ export function CalendlyButton({
     <Button
       href={calendlyLink}
       target="_blank"
+      rel="nofollow noopener noreferrer"
       size={size}
       variant={variant}
       icon={<CalendarCheck size={20} />}

@@ -37,6 +37,7 @@ export interface ButtonProps
   asChild?: boolean;
   href?: string;
   target?: string;
+  rel?: string;
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
 }
@@ -50,6 +51,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       asChild = false,
       href,
       target,
+      rel,
       icon,
       iconPosition = "left",
       children,
@@ -82,8 +84,15 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const classes = cn(buttonVariants({ variant, size, className }));
 
     if (href) {
+      const computedRel =
+        rel ?? (target === "_blank" ? "noopener noreferrer" : undefined);
       return (
-        <Link href={href} target={target} className={classes}>
+        <Link
+          href={href}
+          target={target}
+          rel={computedRel}
+          className={classes}
+        >
           {content}
         </Link>
       );

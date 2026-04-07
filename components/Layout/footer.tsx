@@ -51,7 +51,7 @@ export function Footer() {
                   key={social.name}
                   href={social.href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="w-[38px] h-[38px] bg-white rounded-lg text-2xl text-blue-dark flex items-center justify-center hover:text-blue transition-all duration-300"
                   aria-label={social.name}
                 >

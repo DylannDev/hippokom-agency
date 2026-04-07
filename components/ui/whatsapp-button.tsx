@@ -23,6 +23,7 @@ export function WhatsAppButton({
     <Button
       href={whatsappUrl}
       target="_blank"
+      rel="nofollow noopener noreferrer"
       size={size}
       variant={variant}
       icon={<RiWhatsappFill className="text-xl" />}
