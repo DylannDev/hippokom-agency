@@ -94,7 +94,8 @@ export function FounderSection() {
             <div className="flex items-center gap-2 text-blue-dark group-hover:text-white transition-all duration-500 shadow-lg absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-auto bg-white/30 backdrop-blur-md border border-white rounded-2xl p-5">
               <Image
                 src="/assets/icons/bag.svg"
-                alt="Icône"
+                alt=""
+                aria-hidden="true"
                 width={30}
                 height={30}
                 className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] flex-shrink-0"

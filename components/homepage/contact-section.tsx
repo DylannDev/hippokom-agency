@@ -11,7 +11,8 @@ export function ContactSection() {
     >
       <Image
         src="/bg-light-blue.svg"
-        alt="background"
+        alt=""
+        aria-hidden="true"
         fill
         loading="lazy"
         sizes="100vw"

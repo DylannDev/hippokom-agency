@@ -21,7 +21,8 @@ export function PageHero({
     >
       <Image
         src="/bg-light-blue.svg"
-        alt="Hippô'kom background"
+        alt=""
+        aria-hidden="true"
         fill
         priority
         sizes="100vw"
