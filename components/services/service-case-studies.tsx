@@ -29,7 +29,7 @@ export function ServiceCaseStudies({
     <section className="py-20 sm:py-32 px-5 sm:px-6 md:px-8 relative">
       <div className="w-full h-full absolute inset-0 overflow-hidden -z-10">
         <Image
-          src="/bg-light-blue.webp"
+          src="/bg-light-blue.svg"
           alt=""
           fill
           loading="lazy"
