@@ -20,7 +20,7 @@ export function PageHero({
       className={`relative w-full h-[80vh] max-h-[800px] overflow-hidden [clip-path:ellipse(350%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]`}
     >
       <Image
-        src="/bg-light-blue.svg"
+        src="/bg-light-blue.avif"
         alt=""
         aria-hidden="true"
         fill

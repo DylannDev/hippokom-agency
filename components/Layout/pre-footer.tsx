@@ -7,7 +7,7 @@ export function PreFooter() {
     <section className="relative z-20 w-full -mb-[150px] max-w-7xl mx-auto px-5">
       <div className="w-full relative overflow-hidden rounded-3xl">
         <Image
-          src="/bg-light-blue.svg"
+          src="/bg-light-blue.avif"
           alt="Hippô'kom hero background illustration"
           fill
           loading="lazy"
