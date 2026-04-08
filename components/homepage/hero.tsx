@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative w-full min-h-[80vh] max-h-[900px] overflow-hidden [clip-path:ellipse(250%_100%_at_50%_0%)] sm:[clip-path:ellipse(150%_100%_at_50%_0%)]">
       {/* Background Image */}
       <Image
-        src="/bg-light-blue.avif"
+        src="/bg-light-blue.svg"
         alt=""
         aria-hidden="true"
         fill
